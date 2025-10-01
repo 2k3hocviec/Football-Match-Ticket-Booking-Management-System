@@ -25,10 +25,12 @@ public class TabBookTicket extends javax.swing.JPanel {
     public ArrayList <String> gheDuocDat = new ArrayList<>();
     private static int soLuong = 0;
     private final int donGia = 40000;
+    private UserInterface userInterface;
     
     public TabBookTicket(UserInterface userInterface){
         initComponents();
         setMatchIDTojcbxSelectMatch();
+        this.userInterface = userInterface;
     }
 
     /**
@@ -112,7 +114,7 @@ public class TabBookTicket extends javax.swing.JPanel {
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
         jPasswordField1 = new javax.swing.JPasswordField();
-        jButton1 = new javax.swing.JButton();
+        btnBookTicket = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         txtSeat = new javax.swing.JTextField();
@@ -147,241 +149,481 @@ public class TabBookTicket extends javax.swing.JPanel {
         gheA03.setText("A03");
         gheA03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheA03.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheA03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheA03ActionPerformed(evt);
+            }
+        });
 
         gheA04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheA04.setText("A04");
         gheA04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheA04.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheA04.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheA04ActionPerformed(evt);
+            }
+        });
 
         gheA05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheA05.setText("A05");
         gheA05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheA05.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheA05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheA05ActionPerformed(evt);
+            }
+        });
 
         gheA06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheA06.setText("A06");
         gheA06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheA06.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheA06.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheA06ActionPerformed(evt);
+            }
+        });
 
         gheA07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheA07.setText("A07");
         gheA07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheA07.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheA07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheA07ActionPerformed(evt);
+            }
+        });
 
         gheA08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheA08.setText("A08");
         gheA08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheA08.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheA08.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheA08ActionPerformed(evt);
+            }
+        });
 
         gheA09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheA09.setText("A09");
         gheA09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheA09.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheA09.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheA09ActionPerformed(evt);
+            }
+        });
 
         gheA10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheA10.setText("A10");
         gheA10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheA10.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheA10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheA10ActionPerformed(evt);
+            }
+        });
 
         gheB01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheB01.setText("B01");
         gheB01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheB01.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheB01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheB01ActionPerformed(evt);
+            }
+        });
 
         gheB02.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheB02.setText("B02");
         gheB02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheB02.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheB02.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheB02ActionPerformed(evt);
+            }
+        });
 
         gheB03.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheB03.setText("B03");
         gheB03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheB03.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheB03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheB03ActionPerformed(evt);
+            }
+        });
 
         gheB04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheB04.setText("B04");
         gheB04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheB04.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheB04.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheB04ActionPerformed(evt);
+            }
+        });
 
         gheB05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheB05.setText("B05");
         gheB05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheB05.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheB05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheB05ActionPerformed(evt);
+            }
+        });
 
         gheB06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheB06.setText("B06");
         gheB06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheB06.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheB06.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheB06ActionPerformed(evt);
+            }
+        });
 
         gheB07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheB07.setText("B07");
         gheB07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheB07.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheB07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheB07ActionPerformed(evt);
+            }
+        });
 
         gheB08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheB08.setText("B08");
         gheB08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheB08.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheB08.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheB08ActionPerformed(evt);
+            }
+        });
 
         gheB09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheB09.setText("B09");
         gheB09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheB09.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheB09.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheB09ActionPerformed(evt);
+            }
+        });
 
         gheB10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheB10.setText("B10");
         gheB10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheB10.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheB10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheB10ActionPerformed(evt);
+            }
+        });
 
         gheC01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheC01.setText("C01");
         gheC01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheC01.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheC01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheC01ActionPerformed(evt);
+            }
+        });
 
         gheC02.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheC02.setText("C02");
         gheC02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheC02.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheC02.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheC02ActionPerformed(evt);
+            }
+        });
 
         gheC03.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheC03.setText("C03");
         gheC03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheC03.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheC03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheC03ActionPerformed(evt);
+            }
+        });
 
         gheC04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheC04.setText("C04");
         gheC04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheC04.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheC04.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheC04ActionPerformed(evt);
+            }
+        });
 
         gheC05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheC05.setText("C05");
         gheC05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheC05.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheC05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheC05ActionPerformed(evt);
+            }
+        });
 
         gheC06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheC06.setText("C06");
         gheC06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheC06.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheC06.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheC06ActionPerformed(evt);
+            }
+        });
 
         gheC07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheC07.setText("C07");
         gheC07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheC07.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheC07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheC07ActionPerformed(evt);
+            }
+        });
 
         gheC08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheC08.setText("C08");
         gheC08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheC08.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheC08.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheC08ActionPerformed(evt);
+            }
+        });
 
         gheC09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheC09.setText("C09");
         gheC09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheC09.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheC09.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheC09ActionPerformed(evt);
+            }
+        });
 
         gheC10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheC10.setText("C10");
         gheC10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheC10.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheC10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheC10ActionPerformed(evt);
+            }
+        });
 
         gheD01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheD01.setText("D01");
         gheD01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheD01.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheD01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheD01ActionPerformed(evt);
+            }
+        });
 
         gheD02.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheD02.setText("D02");
         gheD02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheD02.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheD02.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheD02ActionPerformed(evt);
+            }
+        });
 
         gheD03.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheD03.setText("D03");
         gheD03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheD03.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheD03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheD03ActionPerformed(evt);
+            }
+        });
 
         gheD04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheD04.setText("D04");
         gheD04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheD04.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheD04.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheD04ActionPerformed(evt);
+            }
+        });
 
         gheD05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheD05.setText("D05");
         gheD05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheD05.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheD05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheD05ActionPerformed(evt);
+            }
+        });
 
         gheD06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheD06.setText("D06");
         gheD06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheD06.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheD06.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheD06ActionPerformed(evt);
+            }
+        });
 
         gheD07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheD07.setText("D07");
         gheD07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheD07.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheD07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheD07ActionPerformed(evt);
+            }
+        });
 
         gheD08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheD08.setText("D08");
         gheD08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheD08.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheD08.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheD08ActionPerformed(evt);
+            }
+        });
 
         gheD09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheD09.setText("D09");
         gheD09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheD09.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheD09.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheD09ActionPerformed(evt);
+            }
+        });
 
         gheD10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheD10.setText("D10");
         gheD10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheD10.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheD10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheD10ActionPerformed(evt);
+            }
+        });
 
         gheE01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheE01.setText("E01");
         gheE01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheE01.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheE01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheE01ActionPerformed(evt);
+            }
+        });
 
         gheE02.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheE02.setText("E02");
         gheE02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheE02.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheE02.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheE02ActionPerformed(evt);
+            }
+        });
 
         gheE03.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheE03.setText("E03");
         gheE03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheE03.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheE03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheE03ActionPerformed(evt);
+            }
+        });
 
         gheE04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheE04.setText("E04");
         gheE04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheE04.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheE04.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheE04ActionPerformed(evt);
+            }
+        });
 
         gheE05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheE05.setText("E05");
         gheE05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheE05.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheE05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheE05ActionPerformed(evt);
+            }
+        });
 
         gheE06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheE06.setText("E06");
         gheE06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheE06.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheE06.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheE06ActionPerformed(evt);
+            }
+        });
 
         gheE07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheE07.setText("E07");
         gheE07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheE07.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheE07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheE07ActionPerformed(evt);
+            }
+        });
 
         gheE08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheE08.setText("E08");
         gheE08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheE08.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheE08.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheE08ActionPerformed(evt);
+            }
+        });
 
         gheE09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheE09.setText("E09");
         gheE09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheE09.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheE09.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheE09ActionPerformed(evt);
+            }
+        });
 
         gheE10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheE10.setText("E10");
         gheE10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gheE10.setPreferredSize(new java.awt.Dimension(25, 25));
+        gheE10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gheE10ActionPerformed(evt);
+            }
+        });
 
         gheF01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         gheF01.setText("F01");
@@ -679,8 +921,13 @@ public class TabBookTicket extends javax.swing.JPanel {
 
         jPasswordField1.setText("jPasswordField1");
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton1.setText("Đặt Vé");
+        btnBookTicket.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnBookTicket.setText("Xác Nhận & Thanh Toán");
+        btnBookTicket.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBookTicketActionPerformed(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setText("Seat:");
@@ -695,7 +942,7 @@ public class TabBookTicket extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnBookTicket, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -749,7 +996,7 @@ public class TabBookTicket extends javax.swing.JPanel {
                     .addComponent(jLabel7)
                     .addComponent(txtAmount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(btnBookTicket)
                 .addContainerGap())
         );
 
@@ -907,11 +1154,13 @@ public class TabBookTicket extends javax.swing.JPanel {
     
     private void gheA01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA01ActionPerformed
         // TODO add your handling code here:
-        
-        gheA01.setBackground(Color.red);
         gheA01.setEnabled(false);
         setAmountAndSetAndGheDuocDat("A01");
-        
+        gheA01.setBackground(Color.RED);
+        gheA01.setOpaque(true);
+        gheA01.setContentAreaFilled(true);
+        gheA01.setBorderPainted(true);
+        jcbxSelectMatch.setEnabled(false);
     }//GEN-LAST:event_gheA01ActionPerformed
 
     private void gheA02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA02ActionPerformed
@@ -924,10 +1173,211 @@ public class TabBookTicket extends javax.swing.JPanel {
         gheA02.setBorderPainted(true);
         jcbxSelectMatch.setEnabled(false);
     }//GEN-LAST:event_gheA02ActionPerformed
+
+    private void gheA03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA03ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheA03ActionPerformed
+
+    private void gheA04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA04ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheA04ActionPerformed
+
+    private void gheA05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA05ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheA05ActionPerformed
+
+    private void gheA06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA06ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheA06ActionPerformed
+
+    private void gheA07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA07ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheA07ActionPerformed
+
+    private void gheA08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA08ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheA08ActionPerformed
+
+    private void gheA09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA09ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheA09ActionPerformed
+
+    private void gheA10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheA10ActionPerformed
+
+    private void gheB01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB01ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheB01ActionPerformed
+
+    private void gheB02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB02ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheB02ActionPerformed
+
+    private void gheB03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB03ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheB03ActionPerformed
+
+    private void gheB04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB04ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheB04ActionPerformed
+
+    private void gheB05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB05ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheB05ActionPerformed
+
+    private void gheB06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB06ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheB06ActionPerformed
+
+    private void gheB07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB07ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheB07ActionPerformed
+
+    private void gheB08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB08ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheB08ActionPerformed
+
+    private void gheB09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB09ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheB09ActionPerformed
+
+    private void gheB10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheB10ActionPerformed
+
+    private void gheC01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC01ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheC01ActionPerformed
+
+    private void gheC02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC02ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheC02ActionPerformed
+
+    private void gheC03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC03ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheC03ActionPerformed
+
+    private void gheC04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC04ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheC04ActionPerformed
+
+    private void gheC05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC05ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheC05ActionPerformed
+
+    private void gheC06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC06ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheC06ActionPerformed
+
+    private void gheC07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC07ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheC07ActionPerformed
+
+    private void gheC08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC08ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheC08ActionPerformed
+
+    private void gheC09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC09ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheC09ActionPerformed
+
+    private void gheC10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheC10ActionPerformed
+
+    private void gheD01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD01ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheD01ActionPerformed
+
+    private void gheD02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD02ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheD02ActionPerformed
+
+    private void gheD03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD03ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheD03ActionPerformed
+
+    private void gheD04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD04ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheD04ActionPerformed
+
+    private void gheD05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD05ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheD05ActionPerformed
+
+    private void gheD06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD06ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheD06ActionPerformed
+
+    private void gheD07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD07ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheD07ActionPerformed
+
+    private void gheD08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD08ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheD08ActionPerformed
+
+    private void gheD09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD09ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheD09ActionPerformed
+
+    private void gheD10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheD10ActionPerformed
+
+    private void gheE01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE01ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheE01ActionPerformed
+
+    private void gheE02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE02ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheE02ActionPerformed
+
+    private void gheE03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE03ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheE03ActionPerformed
+
+    private void gheE04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE04ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheE04ActionPerformed
+
+    private void gheE05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE05ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheE05ActionPerformed
+
+    private void gheE06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE06ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheE06ActionPerformed
+
+    private void gheE07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE07ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheE07ActionPerformed
+
+    private void gheE08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE08ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheE08ActionPerformed
+
+    private void gheE09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE09ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheE09ActionPerformed
+
+    private void gheE10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gheE10ActionPerformed
+
+    private void btnBookTicketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBookTicketActionPerformed
+        // TODO add your handling code here:
+        //TabPayment tab = new TabPayment(this);
+        //TabMain.addTab("Payment and Order", tab);
+        //TabMain.setSelectedComponent(tab);
+        userInterface.btnBookTicketInTabBookTicKet();
+    }//GEN-LAST:event_btnBookTicketActionPerformed
     
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBookTicket;
     private javax.swing.JButton gheA01;
     private javax.swing.JButton gheA02;
     private javax.swing.JButton gheA03;
@@ -988,7 +1438,6 @@ public class TabBookTicket extends javax.swing.JPanel {
     private javax.swing.JButton gheF08;
     private javax.swing.JButton gheF09;
     private javax.swing.JButton gheF10;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -3,6 +3,7 @@ package com;
 
 import com.dialog.JDialogAboutUs;
 import com.tab.TabBookTicket;
+import com.tab.TabPayment;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -96,7 +97,7 @@ public class UserInterface extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(230, 451));
 
         buttonBookTicket1.setBackground(new java.awt.Color(25, 118, 210));
-        buttonBookTicket1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        buttonBookTicket1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         buttonBookTicket1.setForeground(new java.awt.Color(255, 255, 255));
         buttonBookTicket1.setText("MUA VÉ");
         buttonBookTicket1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -182,7 +183,7 @@ public class UserInterface extends javax.swing.JFrame {
         jPanel2.setPreferredSize(new java.awt.Dimension(188, 450));
 
         buttonBookTicket2.setBackground(new java.awt.Color(25, 118, 210));
-        buttonBookTicket2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        buttonBookTicket2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         buttonBookTicket2.setForeground(new java.awt.Color(255, 255, 255));
         buttonBookTicket2.setText("MUA VÉ");
         buttonBookTicket2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -262,7 +263,7 @@ public class UserInterface extends javax.swing.JFrame {
         jPanel5.setPreferredSize(new java.awt.Dimension(188, 450));
 
         buttonBookTicket3.setBackground(new java.awt.Color(25, 118, 210));
-        buttonBookTicket3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        buttonBookTicket3.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         buttonBookTicket3.setForeground(new java.awt.Color(255, 255, 255));
         buttonBookTicket3.setText("MUA VÉ");
         buttonBookTicket3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -342,7 +343,7 @@ public class UserInterface extends javax.swing.JFrame {
         jPanel6.setPreferredSize(new java.awt.Dimension(188, 450));
 
         buttonBookTicket4.setBackground(new java.awt.Color(25, 118, 210));
-        buttonBookTicket4.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        buttonBookTicket4.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         buttonBookTicket4.setForeground(new java.awt.Color(255, 255, 255));
         buttonBookTicket4.setText("MUA VÉ");
         buttonBookTicket4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -658,6 +659,11 @@ public class UserInterface extends javax.swing.JFrame {
         }
     }
     
+    public void btnBookTicketInTabBookTicKet() {
+        TabPayment tab = new TabPayment(this);
+        TabMain.addTab("Confirm and Payment", tab);
+        TabMain.setSelectedComponent(tab);
+    }
     
     /**
      * @param args the command line arguments
