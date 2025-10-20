@@ -222,12 +222,12 @@ public class DataBaseConnect {
             while (rs.next()) {
                 User u = new User();
                 u.setUser_id(rs.getString("user_id"));
-                u.setFull_name(rs.getString("full_name")); 
+                u.setFull_name(rs.getString("full_name"));
                 u.setEmail(rs.getString("email"));
                 u.setPhone(rs.getString("phone"));
                 u.setPass(rs.getString("pass"));
                 u.setDate(rs.getTimestamp("created").toLocalDateTime());
-                
+
                 list.add(u);
             }
         } catch (Exception e) {
@@ -235,7 +235,7 @@ public class DataBaseConnect {
 
         return list;
     }
-    
+
     public static ArrayList<Ticket> selectListTicket() {
         ArrayList<Ticket> list = new ArrayList<>();
         String sql = "SELECT * FROM Tickets";
@@ -245,12 +245,12 @@ public class DataBaseConnect {
             while (rs.next()) {
                 Ticket t = new Ticket();
                 t.setTicket_id(rs.getString("ticket_id"));
-                t.setOrder_id(rs.getString("order_id")); 
+                t.setOrder_id(rs.getString("order_id"));
                 t.setMatch_id(rs.getString("match_id"));
                 t.setStadium_id(rs.getString("stadium_id"));
                 t.setSeat_id(rs.getString("seat_id"));
                 t.setPrice(rs.getInt("price"));
-                
+
                 list.add(t);
             }
         } catch (Exception e) {
@@ -258,7 +258,7 @@ public class DataBaseConnect {
 
         return list;
     }
-    
+
     public static ArrayList<Stadium> selectListStadium() {
         ArrayList<Stadium> list = new ArrayList<>();
         String sql = "SELECT * FROM Stadiums";
@@ -268,10 +268,10 @@ public class DataBaseConnect {
             while (rs.next()) {
                 Stadium s = new Stadium();
                 s.setStadium_id(rs.getString("stadium_id"));
-                s.setName(rs.getString("name")); 
+                s.setName(rs.getString("name"));
                 s.setLocation(rs.getString("location"));
-                s.setCapacity(rs.getInt("capacity"));                
-                
+                s.setCapacity(rs.getInt("capacity"));
+
                 list.add(s);
             }
         } catch (Exception e) {
@@ -279,9 +279,9 @@ public class DataBaseConnect {
 
         return list;
     }
-    
-    public static ArrayList <Seat> selectListSeat() {
-        ArrayList <Seat> list = new ArrayList<>();
+
+    public static ArrayList<Seat> selectListSeat() {
+        ArrayList<Seat> list = new ArrayList<>();
         String sql = "SELECT * FROM Seats";
 
         try (
@@ -289,10 +289,10 @@ public class DataBaseConnect {
             while (rs.next()) {
                 Seat s = new Seat();
                 s.setMatch_id(rs.getString("match_id"));
-                s.setStadium_id(rs.getString("stadium_id")); 
+                s.setStadium_id(rs.getString("stadium_id"));
                 s.setSeat_id(rs.getString("seat_id"));
-                s.setStatus(rs.getBoolean("status"));                
-                
+                s.setStatus(rs.getBoolean("status"));
+
                 list.add(s);
             }
         } catch (Exception e) {
@@ -300,8 +300,8 @@ public class DataBaseConnect {
 
         return list;
     }
-    
-    public static ArrayList <Payment> selectListPayment() {
+
+    public static ArrayList<Payment> selectListPayment() {
         ArrayList<Payment> list = new ArrayList<>();
         String sql = "SELECT * FROM Payments";
 
@@ -310,12 +310,12 @@ public class DataBaseConnect {
             while (rs.next()) {
                 Payment p = new Payment();
                 p.setPayment_id(rs.getString("payment_id"));
-                p.setOrder_id(rs.getString("order_id")); 
+                p.setOrder_id(rs.getString("order_id"));
                 p.setMethod(rs.getString("method"));
                 p.setAmount(rs.getInt("amount"));
                 p.setStatus(rs.getString("status"));
                 p.setPayment_date(rs.getTimestamp("payment_date").toLocalDateTime());
-                
+
                 list.add(p);
             }
         } catch (Exception e) {
@@ -323,8 +323,8 @@ public class DataBaseConnect {
 
         return list;
     }
-    
-    public static ArrayList <Order> selectListOrder() {
+
+    public static ArrayList<Order> selectListOrder() {
         ArrayList<Order> list = new ArrayList<>();
         String sql = "SELECT * FROM Orders";
 
@@ -333,11 +333,11 @@ public class DataBaseConnect {
             while (rs.next()) {
                 Order o = new Order();
                 o.setOrder_id(rs.getString("order_id"));
-                o.setUser_id(rs.getString("user_id")); 
+                o.setUser_id(rs.getString("user_id"));
                 o.setTotal_amount(rs.getInt("total_amount"));
                 o.setStatus(rs.getString("status"));
                 o.setOrder_date(rs.getTimestamp("order_date").toLocalDateTime());
-                
+
                 list.add(o);
             }
         } catch (Exception e) {
@@ -345,8 +345,8 @@ public class DataBaseConnect {
 
         return list;
     }
-    
-    public static ArrayList <Match> selectListMatch() {
+
+    public static ArrayList<Match> selectListMatch() {
         ArrayList<Match> list = new ArrayList<>();
         String sql = "SELECT * FROM Matches";
 
@@ -355,18 +355,78 @@ public class DataBaseConnect {
             while (rs.next()) {
                 Match m = new Match();
                 m.setMatch_id(rs.getString("match_id"));
-                m.setHome_team(rs.getString("home_team")); 
+                m.setHome_team(rs.getString("home_team"));
                 m.setAway_team(rs.getString("away_team"));
                 m.setStadium_id(rs.getString("stadium_id"));
                 m.setMatch_date(rs.getTimestamp("match_date").toLocalDateTime());
                 m.setTournament(rs.getString("tournament"));
-                
+
                 list.add(m);
             }
         } catch (Exception e) {
         }
-
         return list;
+    }
+
+    public static ArrayList<ArrayList<Object>> selectSeatAvailabilityReport() {
+        ArrayList<ArrayList<Object>> res = new ArrayList();
+        String sql = "SELECT  "
+                + "    s.match_id, "
+                + "    st.name AS stadium_name, "
+                + "    m.home_team, "
+                + "    m.away_team, "
+                + "    SUM(CASE WHEN s.status = 1 THEN 1 ELSE 0 END) AS booked_seats, "
+                + "    SUM(CASE WHEN s.status = 0 THEN 1 ELSE 0 END) AS available_seats "
+                + "FROM Seats AS s "
+                + "JOIN Matches AS m ON s.match_id = m.match_id "
+                + "JOIN Stadiums AS st ON m.stadium_id = st.stadium_id "
+                + "GROUP BY s.match_id, st.name, m.home_team, m.away_team";
+        try (
+                Connection con = getConnection(); PreparedStatement pstmt = con.prepareStatement(sql); ResultSet rs = pstmt.executeQuery();) {
+            while (rs.next()) {
+                ArrayList<Object> tuple = new ArrayList<>();
+                tuple.add(rs.getString("match_id"));
+                tuple.add(rs.getString("stadium_name"));
+                tuple.add(rs.getString("home_team"));
+                tuple.add(rs.getString("away_team"));
+                tuple.add(rs.getInt("booked_seats"));
+                tuple.add(rs.getInt("available_seats"));
+                res.add(tuple);
+            }
+        } catch (Exception e) {
+        }
+        return res;
+    }
+
+    public static ArrayList<ArrayList<Object>> selectTop5HighestSpendingCustomers() {
+        ArrayList<ArrayList<Object>> res = new ArrayList();
+        String sql =  """
+                        select top 5 u.[user_id], u.full_name, sum(ord.total_amount) as TongChiTieu
+                        from Users u
+                        join 
+                            Orders ord on u.[user_id] = ord.[user_id]
+                        group by u.[user_id], u.full_name
+                        order by TongChiTieu desc
+                      """;
+        try (
+                Connection con = getConnection(); 
+                PreparedStatement pstmt = con.prepareStatement(sql); 
+                ResultSet rs = pstmt.executeQuery();) {
+            while (rs.next()) {
+                ArrayList<Object> tuple = new ArrayList<>();
+                tuple.add(rs.getString("user_id"));
+                tuple.add(rs.getString("full_name"));
+                tuple.add(rs.getInt("TongChiTieu"));
+                res.add(tuple);
+            }
+        } catch (Exception e) {
+        }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        ArrayList<ArrayList<Object>> arr = DataBaseConnect.selectSeatAvailabilityReport();
+        System.out.println(arr);
     }
 
 }

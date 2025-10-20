@@ -10,6 +10,7 @@ import com.objects.Stadium;
 import com.objects.Ticket;
 import com.objects.User;
 import java.util.ArrayList;
+import javax.swing.ImageIcon;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -47,6 +48,7 @@ public class TabManager extends javax.swing.JPanel {
         jSeparator1 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
         jComboBoxSelect = new javax.swing.JComboBox<>();
+        jLabelChange = new javax.swing.JLabel();
 
         jTableShow.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -82,6 +84,8 @@ public class TabManager extends javax.swing.JPanel {
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabelChange, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(30, 30, 30)
                         .addComponent(jComboBoxSelect, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
@@ -89,9 +93,11 @@ public class TabManager extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jComboBoxSelect, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel1)
+                        .addComponent(jComboBoxSelect, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelChange, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -103,9 +109,10 @@ public class TabManager extends javax.swing.JPanel {
     private void jComboBoxSelectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxSelectActionPerformed
         // TODO add your handling code here:
         String entity = (String) jComboBoxSelect.getSelectedItem();
+        changeIconLabel(entity);
         switch (entity) {
             case "Users" -> {
-                ArrayList <User> listUser = new ArrayList<>();
+                ArrayList<User> listUser = new ArrayList<>();
                 listUser = DataBaseConnect.selectListUser();
                 String[] column0 = {"User ID", "Full Name", "Email", "Phone", "Password", "Created"};
                 model.setColumnIdentifiers(column0);
@@ -117,14 +124,14 @@ public class TabManager extends javax.swing.JPanel {
                         u.getEmail(),
                         u.getPhone(),
                         u.getPass(),
-                        u.getDate().toString() 
+                        u.getDate().toString()
                     };
                     model.addRow(row);
                 }
             }
-                
+
             case "Orders" -> {
-                ArrayList <Order> listOrder = new ArrayList<>();
+                ArrayList<Order> listOrder = new ArrayList<>();
                 listOrder = DataBaseConnect.selectListOrder();
                 String[] column1 = {"Order ID", "User ID", "Order Date", "Total Amount", "Status"};
                 model.setColumnIdentifiers(column1);
@@ -140,9 +147,9 @@ public class TabManager extends javax.swing.JPanel {
                     model.addRow(row);
                 }
             }
-                
+
             case "Payments" -> {
-                ArrayList <Payment> listPayment = new ArrayList<>();
+                ArrayList<Payment> listPayment = new ArrayList<>();
                 listPayment = DataBaseConnect.selectListPayment();
                 String[] column2 = {"Order ID", "User ID", "Order Date", "Total Amount", "Status"};
                 model.setColumnIdentifiers(column2);
@@ -159,9 +166,9 @@ public class TabManager extends javax.swing.JPanel {
                     model.addRow(row);
                 }
             }
-                
+
             case "Matches" -> {
-                ArrayList <Match> listMatch = new ArrayList<>();
+                ArrayList<Match> listMatch = new ArrayList<>();
                 listMatch = DataBaseConnect.selectListMatch();
                 String[] column3 = {"Match ID", "Home team", "Away team", "Stadium ID", "Match Date", "Tournament"};
                 model.setColumnIdentifiers(column3);
@@ -178,9 +185,9 @@ public class TabManager extends javax.swing.JPanel {
                     model.addRow(row);
                 }
             }
-                
+
             case "Seats" -> {
-                ArrayList <Seat> listSeat = new ArrayList<>();
+                ArrayList<Seat> listSeat = new ArrayList<>();
                 listSeat = DataBaseConnect.selectListSeat();
                 String[] column4 = {"Match ID", "Stadium ID", "Seat ID", "Status"};
                 model.setColumnIdentifiers(column4);
@@ -194,10 +201,10 @@ public class TabManager extends javax.swing.JPanel {
                     };
                     model.addRow(row);
                 }
-            }    
-                
+            }
+
             case "Stadiums" -> {
-                ArrayList <Stadium> listStadium = new ArrayList<>();
+                ArrayList<Stadium> listStadium = new ArrayList<>();
                 listStadium = DataBaseConnect.selectListStadium();
                 String[] column5 = {"Stadium ID", "Name", "Location", "Capacity"};
                 model.setColumnIdentifiers(column5);
@@ -211,10 +218,10 @@ public class TabManager extends javax.swing.JPanel {
                     };
                     model.addRow(row);
                 }
-            }    
-                    
+            }
+
             case "Tickets" -> {
-                ArrayList <Ticket> listTicket = new ArrayList<>();
+                ArrayList<Ticket> listTicket = new ArrayList<>();
                 listTicket = DataBaseConnect.selectListTicket();
                 String[] column6 = {"Stadium ID", "Name", "Location", "Capacity"};
                 model.setColumnIdentifiers(column6);
@@ -230,15 +237,72 @@ public class TabManager extends javax.swing.JPanel {
                     };
                     model.addRow(row);
                 }
-            }    
-                    
-            default -> throw new AssertionError();
+            }
+
+            default ->
+                throw new AssertionError();
         }
     }//GEN-LAST:event_jComboBoxSelectActionPerformed
+
+    private void changeIconLabel(String choice) {
+        switch (choice) {
+            case "Users" -> {
+                java.net.URL imgURL = getClass().getResource("/users.png");
+                if (imgURL != null) {
+                    jLabelChange.setIcon(new ImageIcon(imgURL));
+                }
+            }
+            
+            case "Orders" -> {
+                java.net.URL imgURL = getClass().getResource("/orders.png");
+                if (imgURL != null) {
+                    jLabelChange.setIcon(new ImageIcon(imgURL));
+                }
+            }
+            
+            case "Stadiums" -> {
+                java.net.URL imgURL = getClass().getResource("/stadiums.png");
+                if (imgURL != null) {
+                    jLabelChange.setIcon(new ImageIcon(imgURL));
+                }
+            }
+            
+            case "Matches" -> {
+                java.net.URL imgURL = getClass().getResource("/matches.png");
+                if (imgURL != null) {
+                    jLabelChange.setIcon(new ImageIcon(imgURL));
+                }
+            }
+            
+            case "Seats" -> {
+                java.net.URL imgURL = getClass().getResource("/seats.png");
+                if (imgURL != null) {
+                    jLabelChange.setIcon(new ImageIcon(imgURL));
+                }
+            }    
+            
+            case "Tickets" -> {
+                java.net.URL imgURL = getClass().getResource("/tickets.png");
+                if (imgURL != null) {
+                    jLabelChange.setIcon(new ImageIcon(imgURL));
+                }
+            } 
+            
+            case "Payments" -> {
+                java.net.URL imgURL = getClass().getResource("/payments.png");
+                if (imgURL != null) {
+                    jLabelChange.setIcon(new ImageIcon(imgURL));
+                }
+            }
+            
+            default -> throw new AssertionError();
+        }
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> jComboBoxSelect;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabelChange;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTable jTableShow;

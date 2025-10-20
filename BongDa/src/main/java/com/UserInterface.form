@@ -784,16 +784,17 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
+                      <Component id="jLabel33" alignment="0" max="32767" attributes="0"/>
                       <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="MenuBarExit" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel34" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabelManager" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelUser" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelManager" alignment="0" max="32767" attributes="0"/>
                               <Component id="jLabel31" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelMaAdvance" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="jLabel33" alignment="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -808,10 +809,12 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelUser" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jLabelManager" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="120" max="32767" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jLabelMaAdvance" min="-2" pref="29" max="-2" attributes="0"/>
+                  <EmptySpace pref="73" max="32767" attributes="0"/>
                   <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="MenuAboutUs" min="-2" max="-2" attributes="0"/>
@@ -888,7 +891,7 @@
             <Property name="text" type="java.lang.String" value="________________________________________"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel34">
+        <Component class="javax.swing.JLabel" name="jLabelUser">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
@@ -901,6 +904,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="D&#xe0;nh Cho Kh&#xe1;n Gi&#x1ea3;"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabelUserMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelManager">
           <Properties>
@@ -917,6 +923,23 @@
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabelManagerMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelMaAdvance">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/setting24.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Qu&#x1ea3;n L&#xfd; N&#xe2;ng Cao"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabelMaAdvanceMouseClicked"/>
           </Events>
         </Component>
       </SubComponents>

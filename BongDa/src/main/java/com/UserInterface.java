@@ -8,8 +8,10 @@ import com.objects.Seat;
 import com.objects.User;
 import com.tab.TabBookSeat;
 import com.tab.TabManager;
+import com.tab.TabManagerAdvance;
 import com.tab.TabOrderAndPayment;
 import com.tab.TabShowTicket;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -25,7 +27,7 @@ public class UserInterface extends javax.swing.JFrame {
      */
     public UserInterface() {
         initComponents();
-        setTitle("Quản Lý Sự Kiện");
+        setTitle("Bóng Đá");
         setLocationRelativeTo(this);
         setSize(1010, 640);
     }
@@ -87,8 +89,9 @@ public class UserInterface extends javax.swing.JFrame {
         MenuAboutUs = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
+        jLabelUser = new javax.swing.JLabel();
         jLabelManager = new javax.swing.JLabel();
+        jLabelMaAdvance = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(66, 66, 66));
@@ -526,10 +529,15 @@ public class UserInterface extends javax.swing.JFrame {
 
         jLabel33.setText("________________________________________");
 
-        jLabel34.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel34.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/khangia24.png"))); // NOI18N
-        jLabel34.setText("Dành Cho Khán Giả");
+        jLabelUser.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelUser.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelUser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/khangia24.png"))); // NOI18N
+        jLabelUser.setText("Dành Cho Khán Giả");
+        jLabelUser.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelUserMouseClicked(evt);
+            }
+        });
 
         jLabelManager.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabelManager.setForeground(new java.awt.Color(255, 255, 255));
@@ -538,6 +546,16 @@ public class UserInterface extends javax.swing.JFrame {
         jLabelManager.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabelManagerMouseClicked(evt);
+            }
+        });
+
+        jLabelMaAdvance.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelMaAdvance.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelMaAdvance.setIcon(new javax.swing.ImageIcon(getClass().getResource("/setting24.png"))); // NOI18N
+        jLabelMaAdvance.setText("Quản Lý Nâng Cao");
+        jLabelMaAdvance.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelMaAdvanceMouseClicked(evt);
             }
         });
 
@@ -557,14 +575,15 @@ public class UserInterface extends javax.swing.JFrame {
                                     .addComponent(jLabel32))
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addContainerGap())
+                    .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(MenuAnimationLayout.createSequentialGroup()
-                        .addGroup(MenuAnimationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(MenuAnimationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(MenuBarExit)
-                            .addComponent(jLabel34)
-                            .addComponent(jLabelManager)
-                            .addComponent(jLabel31))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(jLabelUser)
+                            .addComponent(jLabelManager, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel31)
+                            .addComponent(jLabelMaAdvance, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         MenuAnimationLayout.setVerticalGroup(
             MenuAnimationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -576,10 +595,12 @@ public class UserInterface extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel33)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel34)
+                .addComponent(jLabelUser)
                 .addGap(18, 18, 18)
                 .addComponent(jLabelManager)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 120, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabelMaAdvance, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
                 .addComponent(jLabel29)
                 .addGap(18, 18, 18)
                 .addComponent(MenuAboutUs)
@@ -660,6 +681,9 @@ public class UserInterface extends javax.swing.JFrame {
         jDialogRegister dialog = new jDialogRegister(this, true);
         dialog.setVisible(true);
         User registeredUser = dialog.getU();
+        if (registeredUser == null) {
+            return;
+        }
         TabBookSeat tab = new TabBookSeat(this, registeredUser);
         TabMain.addTab("Book Seat", tab);
         TabMain.setSelectedComponent(tab);
@@ -683,6 +707,17 @@ public class UserInterface extends javax.swing.JFrame {
     private void jButtonBookTicket4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBookTicket4ActionPerformed
         jButtonBookTicket1ActionPerformed(evt);
     }//GEN-LAST:event_jButtonBookTicket4ActionPerformed
+
+    private void jLabelUserMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelUserMouseClicked
+        jButtonBookTicket1ActionPerformed(null);
+    }//GEN-LAST:event_jLabelUserMouseClicked
+
+    private void jLabelMaAdvanceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelMaAdvanceMouseClicked
+        TabManagerAdvance tab = new TabManagerAdvance(this);
+        TabMain.add("Advance Manager", tab);
+        TabMain.setSelectedComponent(tab);
+        OpenAndCloseMenuBarMouseClicked(evt);
+    }//GEN-LAST:event_jLabelMaAdvanceMouseClicked
     
     void openMenuBar () {
         new Thread(new Runnable() {
@@ -800,17 +835,19 @@ public class UserInterface extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelMaAdvance;
     private javax.swing.JLabel jLabelManager;
+    private javax.swing.JLabel jLabelUser;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     // End of variables declaration//GEN-END:variables
+
 }
