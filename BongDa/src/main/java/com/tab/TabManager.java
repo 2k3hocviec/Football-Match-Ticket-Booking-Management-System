@@ -50,6 +50,8 @@ public class TabManager extends javax.swing.JPanel {
         jComboBoxSelect = new javax.swing.JComboBox<>();
         jLabelChange = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(255, 255, 255));
+
         jTableShow.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -65,7 +67,7 @@ public class TabManager extends javax.swing.JPanel {
         jLabel1.setText("Manager");
 
         jComboBoxSelect.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jComboBoxSelect.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Users", "Orders", "Payments", "Tickets", "Seats", "Stadiums", "Matches" }));
+        jComboBoxSelect.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Users", "Orders", "Payments", "Tickets", "Seats", "Stadiums", "Matches", "Seat Availability Report", "Top 5 Highest-Spending Customers", "Average Ticket Price Per Tournament", "Rush Hour For Booking", "Ranking Stadium Revenue", "Top 5 Teams by Total Payment Revenue" }));
         jComboBoxSelect.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBoxSelectActionPerformed(evt);
@@ -85,7 +87,7 @@ public class TabManager extends javax.swing.JPanel {
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabelChange, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)
+                        .addGap(18, 18, 18)
                         .addComponent(jComboBoxSelect, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
@@ -223,7 +225,7 @@ public class TabManager extends javax.swing.JPanel {
             case "Tickets" -> {
                 ArrayList<Ticket> listTicket = new ArrayList<>();
                 listTicket = DataBaseConnect.selectListTicket();
-                String[] column6 = {"Stadium ID", "Name", "Location", "Capacity"};
+                String[] column6 = {"Ticket ID", "Order ID", "Match ID", "Seat ID", "Price"};
                 model.setColumnIdentifiers(column6);
                 model.setRowCount(0);
                 for (Ticket t : listTicket) {
@@ -231,14 +233,104 @@ public class TabManager extends javax.swing.JPanel {
                         t.getTicket_id(),
                         t.getOrder_id(),
                         t.getMatch_id(),
-                        t.getStadium_id(),
                         t.getSeat_id(),
                         t.getPrice()
                     };
                     model.addRow(row);
                 }
             }
-
+            
+            case "Seat Availability Report" -> {
+                String[] column1 = {"Match ID", "Stadium Name", "Home Team", "Away Team", "Booked Seats", "Available Seats"};
+                model.setColumnIdentifiers(column1);
+                model.setRowCount(0);
+                ArrayList <ArrayList<Object>> arr = DataBaseConnect.selectSeatAvailabilityReport();
+                for (ArrayList<Object> m : arr) {
+                    Object[] row = new Object[]{
+                        m.get(0),
+                        m.get(1),
+                        m.get(2),
+                        m.get(3),
+                        m.get(4),
+                        m.get(5)
+                    };
+                    model.addRow(row);
+                }
+            }
+            
+            case "Top 5 Highest-Spending Customers" -> {
+                String[] column2 = {"User ID", "Full Name", "Total Revenue"};
+                model.setColumnIdentifiers(column2);
+                model.setRowCount(0);
+                ArrayList <ArrayList<Object>> arr = DataBaseConnect.selectTop5HighestSpendingCustomers();
+                for (ArrayList<Object> m : arr) {
+                    Object[] row = new Object[]{
+                        m.get(0),
+                        m.get(1),
+                        m.get(2),
+                    };
+                    model.addRow(row);
+                }
+            }
+            
+            
+            case "Average Ticket Price Per Tournament" -> {
+                String[] column2 = {"Tournament", "Average Price"};
+                model.setColumnIdentifiers(column2);
+                model.setRowCount(0);
+                ArrayList <ArrayList<Object>> arr = DataBaseConnect.selectAverageTicketPricePerTournament();
+                for (ArrayList<Object> m : arr) {
+                    Object[] row = new Object[]{
+                        m.get(0),
+                        m.get(1),
+                    };
+                    model.addRow(row);
+                }
+            }
+            
+            case "Rush Hour For Booking" -> {
+                String[] column2 = {"Frame Time", "Quantity"};
+                model.setColumnIdentifiers(column2);
+                model.setRowCount(0);
+                ArrayList <ArrayList<Object>> arr = DataBaseConnect.selectRushHourForBooking();
+                for (ArrayList<Object> m : arr) {
+                    Object[] row = new Object[]{
+                        m.get(0),
+                        m.get(1),
+                    };
+                    model.addRow(row);
+                }
+            }
+            
+            case "Ranking Stadium Revenue" -> {
+                String[] column2 = {"Rank", "Stadium", "Total Revenue"};
+                model.setColumnIdentifiers(column2);
+                model.setRowCount(0);
+                ArrayList <ArrayList<Object>> arr = DataBaseConnect.selectRankingStadiumRevenue();
+                for (ArrayList<Object> m : arr) {
+                    Object[] row = new Object[]{
+                        m.get(0),
+                        m.get(1),
+                        m.get(2)
+                    };
+                    model.addRow(row);
+                }
+            }
+            
+            case "Top 5 Teams by Total Payment Revenue" -> {
+                String[] column2 = {"Team", "Total Revenue"};
+                model.setColumnIdentifiers(column2);
+                model.setRowCount(0);
+                ArrayList <ArrayList<Object>> arr = DataBaseConnect.selectTop5TeamsByTotalPaymentRevenue();
+                for (ArrayList<Object> m : arr) {
+                    Object[] row = new Object[]{
+                        m.get(0),
+                        m.get(1)
+                    };
+                    model.addRow(row);
+                }
+            }
+            
             default ->
                 throw new AssertionError();
         }
@@ -295,7 +387,9 @@ public class TabManager extends javax.swing.JPanel {
                 }
             }
             
-            default -> throw new AssertionError();
+            default -> {
+                jLabelChange.setIcon(null);
+            }
         }
     }
 

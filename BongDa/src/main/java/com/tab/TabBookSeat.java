@@ -24,6 +24,8 @@ public class TabBookSeat extends javax.swing.JPanel {
     private final int donGia = 40000;
     private UserInterface userInterface;
     private User userCucBo;
+    private final java.awt.Color HOVER_COLOR = new java.awt.Color(0, 163, 55);
+    private final java.awt.Color DEFAULT_COLOR = new java.awt.Color(0, 204, 68);
 
     public TabBookSeat(UserInterface userInterface, User user) {
         initComponents();
@@ -121,6 +123,7 @@ public class TabBookSeat extends javax.swing.JPanel {
         jTextFieldAmount = new javax.swing.JTextField();
         jcbxSelectMatch = new javax.swing.JComboBox<>();
 
+        setBackground(new java.awt.Color(248, 248, 248));
         setPreferredSize(new java.awt.Dimension(900, 520));
 
         seatPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -786,6 +789,7 @@ public class TabBookSeat extends javax.swing.JPanel {
         });
         seatPanel.add(gheF10);
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -803,18 +807,38 @@ public class TabBookSeat extends javax.swing.JPanel {
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel5.setText("PassWord:");
 
+        jTextFieldUserID.setForeground(new java.awt.Color(51, 51, 51));
         jTextFieldUserID.setText("10002321");
+        jTextFieldUserID.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(221, 221, 221)));
 
+        jTextFieldFullName.setForeground(new java.awt.Color(51, 51, 51));
         jTextFieldFullName.setText("Huỳnh Hoàng Khoa");
+        jTextFieldFullName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(221, 221, 221)));
 
+        jTextFieldEmail.setForeground(new java.awt.Color(51, 51, 51));
         jTextFieldEmail.setText("N23DCCN166");
+        jTextFieldEmail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(221, 221, 221)));
 
+        jTextFieldPhone.setForeground(new java.awt.Color(51, 51, 51));
         jTextFieldPhone.setText("0375065207");
+        jTextFieldPhone.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(221, 221, 221)));
 
+        jPasswordFieldPass.setForeground(new java.awt.Color(51, 51, 51));
         jPasswordFieldPass.setText("jPasswordField1");
+        jPasswordFieldPass.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(221, 221, 221)));
 
+        jButtonConfrimSeatAndChangeTabOrderAndPayment.setBackground(new java.awt.Color(46, 204, 113));
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButtonConfrimSeatAndChangeTabOrderAndPayment.setText("Xác Nhận & Thanh Toán");
+        jButtonConfrimSeatAndChangeTabOrderAndPayment.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonConfrimSeatAndChangeTabOrderAndPayment.setText("Confirmation & Payment");
+        jButtonConfrimSeatAndChangeTabOrderAndPayment.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButtonConfrimSeatAndChangeTabOrderAndPaymentMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButtonConfrimSeatAndChangeTabOrderAndPaymentMouseExited(evt);
+            }
+        });
         jButtonConfrimSeatAndChangeTabOrderAndPayment.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonConfrimSeatAndChangeTabOrderAndPaymentActionPerformed(evt);
@@ -827,6 +851,12 @@ public class TabBookSeat extends javax.swing.JPanel {
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel7.setText("Amount:");
 
+        jTextFieldSeat.setForeground(new java.awt.Color(51, 51, 51));
+        jTextFieldSeat.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(221, 221, 221)));
+
+        jTextFieldAmount.setForeground(new java.awt.Color(51, 51, 51));
+        jTextFieldAmount.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(221, 221, 221)));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -834,7 +864,7 @@ public class TabBookSeat extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonConfrimSeatAndChangeTabOrderAndPayment, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE)
+                    .addComponent(jButtonConfrimSeatAndChangeTabOrderAndPayment, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -925,7 +955,7 @@ public class TabBookSeat extends javax.swing.JPanel {
                     .addComponent(seatPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jcbxSelectMatch, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addContainerGap(82, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -1808,6 +1838,14 @@ public class TabBookSeat extends javax.swing.JPanel {
             System.getLogger(TabBookSeat.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
         }
     }//GEN-LAST:event_jButtonConfrimSeatAndChangeTabOrderAndPaymentActionPerformed
+
+    private void jButtonConfrimSeatAndChangeTabOrderAndPaymentMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonConfrimSeatAndChangeTabOrderAndPaymentMouseEntered
+        jButtonConfrimSeatAndChangeTabOrderAndPayment.setBackground(HOVER_COLOR);
+    }//GEN-LAST:event_jButtonConfrimSeatAndChangeTabOrderAndPaymentMouseEntered
+
+    private void jButtonConfrimSeatAndChangeTabOrderAndPaymentMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonConfrimSeatAndChangeTabOrderAndPaymentMouseExited
+        jButtonConfrimSeatAndChangeTabOrderAndPayment.setBackground(DEFAULT_COLOR);
+    }//GEN-LAST:event_jButtonConfrimSeatAndChangeTabOrderAndPaymentMouseExited
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

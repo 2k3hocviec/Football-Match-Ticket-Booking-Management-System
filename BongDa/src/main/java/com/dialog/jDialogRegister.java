@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
- */
+
 package com.dialog;
 
 import com.connectdatabase.DataBaseConnect;
@@ -20,6 +17,7 @@ public class jDialogRegister extends javax.swing.JDialog {
      */
     
     private User u;
+    private boolean close = false;
     
     public jDialogRegister(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -55,11 +53,16 @@ public class jDialogRegister extends javax.swing.JDialog {
         jTextFieldUserID = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(192, 57, 43));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/register48.png"))); // NOI18N
-        jLabel1.setText("Đăng ký");
+        jLabel1.setText("Registration");
 
+        btnClose.setBackground(new java.awt.Color(231, 76, 60));
+        btnClose.setForeground(new java.awt.Color(255, 255, 255));
         btnClose.setText("Close");
         btnClose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -67,7 +70,9 @@ public class jDialogRegister extends javax.swing.JDialog {
             }
         });
 
-        btnLogin.setText("Login");
+        btnLogin.setBackground(new java.awt.Color(52, 152, 219));
+        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
+        btnLogin.setText("Sign in");
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLoginActionPerformed(evt);
@@ -75,12 +80,16 @@ public class jDialogRegister extends javax.swing.JDialog {
         });
 
         jTextFieldFullName.setText("Huỳnh Hoàng Khoa");
+        jTextFieldFullName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(176, 196, 222)));
+        jTextFieldFullName.setDisabledTextColor(new java.awt.Color(176, 196, 222));
 
         jLabel2.setText("User ID:");
 
         jLabel3.setText("Phone:");
 
         jPassWord.setText("admin");
+        jPassWord.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(176, 196, 222)));
+        jPassWord.setDisabledTextColor(new java.awt.Color(176, 196, 222));
 
         jLabel4.setText("Full name: ");
 
@@ -89,28 +98,28 @@ public class jDialogRegister extends javax.swing.JDialog {
         jLabel6.setText("Password:");
 
         jTextFieldEmail.setText("khoa@gmail.com");
+        jTextFieldEmail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(176, 196, 222)));
+        jTextFieldEmail.setDisabledTextColor(new java.awt.Color(176, 196, 222));
 
         jTextFieldPhone.setText("0375065207");
+        jTextFieldPhone.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(176, 196, 222)));
+        jTextFieldPhone.setDisabledTextColor(new java.awt.Color(176, 196, 222));
 
         jTextFieldUserID.setText("admin");
+        jTextFieldUserID.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(176, 196, 222)));
+        jTextFieldUserID.setDisabledTextColor(new java.awt.Color(176, 196, 222));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jSeparator2)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jSeparator1)
+                    .addComponent(jSeparator2)
                     .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jSeparator1)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(btnLogin)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -128,8 +137,9 @@ public class jDialogRegister extends javax.swing.JDialog {
                                     .addComponent(jTextFieldEmail)
                                     .addComponent(jTextFieldPhone)
                                     .addComponent(jPassWord)
-                                    .addComponent(jTextFieldUserID))))
-                        .addContainerGap())))
+                                    .addComponent(jTextFieldUserID)))
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -160,7 +170,7 @@ public class jDialogRegister extends javax.swing.JDialog {
                     .addComponent(jPassWord, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 4, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnClose)
                     .addComponent(btnLogin))
@@ -170,6 +180,10 @@ public class jDialogRegister extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    public boolean isClose() {
+        return close;
+    }
+    
     public static String createUserID() {
         String prefix = "PER";
         Random rand = new Random();
@@ -188,15 +202,15 @@ public class jDialogRegister extends javax.swing.JDialog {
     }
     
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
-        // TODO add your handling code here:
-        System.exit(0);
+        close = true;
+        dispose();
     }//GEN-LAST:event_btnCloseActionPerformed
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-        // TODO add your handling code here:
         u = new User();
         String fullName, email, phone, userID, passWord;
         fullName = jTextFieldFullName.getText();
+        
         email = jTextFieldEmail.getText();
         phone = jTextFieldPhone.getText();
         userID = jTextFieldUserID.getText();
@@ -204,25 +218,25 @@ public class jDialogRegister extends javax.swing.JDialog {
         
 
         if (fullName.isEmpty() || email.isEmpty() || phone.isEmpty() || userID.isEmpty() || passWord.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Vui lòng nhập đầy đủ thông tin!", "Thông báo", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Vui lòng nhập đầy đủ thông tin!", "Information", JOptionPane.WARNING_MESSAGE);
             return;
         }
 
 
         if (!email.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")) {
-            JOptionPane.showMessageDialog(this, "Email không hợp lệ!", "Thông báo", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Email không hợp lệ!", "Information", JOptionPane.WARNING_MESSAGE);
             return;
         }
 
 
         if (!phone.matches("^[0-9]{9,11}$")) {
-            JOptionPane.showMessageDialog(this, "Số điện thoại không hợp lệ!", "Thông báo", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Số điện thoại không hợp lệ!", "Information", JOptionPane.WARNING_MESSAGE);
             return;
         }
 
 
         if (passWord.length() < 6) {
-            JOptionPane.showMessageDialog(this, "Mật khẩu phải có ít nhất 6 ký tự!", "Thông báo", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Mật khẩu phải có ít nhất 6 ký tự!", "Information", JOptionPane.WARNING_MESSAGE);
             return;
         }
         
@@ -233,10 +247,10 @@ public class jDialogRegister extends javax.swing.JDialog {
         u.setPhone(phone);
         
         if (DataBaseConnect.resgiterUser(u) > 0) {
-            JOptionPane.showMessageDialog(this, "Đăng ký thành công!", "Thành công", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Đăng ký thành công!", "Information", JOptionPane.INFORMATION_MESSAGE);
             dispose();
         } else {
-            JOptionPane.showMessageDialog(this, "Đăng ký thất bại!", "Lỗi", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Đăng ký thất bại!", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_btnLoginActionPerformed
 
@@ -299,17 +313,15 @@ public class jDialogRegister extends javax.swing.JDialog {
         //</editor-fold>
 
         /* Create and display the dialog */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                jDialogRegister dialog = new jDialogRegister(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-                    @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            jDialogRegister dialog = new jDialogRegister(new javax.swing.JFrame(), true);
+            dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+                @Override
+                public void windowClosing(java.awt.event.WindowEvent e) {
+                    System.exit(0);
+                }
+            });
+            dialog.setVisible(true);
         });
     }
 

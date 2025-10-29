@@ -166,21 +166,21 @@ public class DataBaseConnect {
     }
 
     public static int intertTicket(Ticket t) {
-        String sql = "INSERT INTO Tickets (ticket_id, order_id, match_id, stadium_id, seat_id, price) "
-                + "VALUES (?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO Tickets (ticket_id, order_id, match_id, seat_id, price) "
+                + "VALUES (?, ?, ?, ?, ?)";
         try (
                 Connection con = getConnection(); PreparedStatement pstmt = con.prepareStatement(sql);) {
 
             pstmt.setString(1, t.getTicket_id());
             pstmt.setString(2, t.getOrder_id());
-            pstmt.setInt(6, t.getPrice());
+            pstmt.setInt(5, t.getPrice());
             pstmt.setString(3, t.getMatch_id());
-            pstmt.setString(4, t.getStadium_id());
-            pstmt.setString(5, t.getSeat_id());
+            pstmt.setString(4, t.getSeat_id());
 
             return pstmt.executeUpdate();
 
         } catch (Exception e) {
+            e.printStackTrace();
         }
         return 0;
     }
@@ -247,7 +247,6 @@ public class DataBaseConnect {
                 t.setTicket_id(rs.getString("ticket_id"));
                 t.setOrder_id(rs.getString("order_id"));
                 t.setMatch_id(rs.getString("match_id"));
-                t.setStadium_id(rs.getString("stadium_id"));
                 t.setSeat_id(rs.getString("seat_id"));
                 t.setPrice(rs.getInt("price"));
 
@@ -423,7 +422,182 @@ public class DataBaseConnect {
         }
         return res;
     }
+     
+    public static ArrayList<ArrayList<Object>> selectAverageTicketPricePerTournament() {
+        ArrayList<ArrayList<Object>> res = new ArrayList();
+        String sql =  """
+                        select distinct m.tournament, avg(t.price) as GiaVeTrungBinh
+                        from Matches m join Tickets t on m.match_id = t.match_id
+                        group by m.tournament
+                        order by avg(t.price) desc
+                      """;
+        try (
+                Connection con = getConnection(); 
+                PreparedStatement pstmt = con.prepareStatement(sql); 
+                ResultSet rs = pstmt.executeQuery();) {
+            while (rs.next()) {
+                ArrayList<Object> tuple = new ArrayList<>();
+                tuple.add(rs.getString("tournament"));
+                tuple.add(rs.getInt("GiaVeTrungBinh"));
+                res.add(tuple);
+            }
+        } catch (Exception e) {
+        }
+        return res;
+    }
+    
+    public static ArrayList<ArrayList<Object>> selectRushHourForBooking() {
+        ArrayList<ArrayList<Object>> res = new ArrayList();
+        String sql =  """
+                        select
+                        	case
+                        		when DATEPART(hour, o.order_date) between 0 and 5 then '0h - 6h (Early Morning)'
+                        		when DATEPART(hour, o.order_date) between 6 and 11 then '6h - 11h (Morning)'
+                        		when DATEPART(hour, o.order_date) between 12 and 17 then '11h - 17h (Afternoon)'
+                        		else '18h - 24h (Evening)'
+                        	end as FrameTime,
+                        	count(t.ticket_id) as Quantity
+                        from Orders o
+                        join Tickets t on o.order_id = t.order_id
+                        group by 
+                                case
+                        		when DATEPART(hour, o.order_date) between 0 and 5 then '0h - 6h (Early Morning)'
+                        		when DATEPART(hour, o.order_date) between 6 and 11 then '6h - 11h (Morning)'
+                        		when DATEPART(hour, o.order_date) between 12 and 17 then '11h - 17h (Afternoon)'
+                        		else '18h - 24h (Evening)'
+                        	end
+                        order by Quantity DESC
+                      """;
+        try (
+                Connection con = getConnection(); 
+                PreparedStatement pstmt = con.prepareStatement(sql); 
+                ResultSet rs = pstmt.executeQuery();) {
+            while (rs.next()) {
+                ArrayList<Object> tuple = new ArrayList<>();
+                tuple.add(rs.getString("FrameTime"));
+                tuple.add(rs.getInt("Quantity"));
+                res.add(tuple);
+            }
+        } catch (Exception e) {
+        }
+        return res;
+    }
+    
+    public static ArrayList<ArrayList<Object>> selectRankingStadiumRevenue() {
+        ArrayList<ArrayList<Object>> res = new ArrayList();
+        String sql =  """
+                        WITH StadiumPayment AS (
+                            SELECT DISTINCT 
+                                s.name, 
+                                p.payment_id,
+                                p.amount
+                            FROM Stadiums s
+                            JOIN Matches m ON s.stadium_id = m.stadium_id
+                            JOIN Tickets t ON m.match_id = t.match_id
+                            JOIN Orders o ON o.order_id = t.order_id
+                            JOIN Payments p ON p.order_id = o.order_id
+                        )
+                        , TotalRevenue AS (
+                            SELECT 
+                                Name,
+                                SUM(amount) AS TotalRevenue
+                            FROM StadiumPayment
+                            GROUP BY name
+                        )
+                        SELECT 
+                            DENSE_RANK() OVER (ORDER BY TotalRevenue DESC) AS Rank,
+                            Name,
+                            TotalRevenue
+                        FROM TotalRevenue
+                        ORDER BY Rank;
+                      """;
+        try (
+                Connection con = getConnection(); 
+                PreparedStatement pstmt = con.prepareStatement(sql); 
+                ResultSet rs = pstmt.executeQuery();) {
+            while (rs.next()) {
+                ArrayList<Object> tuple = new ArrayList<>();
+                tuple.add(rs.getInt("Rank"));
+                tuple.add(rs.getString("Name"));
+                tuple.add(rs.getInt("TotalRevenue"));
+                res.add(tuple);
+            }
+        } catch (Exception e) {
+        }
+        return res;
+    }
+    
+    public static ArrayList<ArrayList<Object>> selectTop5TeamsByTotalPaymentRevenue() {
+        ArrayList<ArrayList<Object>> res = new ArrayList();
+        String sql =  """
+                        WITH TotalRevenuePerMatch AS (
+                            SELECT 
+                                ma.match_id, 
+                                ma.home_team, 
+                                ma.away_team, 
+                                SUM(p.amount) AS TotalRevenue
+                            FROM Matches ma
+                            JOIN (
+                                SELECT DISTINCT order_id, match_id
+                                FROM Tickets
+                            ) ti ON ma.match_id = ti.match_id
+                            JOIN Payments p ON p.order_id = ti.order_id
+                            GROUP BY ma.match_id, ma.home_team, ma.away_team
+                        ),
+                        MergeHomeAndAwayTeams AS (
+                            SELECT home_team AS TeamName, TotalRevenue FROM TotalRevenuePerMatch
+                            UNION ALL
+                            SELECT away_team AS TeamName, TotalRevenue FROM TotalRevenuePerMatch
+                        )
+                        SELECT TOP 5 
+                            TeamName, 
+                            SUM(TotalRevenue) AS TotalRevenue
+                        FROM MergeHomeAndAwayTeams
+                        GROUP BY TeamName
+                        ORDER BY SUM(TotalRevenue) DESC;
+                      """;
+        try (
+                Connection con = getConnection(); 
+                PreparedStatement pstmt = con.prepareStatement(sql); 
+                ResultSet rs = pstmt.executeQuery();) {
+            while (rs.next()) {
+                ArrayList<Object> tuple = new ArrayList<>();
+                tuple.add(rs.getString("TeamName"));
+                tuple.add(rs.getInt("TotalRevenue"));
+                res.add(tuple);
+            }
+        } catch (Exception e) {
+        }
+        return res;
+    }
 
+    public static User checkAccount(String userID, String pass) {
+        String sql = """
+                 SELECT user_id, full_name, email, phone, pass
+                 FROM Users
+                 WHERE user_id = ? AND pass = ?
+                 """;
+        try (
+                Connection con = getConnection(); PreparedStatement pstmt = con.prepareStatement(sql);) {
+            pstmt.setString(1, userID);
+            pstmt.setString(2, pass);
+            try (ResultSet rs = pstmt.executeQuery()) {
+                if (rs.next()) {
+                    return new User(
+                            rs.getString("user_id"),
+                            rs.getString("full_name"),
+                            rs.getString("email"),
+                            rs.getString("phone"),
+                            rs.getString("pass")
+                    );
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    
     public static void main(String[] args) {
         ArrayList<ArrayList<Object>> arr = DataBaseConnect.selectSeatAvailabilityReport();
         System.out.println(arr);

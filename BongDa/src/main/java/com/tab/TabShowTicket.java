@@ -30,8 +30,8 @@ public class TabShowTicket extends javax.swing.JPanel {
         initComponents();
         this.userInterface = userInterface;
         model = (DefaultTableModel) jTableShow.getModel();
-        jButtonConfirm.setEnabled(false);
         initData(order, listSeat);
+        initTable();
     }
 
     /**
@@ -49,45 +49,55 @@ public class TabShowTicket extends javax.swing.JPanel {
         jButtonConfirm = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
-        jButtonShow = new javax.swing.JButton();
+
+        setBackground(new java.awt.Color(255, 255, 255));
 
         jTableShow.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Ticket ID", "Order ID", "Match ID", "Stadium ID", "Seat ID", "Price"
+                "Ticket ID", "Order ID", "Match ID", "Seat ID", "Price"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane1.setViewportView(jTableShow);
 
+        jButtonConfirm.setBackground(new java.awt.Color(25, 114, 210));
         jButtonConfirm.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButtonConfirm.setText("Xác Nhận");
+        jButtonConfirm.setText("Confirm");
         jButtonConfirm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonConfirmActionPerformed(evt);
@@ -98,37 +108,26 @@ public class TabShowTicket extends javax.swing.JPanel {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/t48icket.png"))); // NOI18N
         jLabel1.setText("Ticket");
 
-        jButtonShow.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButtonShow.setText("Xem");
-        jButtonShow.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonShowActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
-                    .addComponent(jSeparator1)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 746, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 333, Short.MAX_VALUE)
-                        .addComponent(jButtonShow, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButtonConfirm)))
                 .addContainerGap())
+            .addComponent(jSeparator1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonShow, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addGap(0, 0, Short.MAX_VALUE))
@@ -148,7 +147,6 @@ public class TabShowTicket extends javax.swing.JPanel {
                 t.getTicket_id(),
                 t.getOrder_id(),
                 t.getMatch_id(),
-                t.getStadium_id(),
                 t.getSeat_id(),
                 t.getPrice()
             };
@@ -156,12 +154,7 @@ public class TabShowTicket extends javax.swing.JPanel {
         }
     }
     
-    private void jButtonShowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonShowActionPerformed
-        initTable();
-        jButtonConfirm.setEnabled(true);
-        jButtonShow.setEnabled(false);
-    }//GEN-LAST:event_jButtonShowActionPerformed
-
+    
     private void jButtonConfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConfirmActionPerformed
         for (Ticket t : listTicket) {
             DataBaseConnect.intertTicket(t);
@@ -173,7 +166,7 @@ public class TabShowTicket extends javax.swing.JPanel {
 
     private void initData(Order o, ArrayList <Seat> list) {
         for (Seat s : list) {
-            Ticket t = new Ticket(createIDTicket(), o.getOrder_id(), s.getMatch_id(), s.getStadium_id(), s.getSeat_id(), 40000);
+            Ticket t = new Ticket(createIDTicket(), o.getOrder_id(), s.getMatch_id(), s.getSeat_id(), 40000);
             listTicket.add(t);
         }
     }
@@ -193,7 +186,6 @@ public class TabShowTicket extends javax.swing.JPanel {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonConfirm;
-    private javax.swing.JButton jButtonShow;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;

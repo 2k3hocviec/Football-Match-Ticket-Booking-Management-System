@@ -1,6 +1,8 @@
 
 package com.dialog;
 
+import java.awt.Color;
+
 
 public class JDialogAboutUs extends javax.swing.JDialog {
 
@@ -8,6 +10,7 @@ public class JDialogAboutUs extends javax.swing.JDialog {
     public JDialogAboutUs(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        getContentPane().setBackground(Color.white);
         setLocationRelativeTo(parent);
         setTitle("Thông tin thành viên");
     }
@@ -35,7 +38,7 @@ public class JDialogAboutUs extends javax.swing.JDialog {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/database32.png"))); // NOI18N
-        jLabel1.setText("Đồ Án Cơ Sở Dữ Liệu");
+        jLabel1.setText("Database Project");
 
         jTable1.setBackground(new java.awt.Color(153, 204, 255));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -46,7 +49,7 @@ public class JDialogAboutUs extends javax.swing.JDialog {
                 {"Nguyễn Ngọc Phương", "N23DCCN047"}
             },
             new String [] {
-                "Họ và tên", "Mã số sinh viên"
+                "Full name", "Student ID number"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -59,7 +62,7 @@ public class JDialogAboutUs extends javax.swing.JDialog {
         });
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel2.setText("Giáo viên hướng dẫn: Nguyễn Thị Tuyết Hải");
+        jLabel2.setText("Instructor: Nguyễn Thị Tuyết Hải");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

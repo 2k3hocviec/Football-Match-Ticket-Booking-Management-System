@@ -7,7 +7,6 @@ import com.objects.Payment;
 import com.objects.Seat;
 import com.objects.User;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Random;
 import javax.swing.JOptionPane;
@@ -68,13 +67,24 @@ public class TabOrderAndPayment extends javax.swing.JPanel {
         jButtonPay = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(240, 240, 240));
         setPreferredSize(new java.awt.Dimension(900, 520));
         setLayout(new java.awt.GridLayout(1, 0));
 
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        jButtonConfirmOrder.setBackground(new java.awt.Color(52, 152, 219));
         jButtonConfirmOrder.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButtonConfirmOrder.setText("Xác Nhận ");
+        jButtonConfirmOrder.setText("Confirm");
+        jButtonConfirmOrder.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButtonConfirmOrderMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButtonConfirmOrderMouseExited(evt);
+            }
+        });
         jButtonConfirmOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonConfirmOrderActionPerformed(evt);
@@ -82,6 +92,7 @@ public class TabOrderAndPayment extends javax.swing.JPanel {
         });
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(25, 42, 86));
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/t48icket.png"))); // NOI18N
         jLabel9.setText("ORDER");
 
@@ -101,15 +112,20 @@ public class TabOrderAndPayment extends javax.swing.JPanel {
         jLabel10.setText("Order date:  ");
 
         jTextFieldOrderID.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextFieldOrderID.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 152, 219)));
 
         jTextFieldUserID.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextFieldUserID.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 152, 219)));
 
         jTextFieldAmount.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextFieldAmount.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 152, 219)));
 
         jTextFieldDateOrder.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextFieldDateOrder.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 152, 219)));
 
         jComboBoxSatusOrder.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jComboBoxSatusOrder.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pending", "Paid", "Cancelled" }));
+        jComboBoxSatusOrder.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 152, 219)));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -175,13 +191,14 @@ public class TabOrderAndPayment extends javax.swing.JPanel {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jComboBoxSatusOrder, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel13))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
                 .addComponent(jButtonConfirmOrder)
                 .addGap(38, 38, 38))
         );
 
         add(jPanel2);
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -203,25 +220,41 @@ public class TabOrderAndPayment extends javax.swing.JPanel {
         jLabel6.setText("Payment date:  ");
 
         jTextFieldPayID.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextFieldPayID.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 152, 219)));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(25, 42, 86));
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Payment_48.png"))); // NOI18N
         jLabel7.setText("PAYMENT");
 
         jTextFieldOrderIDInPay.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextFieldOrderIDInPay.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 152, 219)));
 
         jTextFieldAmountPay.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextFieldAmountPay.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 152, 219)));
 
         jComboxMethodPayment.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jComboxMethodPayment.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CARD", "MOMO", "PAYPAL", "CASH" }));
+        jComboxMethodPayment.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 152, 219)));
 
         jComboBoxStatusPayment.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jComboBoxStatusPayment.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pending", "Success", "Failed" }));
+        jComboBoxStatusPayment.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 152, 219)));
 
         jTextFieldPayDate.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextFieldPayDate.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 152, 219)));
 
+        jButtonPay.setBackground(new java.awt.Color(46, 204, 113));
         jButtonPay.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButtonPay.setText("Thanh Toán");
+        jButtonPay.setText("Pay");
+        jButtonPay.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButtonPayMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButtonPayMouseExited(evt);
+            }
+        });
         jButtonPay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonPayActionPerformed(evt);
@@ -305,7 +338,7 @@ public class TabOrderAndPayment extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jComboBoxStatusPayment, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
                 .addComponent(jButtonPay)
                 .addGap(38, 38, 38))
         );
@@ -314,7 +347,7 @@ public class TabOrderAndPayment extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonPayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPayActionPerformed
-        jButtonPay.setText("Đã Thanh Toán");
+        jButtonPay.setText("Paied");
         jButtonPay.setEnabled(false);
         //DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         Payment p = new Payment(jTextFieldPayID.getText(), jTextFieldOrderIDInPay.getText(), 
@@ -352,6 +385,26 @@ public class TabOrderAndPayment extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(this, "Lỗi, hãy khởi động lại!", "Erorr", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_jButtonConfirmOrderActionPerformed
+
+    private void jButtonConfirmOrderMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonConfirmOrderMouseEntered
+        java.awt.Color XACNHAN_DEFAULT = new java.awt.Color(41, 128, 185);
+        jButtonConfirmOrder.setBackground(XACNHAN_DEFAULT);
+    }//GEN-LAST:event_jButtonConfirmOrderMouseEntered
+
+    private void jButtonConfirmOrderMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonConfirmOrderMouseExited
+        java.awt.Color XACNHAN_DEFAULT = new java.awt.Color(52, 152, 219);
+        jButtonConfirmOrder.setBackground(XACNHAN_DEFAULT);
+    }//GEN-LAST:event_jButtonConfirmOrderMouseExited
+
+    private void jButtonPayMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonPayMouseEntered
+        java.awt.Color THANHTOAN_HOVER = new java.awt.Color(39, 174, 96);
+        jButtonPay.setBackground(THANHTOAN_HOVER);
+    }//GEN-LAST:event_jButtonPayMouseEntered
+
+    private void jButtonPayMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonPayMouseExited
+        java.awt.Color THANHTOAN_DEFAULT = new java.awt.Color(46, 204, 113);
+        jButtonConfirmOrder.setBackground(THANHTOAN_DEFAULT);
+    }//GEN-LAST:event_jButtonPayMouseExited
 
     private void initPayment() {
         LocalDateTime time = LocalDateTime.now();
