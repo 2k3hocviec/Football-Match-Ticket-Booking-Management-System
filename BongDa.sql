@@ -10,7 +10,7 @@ CREATE TABLE Users(
     email NVARCHAR(100) NOT NULL,
     phone NVARCHAR(20) NOT NULL,
     pass NVARCHAR(20) NOT NULL,
-    --created DATETIME NOT NULL DEFAULT GETDATE()
+    created DATETIME NOT NULL DEFAULT GETDATE()
 );
 
 CREATE TABLE Stadiums(
@@ -34,45 +34,40 @@ CREATE TABLE Seats (
     match_id CHAR(10) NOT NULL,
     stadium_id CHAR(10) NOT NULL,
     seat_id CHAR(10) NOT NULL,
-    trang_thai BIT NOT NULL,
-    CONSTRAINT pk_Seats PRIMARY KEY (match_id, seat_id, stadium_id),
-    CONSTRAINT fk_Seats_Stadium FOREIGN KEY (stadium_id) REFERENCES Stadiums(stadium_id),
+    status BIT NOT NULL,
+    CONSTRAINT pk_Seats PRIMARY KEY (match_id, seat_id),
     CONSTRAINT fk_Seats_Match FOREIGN KEY (match_id) REFERENCES Matches(match_id)
-);
-
-CREATE TABLE Tickets (
-    ticket_id CHAR(10) NOT NULL PRIMARY KEY,
-    match_id CHAR(10) NOT NULL,
-    stadium_id CHAR(10) NOT NULL,
-    seat_id CHAR(10) NOT NULL,
-    price DECIMAL(10,2) NOT NULL,
-    --trang_thai NVARCHAR(20) NOT NULL DEFAULT 'available'
-        --CHECK (trang_thai IN ('available','booked','sold')),
-    CONSTRAINT fk_Tickets_Match FOREIGN KEY (match_id) REFERENCES Matches(match_id) ON DELETE CASCADE,
-    CONSTRAINT fk_Tickets_Stadium FOREIGN KEY (stadium_id) REFERENCES Stadiums(stadium_id) ON DELETE CASCADE,
-    CONSTRAINT fk_Tickets_Seat FOREIGN KEY (match_id, seat_id, stadium_id) REFERENCES Seats(match_id, seat_id, stadium_id) ON DELETE CASCADE
 );
 
 CREATE TABLE Orders (
     order_id CHAR(10) NOT NULL PRIMARY KEY,
-    ticket_id CHAR(10) NOT NULL,
     user_id CHAR(9) NOT NULL,
     order_date DATETIME DEFAULT GETDATE(),
     total_amount DECIMAL(12,2) NOT NULL,
-    --trang_thai NVARCHAR(20) NOT NULL DEFAULT 'pending'
-        --CHECK (trang_thai IN ('pending','paid','cancelled')),
-    CONSTRAINT fk_Orders_User FOREIGN KEY (user_id) REFERENCES Users(user_id) ON DELETE CASCADE,
-    CONSTRAINT fk_Orders_Ticket FOREIGN KEY (ticket_id) REFERENCES Tickets(ticket_id) ON DELETE CASCADE
+    status NVARCHAR(20) NOT NULL DEFAULT 'Paid'
+        CHECK (status IN ('Pending','Paid','Cancelled')),
+    CONSTRAINT fk_Orders_User FOREIGN KEY (user_id) REFERENCES Users(user_id) ON DELETE CASCADE
+);
+
+CREATE TABLE Tickets (
+    ticket_id CHAR(10) NOT NULL PRIMARY KEY,
+    order_id CHAR(10) NOT NULL,
+    match_id CHAR(10) NOT NULL,
+    seat_id CHAR(10) NOT NULL,
+    price DECIMAL(12,2) NOT NULL,
+    CONSTRAINT fk_Tickets_Order FOREIGN KEY (order_id) REFERENCES Orders(order_id) ON DELETE CASCADE,
+    CONSTRAINT fk_Tickets_Match FOREIGN KEY (match_id) REFERENCES Matches(match_id) ON DELETE CASCADE,
+    CONSTRAINT fk_Tickets_Seat FOREIGN KEY (match_id, seat_id) REFERENCES Seats(match_id, seat_id) ON DELETE CASCADE
 );
 
 CREATE TABLE Payments (
     payment_id CHAR(10) NOT NULL PRIMARY KEY,
     order_id CHAR(10) NOT NULL,
-    --method NVARCHAR(20) NOT NULL
-        --CHECK (method IN ('card','momo','paypal','cash')),
+    method NVARCHAR(20) NOT NULL
+        CHECK (method IN ('card','momo','paypal','cash')),
     amount DECIMAL(12,2) NOT NULL,
-    --status NVARCHAR(20) NOT NULL DEFAULT 'pending'
-        --CHECK (status IN ('success','failed','pending')),
+    status  NVARCHAR(20) NOT NULL DEFAULT 'success'
+        CHECK (status  IN ('success','failed','pending')),
     payment_date DATETIME DEFAULT GETDATE(),
     CONSTRAINT fk_Payments_Order FOREIGN KEY (order_id) REFERENCES Orders(order_id) ON DELETE CASCADE
 );
@@ -89,21 +84,14 @@ VALUES
 ('M003', N'Brazil', N'Đức', 'STD001', '2025-11-20 19:00:00', N'Friendly'),
 ('M004', N'Nhật Bản', N'Bồ Đào Nha', 'STD002', '2025-12-24 19:00:00', N'Olympic');
 
--- Sinh ghế cho từng trận dựa vào Matches
-INSERT INTO Seats (match_id, stadium_id, seat_id, trang_thai)
+
+INSERT INTO Seats (match_id, stadium_id, seat_id, status)
 SELECT 
     m.match_id,
     m.stadium_id,
     r.c + RIGHT('00' + CAST(n.n AS VARCHAR(2)), 2) AS seat_id,
-    0 AS trang_thai
+    0 AS status
 FROM Matches m
 CROSS JOIN (VALUES ('A'),('B'),('C'),('D'),('E'),('F')) AS r(c)   -- Hàng ghế
 CROSS JOIN (VALUES (1),(2),(3),(4),(5),(6),(7),(8),(9),(10)) AS n(n); -- Số ghế
 
-
---DELETE FROM Seats;
-
-
-UPDATE Seats
-SET trang_thai = 1
-WHERE seat_id = 'B09' and match_id = 'M003';
