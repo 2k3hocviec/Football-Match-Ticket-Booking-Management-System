@@ -366,7 +366,6 @@ public class TabOrderAndPayment extends javax.swing.JPanel {
 
     private void jButtonConfirmOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConfirmOrderActionPerformed
         //DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-
         orderCucBo = new Order(
                 jTextFieldOrderID.getText(),
                 jTextFieldUserID.getText(),

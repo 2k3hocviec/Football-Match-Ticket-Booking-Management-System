@@ -1002,6 +1002,7 @@ public class TabBookSeat extends javax.swing.JPanel {
             jcbxSelectMatch.setSelectedIndex(0);
         } else {
             JOptionPane.showMessageDialog(this, "Không có MatchID nào!");
+            userInterface.deleteTab();
         }
     }
 

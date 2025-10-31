@@ -10,7 +10,7 @@ import com.objects.Seat;
 import com.objects.User;
 import com.tab.TabBookSeat;
 import com.tab.TabManager;
-import com.tab.NewFunction;
+import com.tab.TabCreateNew;
 import com.tab.TabOrderAndPayment;
 import com.tab.TabShowTicket;
 import java.awt.Color;
@@ -97,6 +97,7 @@ public class UserInterface extends javax.swing.JFrame {
         jLabelUserOld = new javax.swing.JLabel();
         jLabelManager = new javax.swing.JLabel();
         jLabelResetData = new javax.swing.JLabel();
+        jLabelCreateNew = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(66, 66, 66));
@@ -564,6 +565,16 @@ public class UserInterface extends javax.swing.JFrame {
             }
         });
 
+        jLabelCreateNew.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelCreateNew.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelCreateNew.setIcon(new javax.swing.ImageIcon(getClass().getResource("/setting24.png"))); // NOI18N
+        jLabelCreateNew.setText("Create Stadium Match");
+        jLabelCreateNew.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelCreateNewMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout MenuAnimationLayout = new javax.swing.GroupLayout(MenuAnimation);
         MenuAnimation.setLayout(MenuAnimationLayout);
         MenuAnimationLayout.setHorizontalGroup(
@@ -588,7 +599,8 @@ public class UserInterface extends javax.swing.JFrame {
                                 .addComponent(jLabel31)
                                 .addComponent(jLabelResetData, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addComponent(jLabel32))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jLabelCreateNew, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         MenuAnimationLayout.setVerticalGroup(
             MenuAnimationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -605,7 +617,9 @@ public class UserInterface extends javax.swing.JFrame {
                 .addComponent(jLabelManager)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabelResetData, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelCreateNew, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
                 .addComponent(jLabel29)
                 .addGap(18, 18, 18)
                 .addComponent(MenuAboutUs)
@@ -744,6 +758,13 @@ public class UserInterface extends javax.swing.JFrame {
         }
         OpenAndCloseMenuBarMouseClicked(evt);
     }//GEN-LAST:event_jLabelResetDataMouseClicked
+
+    private void jLabelCreateNewMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelCreateNewMouseClicked
+        TabCreateNew tab = new TabCreateNew(this);
+        TabMain.add("New", tab);
+        TabMain.setSelectedComponent(tab);
+        OpenAndCloseMenuBarMouseClicked(evt);
+    }//GEN-LAST:event_jLabelCreateNewMouseClicked
     
     void openMenuBar () {
         new Thread(new Runnable() {
@@ -866,6 +887,7 @@ public class UserInterface extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelCreateNew;
     private javax.swing.JLabel jLabelManager;
     private javax.swing.JLabel jLabelResetData;
     private javax.swing.JLabel jLabelToCloseThisTab;

@@ -5,7 +5,9 @@ com\tab\TabBookSeat$61.class
 com\UserInterface$11.class
 com\dialog\JDialogAboutUs$2$1.class
 com\UserInterface$4.class
+com\tab\TabCreateNew$1.class
 com\dialog\jDialogRegister.class
+com\UserInterface$14.class
 com\tab\TabBookSeat$49.class
 com\tab\TabOrderAndPayment$4.class
 com\tab\TabBookSeat$1.class
@@ -63,14 +65,12 @@ com\tab\TabBookSeat$18.class
 com\tab\TabBookSeat$55.class
 com\tab\TabBookSeat$45.class
 com\objects\User.class
-com\tab\NewFunction.class
 com\tab\TabBookSeat$35.class
 com\tab\TabOrderAndPayment$2.class
 com\tab\TabBookSeat$28.class
 com\tab\TabBookSeat$38.class
 com\tab\TabBookSeat$48.class
 com\tab\TabBookSeat$58.class
-com\tab\NewFunction$1.class
 com\dialog\jDialogUserOld$3.class
 com\UserInterface$5.class
 com\tab\TabBookSeat$22.class
@@ -86,9 +86,11 @@ com\tab\TabBookSeat$63.class
 com\tab\TabBookSeat$53.class
 com\tab\TabBookSeat$13.class
 com\tab\TabBookSeat$23.class
+com\tab\TabCreateNew$2.class
 com\tab\TabBookSeat$9.class
 com\UserInterface.class
 com\tab\TabBookSeat$40.class
+com\tab\TabCreateNew.class
 com\dialog\JDialogAboutUs$1.class
 com\dialog\jDialogUserOld$2.class
 com\UserInterface$3.class
@@ -97,6 +99,7 @@ com\dialog\jDialogRegister$3.class
 com\tab\TabBookSeat$30.class
 com\tab\TabBookSeat$24.class
 com\tab\TabBookSeat$59.class
+com\tab\TabCreateNew$3.class
 com\tab\TabManager.class
 com\tab\TabBookSeat$12.class
 com\tab\TabBookSeat$52.class
