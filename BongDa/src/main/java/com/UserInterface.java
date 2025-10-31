@@ -14,6 +14,7 @@ import com.tab.TabCreateNew;
 import com.tab.TabOrderAndPayment;
 import com.tab.TabShowTicket;
 import java.awt.Color;
+import java.awt.Component;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
@@ -679,6 +680,14 @@ public class UserInterface extends javax.swing.JFrame {
         }
     }
     
+    public void deleteTabByComponent(Component component) {
+        int index = TabMain.indexOfComponent(component);
+        if (index != -1) {
+            TabMain.remove(index);
+        }
+    }
+
+    
     private void OpenAndCloseMenuBarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OpenAndCloseMenuBarMouseClicked
         if (!checkOpenMenuBar) {
             openMenuBar();
@@ -712,6 +721,10 @@ public class UserInterface extends javax.swing.JFrame {
         TabBookSeat tab = new TabBookSeat(this, registeredUser);
         TabMain.addTab("Book Seat", tab);
         TabMain.setSelectedComponent(tab);
+        if (tab.test() == true) {
+            JOptionPane.showMessageDialog(this, "Không có trận đấu nào!");
+            deleteTab();
+        }
     }//GEN-LAST:event_jButtonBookTicket1ActionPerformed
 
     private void jLabelManagerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelManagerMouseClicked

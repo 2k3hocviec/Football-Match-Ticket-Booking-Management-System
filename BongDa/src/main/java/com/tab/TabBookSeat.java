@@ -28,11 +28,12 @@ public class TabBookSeat extends javax.swing.JPanel {
     private final java.awt.Color DEFAULT_COLOR = new java.awt.Color(0, 204, 68);
 
     public TabBookSeat(UserInterface userInterface, User user) {
-        initComponents();
+        initComponents();  
         setMatchIDTojcbxSelectMatch();
         this.userInterface = userInterface;
         this.userCucBo = user;
-        initStatus(user);
+         
+        initStatus(user);       
     }
 
     /**
@@ -1000,10 +1001,12 @@ public class TabBookSeat extends javax.swing.JPanel {
 
         if (!data.isEmpty()) {
             jcbxSelectMatch.setSelectedIndex(0);
-        } else {
-            JOptionPane.showMessageDialog(this, "Không có MatchID nào!");
-            userInterface.deleteTab();
         }
+    }
+    
+    public boolean test() {
+        ArrayList<String> data = DataBaseConnect.getMatchID();
+        return data.isEmpty();
     }
 
     private void jcbxSelectMatchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcbxSelectMatchActionPerformed
