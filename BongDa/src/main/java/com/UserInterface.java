@@ -15,6 +15,8 @@ import com.tab.TabOrderAndPayment;
 import com.tab.TabShowTicket;
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
@@ -509,7 +511,7 @@ public class UserInterface extends javax.swing.JFrame {
 
         jLabel32.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/setting24.png"))); // NOI18N
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/conf24.png"))); // NOI18N
         jLabel32.setText("Features");
 
         MenuBarExit.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -568,7 +570,7 @@ public class UserInterface extends javax.swing.JFrame {
 
         jLabelCreateNew.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabelCreateNew.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelCreateNew.setIcon(new javax.swing.ImageIcon(getClass().getResource("/setting24.png"))); // NOI18N
+        jLabelCreateNew.setIcon(new javax.swing.ImageIcon(getClass().getResource("/create24.png"))); // NOI18N
         jLabelCreateNew.setText("Create Stadium Match");
         jLabelCreateNew.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

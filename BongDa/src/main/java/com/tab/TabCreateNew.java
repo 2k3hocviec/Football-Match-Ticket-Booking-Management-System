@@ -422,6 +422,11 @@ public class TabCreateNew extends javax.swing.JPanel {
     }//GEN-LAST:event_jComboBoxSelectActionPerformed
 
     private void jButtonConfirmStadiumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConfirmStadiumActionPerformed
+        if (jTextFieldNameStadium.getText().equals("") || jTextFieldLocation.getText().equals("")){
+            JOptionPane.showMessageDialog(this, "Thất bại!", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        
         Stadium s = new Stadium(jTextFieldStadiumID.getText(), 
                 jTextFieldNameStadium.getText(), jTextFieldLocation.getText(), Integer.parseInt(jTextFieldCapacity.getText()));
                
@@ -436,9 +441,21 @@ public class TabCreateNew extends javax.swing.JPanel {
 
     private void jButtonConfirmMatchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConfirmMatchActionPerformed
         DateTimeFormatter f = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        LocalDateTime date = null; 
+        try {
+            date = LocalDateTime.parse(jTextFieldMatchDate.getText(),f);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Thất bại!", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        
+        if (jTextFieldHomeTeam.getText().equals("") || jTextFieldAwayTeam.getText().equals("") || jTextFieldTournament.getText().equals("")) {
+            JOptionPane.showMessageDialog(this, "Thất bại!", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
         Match m = new Match(jTextFieldMatchID.getText(), jTextFieldHomeTeam.getText(), 
                 jTextFieldAwayTeam.getText(), (String)jComboBoxStadiumId.getSelectedItem(), 
-                LocalDateTime.parse(jTextFieldMatchDate.getText(),f), jTextFieldTournament.getText());
+                date, jTextFieldTournament.getText());
         if (DataBaseConnect.insertMatch(m) == true) {
             JOptionPane.showMessageDialog(this, "Thêm Trận đấu thành công!", "Information", JOptionPane.INFORMATION_MESSAGE);
             

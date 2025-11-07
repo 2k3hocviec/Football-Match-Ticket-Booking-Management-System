@@ -177,7 +177,8 @@ public class jDialogUserOld extends javax.swing.JDialog {
         
         
         if (u != null) {
-            JOptionPane.showMessageDialog(this, "Đăng nhập thành công!", "Thành công", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Đăng nhập thành công!\n"
+                    + "\"Vui lòng thực hiện đầy đủ thao tác đặt vé!\"", "Thành công", JOptionPane.INFORMATION_MESSAGE);
             dispose();
         } else {
             JOptionPane.showMessageDialog(this, "Đăng nhập thất bại!", "Lỗi", JOptionPane.ERROR_MESSAGE);

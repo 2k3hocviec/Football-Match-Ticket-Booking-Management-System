@@ -247,7 +247,8 @@ public class jDialogRegister extends javax.swing.JDialog {
         u.setPhone(phone);
         
         if (DataBaseConnect.resgiterUser(u) > 0) {
-            JOptionPane.showMessageDialog(this, "Đăng ký thành công!", "Information", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Đăng ký thành công!\n"
+                    + "Vui lòng thực hiện đầy đủ thao tác đặt vé!", "Information", JOptionPane.INFORMATION_MESSAGE);
             dispose();
         } else {
             JOptionPane.showMessageDialog(this, "Đăng ký thất bại!", "Error", JOptionPane.ERROR_MESSAGE);

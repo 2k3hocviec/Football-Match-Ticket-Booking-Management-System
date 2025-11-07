@@ -20,7 +20,7 @@ import java.util.Vector;
 public class DataBaseConnect {
 
     private static Connection getConnection() throws SQLException, ClassNotFoundException {
-        return getConnection("BongDa", "sa", "123");
+        return getConnection("BongDa", "sa", "111");
     }
 
     private static Connection getConnection(String dbName, String userName, String password) throws ClassNotFoundException, SQLException {
@@ -98,7 +98,6 @@ public class DataBaseConnect {
             pstmt.setString(4, u.getPhone());
             pstmt.setString(5, u.getPass());
 
-            // Thực thi câu lệnh INSERT
             return pstmt.executeUpdate();
 
         } catch (Exception e) {
@@ -136,6 +135,7 @@ public class DataBaseConnect {
             return pstmt.executeUpdate();
 
         } catch (Exception e) {
+            System.exit(0);
         }
         return 0;
     }
@@ -155,6 +155,7 @@ public class DataBaseConnect {
             return pstmt.executeUpdate();
 
         } catch (Exception e) {
+            System.exit(0);
         }
         return 0;
     }
@@ -175,6 +176,7 @@ public class DataBaseConnect {
             return pstmt.executeUpdate();
 
         } catch (Exception e) {
+            System.exit(0);
         }
         return 0;
     }
