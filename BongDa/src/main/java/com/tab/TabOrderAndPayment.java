@@ -377,7 +377,7 @@ public class TabOrderAndPayment extends javax.swing.JPanel {
         if (DataBaseConnect.insertOrder(orderCucBo) > 0) {
             JOptionPane.showMessageDialog(this, "Xác nhận thành công", "Information", JOptionPane.OK_OPTION);
             jButtonConfirmOrder.setEnabled(false);
-            jButtonConfirmOrder.setText("Đã Xác Nhận");
+            jButtonConfirmOrder.setText("Confirmed");
             jButtonPay.setEnabled(true);
             initPayment();
         } else {
