@@ -28,7 +28,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jcbxSelectMatch" min="-2" pref="125" max="-2" attributes="0"/>
+                      <Component id="jComboxSelectMatch" min="-2" pref="125" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
@@ -50,7 +50,7 @@
                   <Component id="seatPanel" max="32767" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jcbxSelectMatch" min="-2" pref="44" max="-2" attributes="0"/>
+              <Component id="jComboxSelectMatch" min="-2" pref="44" max="-2" attributes="0"/>
               <EmptySpace pref="82" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -71,7 +71,7 @@
         <Property name="rows" type="int" value="6"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="gheA01">
+        <Component class="javax.swing.JButton" name="jButtonGheA01">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -83,10 +83,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheA01ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheA01ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheA02">
+        <Component class="javax.swing.JButton" name="jButtonGheA02">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -98,10 +98,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheA02ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheA02ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheA03">
+        <Component class="javax.swing.JButton" name="jButtonGheA03">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -113,10 +113,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheA03ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheA03ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheA04">
+        <Component class="javax.swing.JButton" name="jButtonGheA04">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -128,10 +128,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheA04ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheA04ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheA05">
+        <Component class="javax.swing.JButton" name="jButtonGheA05">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -143,10 +143,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheA05ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheA05ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheA06">
+        <Component class="javax.swing.JButton" name="jButtonGheA06">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -158,10 +158,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheA06ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheA06ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheA07">
+        <Component class="javax.swing.JButton" name="jButtonGheA07">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -173,10 +173,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheA07ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheA07ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheA08">
+        <Component class="javax.swing.JButton" name="jButtonGheA08">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -188,10 +188,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheA08ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheA08ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheA09">
+        <Component class="javax.swing.JButton" name="jButtonGheA09">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -203,10 +203,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheA09ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheA09ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheA10">
+        <Component class="javax.swing.JButton" name="jButtonGheA10">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -218,10 +218,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheA10ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheA10ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheB01">
+        <Component class="javax.swing.JButton" name="jButtonGheB01">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -233,10 +233,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheB01ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheB01ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheB02">
+        <Component class="javax.swing.JButton" name="jButtonGheB02">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -248,10 +248,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheB02ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheB02ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheB03">
+        <Component class="javax.swing.JButton" name="jButtonGheB03">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -263,10 +263,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheB03ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheB03ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheB04">
+        <Component class="javax.swing.JButton" name="jButtonGheB04">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -278,10 +278,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheB04ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheB04ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheB05">
+        <Component class="javax.swing.JButton" name="jButtonGheB05">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -293,10 +293,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheB05ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheB05ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheB06">
+        <Component class="javax.swing.JButton" name="jButtonGheB06">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -308,10 +308,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheB06ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheB06ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheB07">
+        <Component class="javax.swing.JButton" name="jButtonGheB07">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -323,10 +323,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheB07ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheB07ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheB08">
+        <Component class="javax.swing.JButton" name="jButtonGheB08">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -338,10 +338,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheB08ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheB08ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheB09">
+        <Component class="javax.swing.JButton" name="jButtonGheB09">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -353,10 +353,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheB09ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheB09ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheB10">
+        <Component class="javax.swing.JButton" name="jButtonGheB10">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -368,10 +368,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheB10ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheB10ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheC01">
+        <Component class="javax.swing.JButton" name="jButtonGheC01">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -383,10 +383,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheC01ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheC01ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheC02">
+        <Component class="javax.swing.JButton" name="jButtonGheC02">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -398,10 +398,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheC02ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheC02ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheC03">
+        <Component class="javax.swing.JButton" name="jButtonGheC03">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -413,10 +413,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheC03ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheC03ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheC04">
+        <Component class="javax.swing.JButton" name="jButtonGheC04">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -428,10 +428,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheC04ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheC04ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheC05">
+        <Component class="javax.swing.JButton" name="jButtonGheC05">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -443,10 +443,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheC05ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheC05ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheC06">
+        <Component class="javax.swing.JButton" name="jButtonGheC06">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -458,10 +458,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheC06ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheC06ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheC07">
+        <Component class="javax.swing.JButton" name="jButtonGheC07">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -473,10 +473,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheC07ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheC07ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheC08">
+        <Component class="javax.swing.JButton" name="jButtonGheC08">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -488,10 +488,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheC08ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheC08ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheC09">
+        <Component class="javax.swing.JButton" name="jButtonGheC09">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -503,10 +503,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheC09ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheC09ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheC10">
+        <Component class="javax.swing.JButton" name="jButtonGheC10">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -518,10 +518,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheC10ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheC10ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheD01">
+        <Component class="javax.swing.JButton" name="jButtonGheD01">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -533,10 +533,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheD01ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheD01ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheD02">
+        <Component class="javax.swing.JButton" name="jButtonGheD02">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -548,10 +548,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheD02ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheD02ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheD03">
+        <Component class="javax.swing.JButton" name="jButtonGheD03">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -563,10 +563,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheD03ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheD03ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheD04">
+        <Component class="javax.swing.JButton" name="jButtonGheD04">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -578,10 +578,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheD04ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheD04ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheD05">
+        <Component class="javax.swing.JButton" name="jButtonGheD05">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -593,10 +593,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheD05ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheD05ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheD06">
+        <Component class="javax.swing.JButton" name="jButtonGheD06">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -608,10 +608,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheD06ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheD06ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheD07">
+        <Component class="javax.swing.JButton" name="jButtonGheD07">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -623,10 +623,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheD07ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheD07ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheD08">
+        <Component class="javax.swing.JButton" name="jButtonGheD08">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -638,10 +638,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheD08ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheD08ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheD09">
+        <Component class="javax.swing.JButton" name="jButtonGheD09">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -653,10 +653,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheD09ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheD09ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheD10">
+        <Component class="javax.swing.JButton" name="jButtonGheD10">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -668,10 +668,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheD10ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheD10ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheE01">
+        <Component class="javax.swing.JButton" name="jButtonGheE01">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -683,10 +683,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheE01ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheE01ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheE02">
+        <Component class="javax.swing.JButton" name="jButtonGheE02">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -698,10 +698,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheE02ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheE02ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheE03">
+        <Component class="javax.swing.JButton" name="jButtonGheE03">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -713,10 +713,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheE03ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheE03ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheE04">
+        <Component class="javax.swing.JButton" name="jButtonGheE04">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -728,10 +728,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheE04ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheE04ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheE05">
+        <Component class="javax.swing.JButton" name="jButtonGheE05">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -743,10 +743,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheE05ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheE05ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheE06">
+        <Component class="javax.swing.JButton" name="jButtonGheE06">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -758,10 +758,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheE06ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheE06ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheE07">
+        <Component class="javax.swing.JButton" name="jButtonGheE07">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -773,10 +773,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheE07ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheE07ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheE08">
+        <Component class="javax.swing.JButton" name="jButtonGheE08">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -788,10 +788,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheE08ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheE08ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheE09">
+        <Component class="javax.swing.JButton" name="jButtonGheE09">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -803,10 +803,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheE09ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheE09ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheE10">
+        <Component class="javax.swing.JButton" name="jButtonGheE10">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -818,10 +818,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheE10ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheE10ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheF01">
+        <Component class="javax.swing.JButton" name="jButtonGheF01">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -833,10 +833,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheF01ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheF01ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheF02">
+        <Component class="javax.swing.JButton" name="jButtonGheF02">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -848,10 +848,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheF02ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheF02ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheF03">
+        <Component class="javax.swing.JButton" name="jButtonGheF03">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -863,10 +863,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheF03ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheF03ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheF04">
+        <Component class="javax.swing.JButton" name="jButtonGheF04">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -878,10 +878,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheF04ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheF04ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheF05">
+        <Component class="javax.swing.JButton" name="jButtonGheF05">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -893,10 +893,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheF05ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheF05ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheF06">
+        <Component class="javax.swing.JButton" name="jButtonGheF06">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -908,10 +908,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheF06ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheF06ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheF07">
+        <Component class="javax.swing.JButton" name="jButtonGheF07">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -923,10 +923,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheF07ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheF07ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheF08">
+        <Component class="javax.swing.JButton" name="jButtonGheF08">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -938,10 +938,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheF08ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheF08ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheF09">
+        <Component class="javax.swing.JButton" name="jButtonGheF09">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -953,10 +953,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheF09ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheF09ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="gheF10">
+        <Component class="javax.swing.JButton" name="jButtonGheF10">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="1"/>
@@ -968,7 +968,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gheF10ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGheF10ActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -991,7 +991,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jButtonConfrimSeatAndChangeTabOrderAndPayment" max="32767" attributes="0"/>
+                      <Component id="jButtonConfrimSeatAndChangeTabOrderAndPayment" pref="279" max="32767" attributes="0"/>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
@@ -1246,7 +1246,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JComboBox" name="jcbxSelectMatch">
+    <Component class="javax.swing.JComboBox" name="jComboxSelectMatch">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="14" style="0"/>
@@ -1262,7 +1262,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcbxSelectMatchActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboxSelectMatchActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>

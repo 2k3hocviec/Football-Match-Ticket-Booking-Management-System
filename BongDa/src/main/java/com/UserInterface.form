@@ -28,7 +28,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="OpenAndCloseMenuBar" min="-2" max="-2" attributes="0"/>
+              <Component id="jLabelOpenAndCloseMenuBar" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jLabelToCloseThisTab" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -44,7 +44,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="OpenAndCloseMenuBar" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelOpenAndCloseMenuBar" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabelToCloseThisTab" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -738,14 +738,14 @@
         </Container>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="OpenAndCloseMenuBar">
+    <Component class="javax.swing.JLabel" name="jLabelOpenAndCloseMenuBar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/menu32.png"/>
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="OpenAndCloseMenuBarMouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabelOpenAndCloseMenuBarMouseClicked"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabelToCloseThisTab">
@@ -775,7 +775,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel29" max="32767" attributes="0"/>
                               <Group type="102" attributes="0">
-                                  <Component id="MenuAboutUs" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelMenuAboutUs" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -785,7 +785,7 @@
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="MenuBarExit" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelMenuBarExit" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabelUserOld" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabelManager" alignment="0" max="32767" attributes="0"/>
                                   <Component id="jLabel31" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -820,9 +820,9 @@
                   <EmptySpace pref="56" max="32767" attributes="0"/>
                   <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="MenuAboutUs" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelMenuAboutUs" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="MenuBarExit" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelMenuBarExit" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -850,7 +850,7 @@
             <Property name="text" type="java.lang.String" value="Features"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="MenuBarExit">
+        <Component class="javax.swing.JLabel" name="jLabelMenuBarExit">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
@@ -864,10 +864,10 @@
             <Property name="text" type="java.lang.String" value="Exit"/>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="MenuBarExitMouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabelMenuBarExitMouseClicked"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="MenuAboutUs">
+        <Component class="javax.swing.JLabel" name="jLabelMenuAboutUs">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
@@ -881,7 +881,7 @@
             <Property name="text" type="java.lang.String" value="Introduce"/>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="MenuAboutUsMouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabelMenuAboutUsMouseClicked"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel29">

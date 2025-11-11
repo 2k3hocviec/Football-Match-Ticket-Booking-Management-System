@@ -38,9 +38,9 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel1" max="32767" attributes="0"/>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="btnLogin" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButtonLogin" min="-2" max="-2" attributes="0"/>
                               <EmptySpace pref="97" max="32767" attributes="0"/>
-                              <Component id="btnClose" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButtonClose" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -81,8 +81,8 @@
               <Component id="jSeparator2" min="-2" pref="4" max="-2" attributes="0"/>
               <EmptySpace pref="26" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnClose" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnLogin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonClose" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonLogin" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
           </Group>
@@ -107,7 +107,7 @@
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator2">
     </Component>
-    <Component class="javax.swing.JButton" name="btnClose">
+    <Component class="javax.swing.JButton" name="jButtonClose">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="3c" green="4c" red="e7" type="rgb"/>
@@ -118,10 +118,10 @@
         <Property name="text" type="java.lang.String" value="Close"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCloseActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonCloseActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnLogin">
+    <Component class="javax.swing.JButton" name="jButtonLogin">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="db" green="98" red="34" type="rgb"/>
@@ -132,7 +132,7 @@
         <Property name="text" type="java.lang.String" value="Login"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLoginActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonLoginActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator1">

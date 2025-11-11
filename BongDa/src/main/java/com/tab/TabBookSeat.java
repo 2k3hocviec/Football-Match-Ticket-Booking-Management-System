@@ -46,66 +46,66 @@ public class TabBookSeat extends javax.swing.JPanel {
     private void initComponents() {
 
         seatPanel = new javax.swing.JPanel();
-        gheA01 = new javax.swing.JButton();
-        gheA02 = new javax.swing.JButton();
-        gheA03 = new javax.swing.JButton();
-        gheA04 = new javax.swing.JButton();
-        gheA05 = new javax.swing.JButton();
-        gheA06 = new javax.swing.JButton();
-        gheA07 = new javax.swing.JButton();
-        gheA08 = new javax.swing.JButton();
-        gheA09 = new javax.swing.JButton();
-        gheA10 = new javax.swing.JButton();
-        gheB01 = new javax.swing.JButton();
-        gheB02 = new javax.swing.JButton();
-        gheB03 = new javax.swing.JButton();
-        gheB04 = new javax.swing.JButton();
-        gheB05 = new javax.swing.JButton();
-        gheB06 = new javax.swing.JButton();
-        gheB07 = new javax.swing.JButton();
-        gheB08 = new javax.swing.JButton();
-        gheB09 = new javax.swing.JButton();
-        gheB10 = new javax.swing.JButton();
-        gheC01 = new javax.swing.JButton();
-        gheC02 = new javax.swing.JButton();
-        gheC03 = new javax.swing.JButton();
-        gheC04 = new javax.swing.JButton();
-        gheC05 = new javax.swing.JButton();
-        gheC06 = new javax.swing.JButton();
-        gheC07 = new javax.swing.JButton();
-        gheC08 = new javax.swing.JButton();
-        gheC09 = new javax.swing.JButton();
-        gheC10 = new javax.swing.JButton();
-        gheD01 = new javax.swing.JButton();
-        gheD02 = new javax.swing.JButton();
-        gheD03 = new javax.swing.JButton();
-        gheD04 = new javax.swing.JButton();
-        gheD05 = new javax.swing.JButton();
-        gheD06 = new javax.swing.JButton();
-        gheD07 = new javax.swing.JButton();
-        gheD08 = new javax.swing.JButton();
-        gheD09 = new javax.swing.JButton();
-        gheD10 = new javax.swing.JButton();
-        gheE01 = new javax.swing.JButton();
-        gheE02 = new javax.swing.JButton();
-        gheE03 = new javax.swing.JButton();
-        gheE04 = new javax.swing.JButton();
-        gheE05 = new javax.swing.JButton();
-        gheE06 = new javax.swing.JButton();
-        gheE07 = new javax.swing.JButton();
-        gheE08 = new javax.swing.JButton();
-        gheE09 = new javax.swing.JButton();
-        gheE10 = new javax.swing.JButton();
-        gheF01 = new javax.swing.JButton();
-        gheF02 = new javax.swing.JButton();
-        gheF03 = new javax.swing.JButton();
-        gheF04 = new javax.swing.JButton();
-        gheF05 = new javax.swing.JButton();
-        gheF06 = new javax.swing.JButton();
-        gheF07 = new javax.swing.JButton();
-        gheF08 = new javax.swing.JButton();
-        gheF09 = new javax.swing.JButton();
-        gheF10 = new javax.swing.JButton();
+        jButtonGheA01 = new javax.swing.JButton();
+        jButtonGheA02 = new javax.swing.JButton();
+        jButtonGheA03 = new javax.swing.JButton();
+        jButtonGheA04 = new javax.swing.JButton();
+        jButtonGheA05 = new javax.swing.JButton();
+        jButtonGheA06 = new javax.swing.JButton();
+        jButtonGheA07 = new javax.swing.JButton();
+        jButtonGheA08 = new javax.swing.JButton();
+        jButtonGheA09 = new javax.swing.JButton();
+        jButtonGheA10 = new javax.swing.JButton();
+        jButtonGheB01 = new javax.swing.JButton();
+        jButtonGheB02 = new javax.swing.JButton();
+        jButtonGheB03 = new javax.swing.JButton();
+        jButtonGheB04 = new javax.swing.JButton();
+        jButtonGheB05 = new javax.swing.JButton();
+        jButtonGheB06 = new javax.swing.JButton();
+        jButtonGheB07 = new javax.swing.JButton();
+        jButtonGheB08 = new javax.swing.JButton();
+        jButtonGheB09 = new javax.swing.JButton();
+        jButtonGheB10 = new javax.swing.JButton();
+        jButtonGheC01 = new javax.swing.JButton();
+        jButtonGheC02 = new javax.swing.JButton();
+        jButtonGheC03 = new javax.swing.JButton();
+        jButtonGheC04 = new javax.swing.JButton();
+        jButtonGheC05 = new javax.swing.JButton();
+        jButtonGheC06 = new javax.swing.JButton();
+        jButtonGheC07 = new javax.swing.JButton();
+        jButtonGheC08 = new javax.swing.JButton();
+        jButtonGheC09 = new javax.swing.JButton();
+        jButtonGheC10 = new javax.swing.JButton();
+        jButtonGheD01 = new javax.swing.JButton();
+        jButtonGheD02 = new javax.swing.JButton();
+        jButtonGheD03 = new javax.swing.JButton();
+        jButtonGheD04 = new javax.swing.JButton();
+        jButtonGheD05 = new javax.swing.JButton();
+        jButtonGheD06 = new javax.swing.JButton();
+        jButtonGheD07 = new javax.swing.JButton();
+        jButtonGheD08 = new javax.swing.JButton();
+        jButtonGheD09 = new javax.swing.JButton();
+        jButtonGheD10 = new javax.swing.JButton();
+        jButtonGheE01 = new javax.swing.JButton();
+        jButtonGheE02 = new javax.swing.JButton();
+        jButtonGheE03 = new javax.swing.JButton();
+        jButtonGheE04 = new javax.swing.JButton();
+        jButtonGheE05 = new javax.swing.JButton();
+        jButtonGheE06 = new javax.swing.JButton();
+        jButtonGheE07 = new javax.swing.JButton();
+        jButtonGheE08 = new javax.swing.JButton();
+        jButtonGheE09 = new javax.swing.JButton();
+        jButtonGheE10 = new javax.swing.JButton();
+        jButtonGheF01 = new javax.swing.JButton();
+        jButtonGheF02 = new javax.swing.JButton();
+        jButtonGheF03 = new javax.swing.JButton();
+        jButtonGheF04 = new javax.swing.JButton();
+        jButtonGheF05 = new javax.swing.JButton();
+        jButtonGheF06 = new javax.swing.JButton();
+        jButtonGheF07 = new javax.swing.JButton();
+        jButtonGheF08 = new javax.swing.JButton();
+        jButtonGheF09 = new javax.swing.JButton();
+        jButtonGheF10 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -122,7 +122,7 @@ public class TabBookSeat extends javax.swing.JPanel {
         jLabel7 = new javax.swing.JLabel();
         jTextFieldSeat = new javax.swing.JTextField();
         jTextFieldAmount = new javax.swing.JTextField();
-        jcbxSelectMatch = new javax.swing.JComboBox<>();
+        jComboxSelectMatch = new javax.swing.JComboBox<>();
 
         setBackground(new java.awt.Color(248, 248, 248));
         setPreferredSize(new java.awt.Dimension(900, 520));
@@ -130,665 +130,665 @@ public class TabBookSeat extends javax.swing.JPanel {
         seatPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         seatPanel.setLayout(new java.awt.GridLayout(6, 10));
 
-        gheA01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheA01.setText("A01");
-        gheA01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheA01.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheA01.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheA01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheA01.setText("A01");
+        jButtonGheA01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheA01.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheA01.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheA01ActionPerformed(evt);
+                jButtonGheA01ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheA01);
+        seatPanel.add(jButtonGheA01);
 
-        gheA02.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheA02.setText("A02");
-        gheA02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheA02.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheA02.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheA02.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheA02.setText("A02");
+        jButtonGheA02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheA02.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheA02.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheA02ActionPerformed(evt);
+                jButtonGheA02ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheA02);
+        seatPanel.add(jButtonGheA02);
 
-        gheA03.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheA03.setText("A03");
-        gheA03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheA03.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheA03.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheA03.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheA03.setText("A03");
+        jButtonGheA03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheA03.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheA03.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheA03ActionPerformed(evt);
+                jButtonGheA03ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheA03);
+        seatPanel.add(jButtonGheA03);
 
-        gheA04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheA04.setText("A04");
-        gheA04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheA04.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheA04.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheA04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheA04.setText("A04");
+        jButtonGheA04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheA04.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheA04.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheA04ActionPerformed(evt);
+                jButtonGheA04ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheA04);
+        seatPanel.add(jButtonGheA04);
 
-        gheA05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheA05.setText("A05");
-        gheA05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheA05.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheA05.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheA05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheA05.setText("A05");
+        jButtonGheA05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheA05.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheA05.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheA05ActionPerformed(evt);
+                jButtonGheA05ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheA05);
+        seatPanel.add(jButtonGheA05);
 
-        gheA06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheA06.setText("A06");
-        gheA06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheA06.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheA06.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheA06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheA06.setText("A06");
+        jButtonGheA06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheA06.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheA06.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheA06ActionPerformed(evt);
+                jButtonGheA06ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheA06);
+        seatPanel.add(jButtonGheA06);
 
-        gheA07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheA07.setText("A07");
-        gheA07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheA07.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheA07.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheA07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheA07.setText("A07");
+        jButtonGheA07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheA07.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheA07.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheA07ActionPerformed(evt);
+                jButtonGheA07ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheA07);
+        seatPanel.add(jButtonGheA07);
 
-        gheA08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheA08.setText("A08");
-        gheA08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheA08.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheA08.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheA08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheA08.setText("A08");
+        jButtonGheA08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheA08.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheA08.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheA08ActionPerformed(evt);
+                jButtonGheA08ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheA08);
+        seatPanel.add(jButtonGheA08);
 
-        gheA09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheA09.setText("A09");
-        gheA09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheA09.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheA09.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheA09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheA09.setText("A09");
+        jButtonGheA09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheA09.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheA09.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheA09ActionPerformed(evt);
+                jButtonGheA09ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheA09);
+        seatPanel.add(jButtonGheA09);
 
-        gheA10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheA10.setText("A10");
-        gheA10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheA10.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheA10.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheA10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheA10.setText("A10");
+        jButtonGheA10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheA10.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheA10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheA10ActionPerformed(evt);
+                jButtonGheA10ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheA10);
+        seatPanel.add(jButtonGheA10);
 
-        gheB01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheB01.setText("B01");
-        gheB01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheB01.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheB01.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheB01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheB01.setText("B01");
+        jButtonGheB01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheB01.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheB01.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheB01ActionPerformed(evt);
+                jButtonGheB01ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheB01);
+        seatPanel.add(jButtonGheB01);
 
-        gheB02.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheB02.setText("B02");
-        gheB02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheB02.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheB02.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheB02.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheB02.setText("B02");
+        jButtonGheB02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheB02.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheB02.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheB02ActionPerformed(evt);
+                jButtonGheB02ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheB02);
+        seatPanel.add(jButtonGheB02);
 
-        gheB03.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheB03.setText("B03");
-        gheB03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheB03.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheB03.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheB03.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheB03.setText("B03");
+        jButtonGheB03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheB03.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheB03.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheB03ActionPerformed(evt);
+                jButtonGheB03ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheB03);
+        seatPanel.add(jButtonGheB03);
 
-        gheB04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheB04.setText("B04");
-        gheB04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheB04.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheB04.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheB04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheB04.setText("B04");
+        jButtonGheB04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheB04.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheB04.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheB04ActionPerformed(evt);
+                jButtonGheB04ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheB04);
+        seatPanel.add(jButtonGheB04);
 
-        gheB05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheB05.setText("B05");
-        gheB05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheB05.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheB05.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheB05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheB05.setText("B05");
+        jButtonGheB05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheB05.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheB05.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheB05ActionPerformed(evt);
+                jButtonGheB05ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheB05);
+        seatPanel.add(jButtonGheB05);
 
-        gheB06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheB06.setText("B06");
-        gheB06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheB06.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheB06.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheB06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheB06.setText("B06");
+        jButtonGheB06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheB06.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheB06.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheB06ActionPerformed(evt);
+                jButtonGheB06ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheB06);
+        seatPanel.add(jButtonGheB06);
 
-        gheB07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheB07.setText("B07");
-        gheB07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheB07.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheB07.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheB07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheB07.setText("B07");
+        jButtonGheB07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheB07.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheB07.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheB07ActionPerformed(evt);
+                jButtonGheB07ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheB07);
+        seatPanel.add(jButtonGheB07);
 
-        gheB08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheB08.setText("B08");
-        gheB08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheB08.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheB08.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheB08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheB08.setText("B08");
+        jButtonGheB08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheB08.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheB08.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheB08ActionPerformed(evt);
+                jButtonGheB08ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheB08);
+        seatPanel.add(jButtonGheB08);
 
-        gheB09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheB09.setText("B09");
-        gheB09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheB09.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheB09.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheB09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheB09.setText("B09");
+        jButtonGheB09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheB09.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheB09.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheB09ActionPerformed(evt);
+                jButtonGheB09ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheB09);
+        seatPanel.add(jButtonGheB09);
 
-        gheB10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheB10.setText("B10");
-        gheB10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheB10.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheB10.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheB10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheB10.setText("B10");
+        jButtonGheB10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheB10.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheB10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheB10ActionPerformed(evt);
+                jButtonGheB10ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheB10);
+        seatPanel.add(jButtonGheB10);
 
-        gheC01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheC01.setText("C01");
-        gheC01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheC01.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheC01.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheC01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheC01.setText("C01");
+        jButtonGheC01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheC01.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheC01.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheC01ActionPerformed(evt);
+                jButtonGheC01ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheC01);
+        seatPanel.add(jButtonGheC01);
 
-        gheC02.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheC02.setText("C02");
-        gheC02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheC02.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheC02.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheC02.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheC02.setText("C02");
+        jButtonGheC02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheC02.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheC02.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheC02ActionPerformed(evt);
+                jButtonGheC02ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheC02);
+        seatPanel.add(jButtonGheC02);
 
-        gheC03.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheC03.setText("C03");
-        gheC03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheC03.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheC03.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheC03.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheC03.setText("C03");
+        jButtonGheC03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheC03.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheC03.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheC03ActionPerformed(evt);
+                jButtonGheC03ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheC03);
+        seatPanel.add(jButtonGheC03);
 
-        gheC04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheC04.setText("C04");
-        gheC04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheC04.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheC04.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheC04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheC04.setText("C04");
+        jButtonGheC04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheC04.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheC04.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheC04ActionPerformed(evt);
+                jButtonGheC04ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheC04);
+        seatPanel.add(jButtonGheC04);
 
-        gheC05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheC05.setText("C05");
-        gheC05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheC05.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheC05.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheC05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheC05.setText("C05");
+        jButtonGheC05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheC05.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheC05.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheC05ActionPerformed(evt);
+                jButtonGheC05ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheC05);
+        seatPanel.add(jButtonGheC05);
 
-        gheC06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheC06.setText("C06");
-        gheC06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheC06.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheC06.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheC06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheC06.setText("C06");
+        jButtonGheC06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheC06.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheC06.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheC06ActionPerformed(evt);
+                jButtonGheC06ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheC06);
+        seatPanel.add(jButtonGheC06);
 
-        gheC07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheC07.setText("C07");
-        gheC07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheC07.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheC07.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheC07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheC07.setText("C07");
+        jButtonGheC07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheC07.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheC07.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheC07ActionPerformed(evt);
+                jButtonGheC07ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheC07);
+        seatPanel.add(jButtonGheC07);
 
-        gheC08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheC08.setText("C08");
-        gheC08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheC08.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheC08.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheC08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheC08.setText("C08");
+        jButtonGheC08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheC08.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheC08.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheC08ActionPerformed(evt);
+                jButtonGheC08ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheC08);
+        seatPanel.add(jButtonGheC08);
 
-        gheC09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheC09.setText("C09");
-        gheC09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheC09.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheC09.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheC09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheC09.setText("C09");
+        jButtonGheC09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheC09.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheC09.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheC09ActionPerformed(evt);
+                jButtonGheC09ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheC09);
+        seatPanel.add(jButtonGheC09);
 
-        gheC10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheC10.setText("C10");
-        gheC10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheC10.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheC10.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheC10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheC10.setText("C10");
+        jButtonGheC10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheC10.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheC10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheC10ActionPerformed(evt);
+                jButtonGheC10ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheC10);
+        seatPanel.add(jButtonGheC10);
 
-        gheD01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheD01.setText("D01");
-        gheD01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheD01.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheD01.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheD01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheD01.setText("D01");
+        jButtonGheD01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheD01.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheD01.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheD01ActionPerformed(evt);
+                jButtonGheD01ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheD01);
+        seatPanel.add(jButtonGheD01);
 
-        gheD02.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheD02.setText("D02");
-        gheD02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheD02.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheD02.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheD02.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheD02.setText("D02");
+        jButtonGheD02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheD02.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheD02.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheD02ActionPerformed(evt);
+                jButtonGheD02ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheD02);
+        seatPanel.add(jButtonGheD02);
 
-        gheD03.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheD03.setText("D03");
-        gheD03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheD03.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheD03.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheD03.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheD03.setText("D03");
+        jButtonGheD03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheD03.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheD03.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheD03ActionPerformed(evt);
+                jButtonGheD03ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheD03);
+        seatPanel.add(jButtonGheD03);
 
-        gheD04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheD04.setText("D04");
-        gheD04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheD04.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheD04.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheD04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheD04.setText("D04");
+        jButtonGheD04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheD04.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheD04.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheD04ActionPerformed(evt);
+                jButtonGheD04ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheD04);
+        seatPanel.add(jButtonGheD04);
 
-        gheD05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheD05.setText("D05");
-        gheD05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheD05.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheD05.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheD05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheD05.setText("D05");
+        jButtonGheD05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheD05.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheD05.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheD05ActionPerformed(evt);
+                jButtonGheD05ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheD05);
+        seatPanel.add(jButtonGheD05);
 
-        gheD06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheD06.setText("D06");
-        gheD06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheD06.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheD06.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheD06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheD06.setText("D06");
+        jButtonGheD06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheD06.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheD06.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheD06ActionPerformed(evt);
+                jButtonGheD06ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheD06);
+        seatPanel.add(jButtonGheD06);
 
-        gheD07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheD07.setText("D07");
-        gheD07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheD07.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheD07.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheD07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheD07.setText("D07");
+        jButtonGheD07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheD07.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheD07.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheD07ActionPerformed(evt);
+                jButtonGheD07ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheD07);
+        seatPanel.add(jButtonGheD07);
 
-        gheD08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheD08.setText("D08");
-        gheD08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheD08.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheD08.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheD08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheD08.setText("D08");
+        jButtonGheD08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheD08.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheD08.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheD08ActionPerformed(evt);
+                jButtonGheD08ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheD08);
+        seatPanel.add(jButtonGheD08);
 
-        gheD09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheD09.setText("D09");
-        gheD09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheD09.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheD09.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheD09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheD09.setText("D09");
+        jButtonGheD09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheD09.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheD09.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheD09ActionPerformed(evt);
+                jButtonGheD09ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheD09);
+        seatPanel.add(jButtonGheD09);
 
-        gheD10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheD10.setText("D10");
-        gheD10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheD10.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheD10.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheD10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheD10.setText("D10");
+        jButtonGheD10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheD10.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheD10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheD10ActionPerformed(evt);
+                jButtonGheD10ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheD10);
+        seatPanel.add(jButtonGheD10);
 
-        gheE01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheE01.setText("E01");
-        gheE01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheE01.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheE01.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheE01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheE01.setText("E01");
+        jButtonGheE01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheE01.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheE01.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheE01ActionPerformed(evt);
+                jButtonGheE01ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheE01);
+        seatPanel.add(jButtonGheE01);
 
-        gheE02.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheE02.setText("E02");
-        gheE02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheE02.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheE02.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheE02.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheE02.setText("E02");
+        jButtonGheE02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheE02.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheE02.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheE02ActionPerformed(evt);
+                jButtonGheE02ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheE02);
+        seatPanel.add(jButtonGheE02);
 
-        gheE03.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheE03.setText("E03");
-        gheE03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheE03.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheE03.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheE03.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheE03.setText("E03");
+        jButtonGheE03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheE03.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheE03.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheE03ActionPerformed(evt);
+                jButtonGheE03ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheE03);
+        seatPanel.add(jButtonGheE03);
 
-        gheE04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheE04.setText("E04");
-        gheE04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheE04.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheE04.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheE04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheE04.setText("E04");
+        jButtonGheE04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheE04.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheE04.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheE04ActionPerformed(evt);
+                jButtonGheE04ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheE04);
+        seatPanel.add(jButtonGheE04);
 
-        gheE05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheE05.setText("E05");
-        gheE05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheE05.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheE05.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheE05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheE05.setText("E05");
+        jButtonGheE05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheE05.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheE05.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheE05ActionPerformed(evt);
+                jButtonGheE05ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheE05);
+        seatPanel.add(jButtonGheE05);
 
-        gheE06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheE06.setText("E06");
-        gheE06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheE06.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheE06.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheE06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheE06.setText("E06");
+        jButtonGheE06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheE06.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheE06.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheE06ActionPerformed(evt);
+                jButtonGheE06ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheE06);
+        seatPanel.add(jButtonGheE06);
 
-        gheE07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheE07.setText("E07");
-        gheE07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheE07.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheE07.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheE07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheE07.setText("E07");
+        jButtonGheE07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheE07.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheE07.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheE07ActionPerformed(evt);
+                jButtonGheE07ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheE07);
+        seatPanel.add(jButtonGheE07);
 
-        gheE08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheE08.setText("E08");
-        gheE08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheE08.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheE08.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheE08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheE08.setText("E08");
+        jButtonGheE08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheE08.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheE08.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheE08ActionPerformed(evt);
+                jButtonGheE08ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheE08);
+        seatPanel.add(jButtonGheE08);
 
-        gheE09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheE09.setText("E09");
-        gheE09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheE09.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheE09.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheE09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheE09.setText("E09");
+        jButtonGheE09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheE09.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheE09.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheE09ActionPerformed(evt);
+                jButtonGheE09ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheE09);
+        seatPanel.add(jButtonGheE09);
 
-        gheE10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheE10.setText("E10");
-        gheE10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheE10.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheE10.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheE10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheE10.setText("E10");
+        jButtonGheE10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheE10.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheE10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheE10ActionPerformed(evt);
+                jButtonGheE10ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheE10);
+        seatPanel.add(jButtonGheE10);
 
-        gheF01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheF01.setText("F01");
-        gheF01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheF01.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheF01.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheF01.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheF01.setText("F01");
+        jButtonGheF01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheF01.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheF01.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheF01ActionPerformed(evt);
+                jButtonGheF01ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheF01);
+        seatPanel.add(jButtonGheF01);
 
-        gheF02.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheF02.setText("F02");
-        gheF02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheF02.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheF02.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheF02.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheF02.setText("F02");
+        jButtonGheF02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheF02.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheF02.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheF02ActionPerformed(evt);
+                jButtonGheF02ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheF02);
+        seatPanel.add(jButtonGheF02);
 
-        gheF03.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheF03.setText("F03");
-        gheF03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheF03.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheF03.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheF03.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheF03.setText("F03");
+        jButtonGheF03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheF03.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheF03.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheF03ActionPerformed(evt);
+                jButtonGheF03ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheF03);
+        seatPanel.add(jButtonGheF03);
 
-        gheF04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheF04.setText("F04");
-        gheF04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheF04.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheF04.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheF04.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheF04.setText("F04");
+        jButtonGheF04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheF04.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheF04.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheF04ActionPerformed(evt);
+                jButtonGheF04ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheF04);
+        seatPanel.add(jButtonGheF04);
 
-        gheF05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheF05.setText("F05");
-        gheF05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheF05.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheF05.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheF05.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheF05.setText("F05");
+        jButtonGheF05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheF05.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheF05.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheF05ActionPerformed(evt);
+                jButtonGheF05ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheF05);
+        seatPanel.add(jButtonGheF05);
 
-        gheF06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheF06.setText("F06");
-        gheF06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheF06.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheF06.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheF06.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheF06.setText("F06");
+        jButtonGheF06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheF06.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheF06.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheF06ActionPerformed(evt);
+                jButtonGheF06ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheF06);
+        seatPanel.add(jButtonGheF06);
 
-        gheF07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheF07.setText("F07");
-        gheF07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheF07.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheF07.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheF07.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheF07.setText("F07");
+        jButtonGheF07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheF07.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheF07.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheF07ActionPerformed(evt);
+                jButtonGheF07ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheF07);
+        seatPanel.add(jButtonGheF07);
 
-        gheF08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheF08.setText("F08");
-        gheF08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheF08.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheF08.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheF08.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheF08.setText("F08");
+        jButtonGheF08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheF08.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheF08.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheF08ActionPerformed(evt);
+                jButtonGheF08ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheF08);
+        seatPanel.add(jButtonGheF08);
 
-        gheF09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheF09.setText("F09");
-        gheF09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheF09.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheF09.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheF09.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheF09.setText("F09");
+        jButtonGheF09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheF09.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheF09.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheF09ActionPerformed(evt);
+                jButtonGheF09ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheF09);
+        seatPanel.add(jButtonGheF09);
 
-        gheF10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        gheF10.setText("F10");
-        gheF10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        gheF10.setPreferredSize(new java.awt.Dimension(25, 25));
-        gheF10.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGheF10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButtonGheF10.setText("F10");
+        jButtonGheF10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonGheF10.setPreferredSize(new java.awt.Dimension(25, 25));
+        jButtonGheF10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gheF10ActionPerformed(evt);
+                jButtonGheF10ActionPerformed(evt);
             }
         });
-        seatPanel.add(gheF10);
+        seatPanel.add(jButtonGheF10);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -865,7 +865,7 @@ public class TabBookSeat extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonConfrimSeatAndChangeTabOrderAndPayment, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButtonConfrimSeatAndChangeTabOrderAndPayment, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -923,11 +923,11 @@ public class TabBookSeat extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        jcbxSelectMatch.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jcbxSelectMatch.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Default", "Match1 (VIE - THA)", "Match2 (ENG - URU)", "Match3 (BRA - GER)", "Match4 (JPN - POR)" }));
-        jcbxSelectMatch.addActionListener(new java.awt.event.ActionListener() {
+        jComboxSelectMatch.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jComboxSelectMatch.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Default", "Match1 (VIE - THA)", "Match2 (ENG - URU)", "Match3 (BRA - GER)", "Match4 (JPN - POR)" }));
+        jComboxSelectMatch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jcbxSelectMatchActionPerformed(evt);
+                jComboxSelectMatchActionPerformed(evt);
             }
         });
 
@@ -939,7 +939,7 @@ public class TabBookSeat extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jcbxSelectMatch, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jComboxSelectMatch, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(seatPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 692, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -955,7 +955,7 @@ public class TabBookSeat extends javax.swing.JPanel {
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(seatPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jcbxSelectMatch, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jComboxSelectMatch, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(82, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -982,9 +982,7 @@ public class TabBookSeat extends javax.swing.JPanel {
                     field.setAccessible(true);
                     JButton ghe = (JButton) field.get(this);
                     ghe.setEnabled(false);
-                } catch (IllegalAccessException | IllegalArgumentException | NoSuchFieldException e) {
-                    System.out.println("Không tìm thấy " + tenGhe);
-                }
+                } catch (IllegalAccessException | IllegalArgumentException | NoSuchFieldException e) {}
             }
         }
     }
@@ -997,10 +995,10 @@ public class TabBookSeat extends javax.swing.JPanel {
             model.addElement(item);
         }
 
-        jcbxSelectMatch.setModel(model);
+        jComboxSelectMatch.setModel(model);
 
         if (!data.isEmpty()) {
-            jcbxSelectMatch.setSelectedIndex(0);
+            jComboxSelectMatch.setSelectedIndex(0);
         }
     }
     
@@ -1009,8 +1007,8 @@ public class TabBookSeat extends javax.swing.JPanel {
         return data.isEmpty();
     }
 
-    private void jcbxSelectMatchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcbxSelectMatchActionPerformed
-        String matchID = jcbxSelectMatch.getSelectedItem().toString();
+    private void jComboxSelectMatchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboxSelectMatchActionPerformed
+        String matchID = jComboxSelectMatch.getSelectedItem().toString();
         try {
             ArrayList<Vector> arr = DataBaseConnect.getDataSeatsAccordingToTheMatch(matchID);
             setStatusGheFollowComboBox(arr);
@@ -1018,7 +1016,7 @@ public class TabBookSeat extends javax.swing.JPanel {
             System.getLogger(TabBookSeat.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
         }
 
-    }//GEN-LAST:event_jcbxSelectMatchActionPerformed
+    }//GEN-LAST:event_jComboxSelectMatchActionPerformed
 
     private void setStatusGheFollowComboBox(ArrayList<Vector> arr) {
         for (Vector row : arr) {
@@ -1028,125 +1026,125 @@ public class TabBookSeat extends javax.swing.JPanel {
 
             switch (seatId) {
                 case "A01" ->
-                    gheA01.setEnabled(!status);
+                    jButtonGheA01.setEnabled(!status);
                 case "A02" ->
-                    gheA02.setEnabled(!status);
+                    jButtonGheA02.setEnabled(!status);
                 case "A03" ->
-                    gheA03.setEnabled(!status);
+                    jButtonGheA03.setEnabled(!status);
                 case "A04" ->
-                    gheA04.setEnabled(!status);
+                    jButtonGheA04.setEnabled(!status);
                 case "A05" ->
-                    gheA05.setEnabled(!status);
+                    jButtonGheA05.setEnabled(!status);
                 case "A06" ->
-                    gheA06.setEnabled(!status);
+                    jButtonGheA06.setEnabled(!status);
                 case "A07" ->
-                    gheA07.setEnabled(!status);
+                    jButtonGheA07.setEnabled(!status);
                 case "A08" ->
-                    gheA08.setEnabled(!status);
+                    jButtonGheA08.setEnabled(!status);
                 case "A09" ->
-                    gheA09.setEnabled(!status);
+                    jButtonGheA09.setEnabled(!status);
                 case "A10" ->
-                    gheA10.setEnabled(!status);
+                    jButtonGheA10.setEnabled(!status);
                 case "B01" ->
-                    gheB01.setEnabled(!status);
+                    jButtonGheB01.setEnabled(!status);
                 case "B02" ->
-                    gheB02.setEnabled(!status);
+                    jButtonGheB02.setEnabled(!status);
                 case "B03" ->
-                    gheB03.setEnabled(!status);
+                    jButtonGheB03.setEnabled(!status);
                 case "B04" ->
-                    gheB04.setEnabled(!status);
+                    jButtonGheB04.setEnabled(!status);
                 case "B05" ->
-                    gheB05.setEnabled(!status);
+                    jButtonGheB05.setEnabled(!status);
                 case "B06" ->
-                    gheB06.setEnabled(!status);
+                    jButtonGheB06.setEnabled(!status);
                 case "B07" ->
-                    gheB07.setEnabled(!status);
+                    jButtonGheB07.setEnabled(!status);
                 case "B08" ->
-                    gheB08.setEnabled(!status);
+                    jButtonGheB08.setEnabled(!status);
                 case "B09" ->
-                    gheB09.setEnabled(!status);
+                    jButtonGheB09.setEnabled(!status);
                 case "B10" ->
-                    gheB10.setEnabled(!status);
+                    jButtonGheB10.setEnabled(!status);
                 case "C01" ->
-                    gheC01.setEnabled(!status);
+                    jButtonGheC01.setEnabled(!status);
                 case "C02" ->
-                    gheC02.setEnabled(!status);
+                    jButtonGheC02.setEnabled(!status);
                 case "C03" ->
-                    gheC03.setEnabled(!status);
+                    jButtonGheC03.setEnabled(!status);
                 case "C04" ->
-                    gheC04.setEnabled(!status);
+                    jButtonGheC04.setEnabled(!status);
                 case "C05" ->
-                    gheC05.setEnabled(!status);
+                    jButtonGheC05.setEnabled(!status);
                 case "C06" ->
-                    gheC06.setEnabled(!status);
+                    jButtonGheC06.setEnabled(!status);
                 case "C07" ->
-                    gheC07.setEnabled(!status);
+                    jButtonGheC07.setEnabled(!status);
                 case "C08" ->
-                    gheC08.setEnabled(!status);
+                    jButtonGheC08.setEnabled(!status);
                 case "C09" ->
-                    gheC09.setEnabled(!status);
+                    jButtonGheC09.setEnabled(!status);
                 case "C10" ->
-                    gheC10.setEnabled(!status);
+                    jButtonGheC10.setEnabled(!status);
                 case "D01" ->
-                    gheD01.setEnabled(!status);
+                    jButtonGheD01.setEnabled(!status);
                 case "D02" ->
-                    gheD02.setEnabled(!status);
+                    jButtonGheD02.setEnabled(!status);
                 case "D03" ->
-                    gheD03.setEnabled(!status);
+                    jButtonGheD03.setEnabled(!status);
                 case "D04" ->
-                    gheD04.setEnabled(!status);
+                    jButtonGheD04.setEnabled(!status);
                 case "D05" ->
-                    gheD05.setEnabled(!status);
+                    jButtonGheD05.setEnabled(!status);
                 case "D06" ->
-                    gheD06.setEnabled(!status);
+                    jButtonGheD06.setEnabled(!status);
                 case "D07" ->
-                    gheD07.setEnabled(!status);
+                    jButtonGheD07.setEnabled(!status);
                 case "D08" ->
-                    gheD08.setEnabled(!status);
+                    jButtonGheD08.setEnabled(!status);
                 case "D09" ->
-                    gheD09.setEnabled(!status);
+                    jButtonGheD09.setEnabled(!status);
                 case "D10" ->
-                    gheD10.setEnabled(!status);
+                    jButtonGheD10.setEnabled(!status);
                 case "E01" ->
-                    gheE01.setEnabled(!status);
+                    jButtonGheE01.setEnabled(!status);
                 case "E02" ->
-                    gheE02.setEnabled(!status);
+                    jButtonGheE02.setEnabled(!status);
                 case "E03" ->
-                    gheE03.setEnabled(!status);
+                    jButtonGheE03.setEnabled(!status);
                 case "E04" ->
-                    gheE04.setEnabled(!status);
+                    jButtonGheE04.setEnabled(!status);
                 case "E05" ->
-                    gheE05.setEnabled(!status);
+                    jButtonGheE05.setEnabled(!status);
                 case "E06" ->
-                    gheE06.setEnabled(!status);
+                    jButtonGheE06.setEnabled(!status);
                 case "E07" ->
-                    gheE07.setEnabled(!status);
+                    jButtonGheE07.setEnabled(!status);
                 case "E08" ->
-                    gheE08.setEnabled(!status);
+                    jButtonGheE08.setEnabled(!status);
                 case "E09" ->
-                    gheE09.setEnabled(!status);
+                    jButtonGheE09.setEnabled(!status);
                 case "E10" ->
-                    gheE10.setEnabled(!status);
+                    jButtonGheE10.setEnabled(!status);
                 case "F01" ->
-                    gheF01.setEnabled(!status);
+                    jButtonGheF01.setEnabled(!status);
                 case "F02" ->
-                    gheF02.setEnabled(!status);
+                    jButtonGheF02.setEnabled(!status);
                 case "F03" ->
-                    gheF03.setEnabled(!status);
+                    jButtonGheF03.setEnabled(!status);
                 case "F04" ->
-                    gheF04.setEnabled(!status);
+                    jButtonGheF04.setEnabled(!status);
                 case "F05" ->
-                    gheF05.setEnabled(!status);
+                    jButtonGheF05.setEnabled(!status);
                 case "F06" ->
-                    gheF06.setEnabled(!status);
+                    jButtonGheF06.setEnabled(!status);
                 case "F07" ->
-                    gheF07.setEnabled(!status);
+                    jButtonGheF07.setEnabled(!status);
                 case "F08" ->
-                    gheF08.setEnabled(!status);
+                    jButtonGheF08.setEnabled(!status);
                 case "F09" ->
-                    gheF09.setEnabled(!status);
+                    jButtonGheF09.setEnabled(!status);
                 case "F10" ->
-                    gheF10.setEnabled(!status);
+                    jButtonGheF10.setEnabled(!status);
                 default -> {
                 }
             }
@@ -1162,672 +1160,672 @@ public class TabBookSeat extends javax.swing.JPanel {
         jTextFieldAmount.setText("" + soLuong * donGia);
     }
 
-    private void gheA01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA01ActionPerformed
-        gheA01.setEnabled(false);
+    private void jButtonGheA01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheA01ActionPerformed
+        jButtonGheA01.setEnabled(false);
         setAmountAndSetAndGheDuocDat("A01");
-        gheA01.setBackground(Color.RED);
-        gheA01.setOpaque(true);
-        gheA01.setContentAreaFilled(true);
-        gheA01.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheA01.setBackground(Color.RED);
+        jButtonGheA01.setOpaque(true);
+        jButtonGheA01.setContentAreaFilled(true);
+        jButtonGheA01.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheA01ActionPerformed
+    }//GEN-LAST:event_jButtonGheA01ActionPerformed
 
-    private void gheA02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA02ActionPerformed
-        gheA02.setEnabled(false);
+    private void jButtonGheA02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheA02ActionPerformed
+        jButtonGheA02.setEnabled(false);
         setAmountAndSetAndGheDuocDat("A02");
-        gheA02.setBackground(Color.RED);
-        gheA02.setOpaque(true);
-        gheA02.setContentAreaFilled(true);
-        gheA02.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheA02.setBackground(Color.RED);
+        jButtonGheA02.setOpaque(true);
+        jButtonGheA02.setContentAreaFilled(true);
+        jButtonGheA02.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheA02ActionPerformed
+    }//GEN-LAST:event_jButtonGheA02ActionPerformed
 
-    private void gheA03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA03ActionPerformed
-        gheA03.setEnabled(false);
+    private void jButtonGheA03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheA03ActionPerformed
+        jButtonGheA03.setEnabled(false);
         setAmountAndSetAndGheDuocDat("A03");
-        gheA03.setBackground(Color.RED);
-        gheA03.setOpaque(true);
-        gheA03.setContentAreaFilled(true);
-        gheA03.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheA03.setBackground(Color.RED);
+        jButtonGheA03.setOpaque(true);
+        jButtonGheA03.setContentAreaFilled(true);
+        jButtonGheA03.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheA03ActionPerformed
+    }//GEN-LAST:event_jButtonGheA03ActionPerformed
 
-    private void gheA04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA04ActionPerformed
-        gheA04.setEnabled(false);
+    private void jButtonGheA04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheA04ActionPerformed
+        jButtonGheA04.setEnabled(false);
         setAmountAndSetAndGheDuocDat("A04");
-        gheA04.setBackground(Color.RED);
-        gheA04.setOpaque(true);
-        gheA04.setContentAreaFilled(true);
-        gheA04.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheA04.setBackground(Color.RED);
+        jButtonGheA04.setOpaque(true);
+        jButtonGheA04.setContentAreaFilled(true);
+        jButtonGheA04.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheA04ActionPerformed
+    }//GEN-LAST:event_jButtonGheA04ActionPerformed
 
-    private void gheA05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA05ActionPerformed
-        gheA05.setEnabled(false);
+    private void jButtonGheA05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheA05ActionPerformed
+        jButtonGheA05.setEnabled(false);
         setAmountAndSetAndGheDuocDat("A05");
-        gheA05.setBackground(Color.RED);
-        gheA05.setOpaque(true);
-        gheA05.setContentAreaFilled(true);
-        gheA05.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheA05.setBackground(Color.RED);
+        jButtonGheA05.setOpaque(true);
+        jButtonGheA05.setContentAreaFilled(true);
+        jButtonGheA05.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheA05ActionPerformed
+    }//GEN-LAST:event_jButtonGheA05ActionPerformed
 
-    private void gheA06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA06ActionPerformed
-        gheA06.setEnabled(false);
+    private void jButtonGheA06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheA06ActionPerformed
+        jButtonGheA06.setEnabled(false);
         setAmountAndSetAndGheDuocDat("A06");
-        gheA06.setBackground(Color.RED);
-        gheA06.setOpaque(true);
-        gheA06.setContentAreaFilled(true);
-        gheA06.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheA06.setBackground(Color.RED);
+        jButtonGheA06.setOpaque(true);
+        jButtonGheA06.setContentAreaFilled(true);
+        jButtonGheA06.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheA06ActionPerformed
+    }//GEN-LAST:event_jButtonGheA06ActionPerformed
 
-    private void gheA07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA07ActionPerformed
-        gheA07.setEnabled(false);
+    private void jButtonGheA07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheA07ActionPerformed
+        jButtonGheA07.setEnabled(false);
         setAmountAndSetAndGheDuocDat("A07");
-        gheA07.setBackground(Color.RED);
-        gheA07.setOpaque(true);
-        gheA07.setContentAreaFilled(true);
-        gheA07.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheA07.setBackground(Color.RED);
+        jButtonGheA07.setOpaque(true);
+        jButtonGheA07.setContentAreaFilled(true);
+        jButtonGheA07.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheA07ActionPerformed
+    }//GEN-LAST:event_jButtonGheA07ActionPerformed
 
-    private void gheA08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA08ActionPerformed
-        gheA08.setEnabled(false);
+    private void jButtonGheA08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheA08ActionPerformed
+        jButtonGheA08.setEnabled(false);
         setAmountAndSetAndGheDuocDat("A08");
-        gheA08.setBackground(Color.RED);
-        gheA08.setOpaque(true);
-        gheA08.setContentAreaFilled(true);
-        gheA08.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheA08.setBackground(Color.RED);
+        jButtonGheA08.setOpaque(true);
+        jButtonGheA08.setContentAreaFilled(true);
+        jButtonGheA08.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheA08ActionPerformed
+    }//GEN-LAST:event_jButtonGheA08ActionPerformed
 
-    private void gheA09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA09ActionPerformed
-        gheA09.setEnabled(false);
+    private void jButtonGheA09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheA09ActionPerformed
+        jButtonGheA09.setEnabled(false);
         setAmountAndSetAndGheDuocDat("A09");
-        gheA09.setBackground(Color.RED);
-        gheA09.setOpaque(true);
-        gheA09.setContentAreaFilled(true);
-        gheA09.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheA09.setBackground(Color.RED);
+        jButtonGheA09.setOpaque(true);
+        jButtonGheA09.setContentAreaFilled(true);
+        jButtonGheA09.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheA09ActionPerformed
+    }//GEN-LAST:event_jButtonGheA09ActionPerformed
 
-    private void gheA10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheA10ActionPerformed
-        gheA10.setEnabled(false);
+    private void jButtonGheA10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheA10ActionPerformed
+        jButtonGheA10.setEnabled(false);
         setAmountAndSetAndGheDuocDat("A10");
-        gheA10.setBackground(Color.RED);
-        gheA10.setOpaque(true);
-        gheA10.setContentAreaFilled(true);
-        gheA10.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheA10.setBackground(Color.RED);
+        jButtonGheA10.setOpaque(true);
+        jButtonGheA10.setContentAreaFilled(true);
+        jButtonGheA10.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheA10ActionPerformed
+    }//GEN-LAST:event_jButtonGheA10ActionPerformed
 
-    private void gheB01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB01ActionPerformed
-        gheB01.setEnabled(false);
+    private void jButtonGheB01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheB01ActionPerformed
+        jButtonGheB01.setEnabled(false);
         setAmountAndSetAndGheDuocDat("B01");
-        gheB01.setBackground(Color.RED);
-        gheB01.setOpaque(true);
-        gheB01.setContentAreaFilled(true);
-        gheB01.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheB01.setBackground(Color.RED);
+        jButtonGheB01.setOpaque(true);
+        jButtonGheB01.setContentAreaFilled(true);
+        jButtonGheB01.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheB01ActionPerformed
+    }//GEN-LAST:event_jButtonGheB01ActionPerformed
 
-    private void gheB02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB02ActionPerformed
-        gheB02.setEnabled(false);
+    private void jButtonGheB02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheB02ActionPerformed
+        jButtonGheB02.setEnabled(false);
         setAmountAndSetAndGheDuocDat("B02");
-        gheB02.setBackground(Color.RED);
-        gheB02.setOpaque(true);
-        gheB02.setContentAreaFilled(true);
-        gheB02.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheB02.setBackground(Color.RED);
+        jButtonGheB02.setOpaque(true);
+        jButtonGheB02.setContentAreaFilled(true);
+        jButtonGheB02.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheB02ActionPerformed
+    }//GEN-LAST:event_jButtonGheB02ActionPerformed
 
-    private void gheB03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB03ActionPerformed
-        gheB03.setEnabled(false);
+    private void jButtonGheB03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheB03ActionPerformed
+        jButtonGheB03.setEnabled(false);
         setAmountAndSetAndGheDuocDat("B03");
-        gheB03.setBackground(Color.RED);
-        gheB03.setOpaque(true);
-        gheB03.setContentAreaFilled(true);
-        gheB03.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheB03.setBackground(Color.RED);
+        jButtonGheB03.setOpaque(true);
+        jButtonGheB03.setContentAreaFilled(true);
+        jButtonGheB03.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheB03ActionPerformed
+    }//GEN-LAST:event_jButtonGheB03ActionPerformed
 
-    private void gheB04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB04ActionPerformed
-        gheB04.setEnabled(false);
+    private void jButtonGheB04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheB04ActionPerformed
+        jButtonGheB04.setEnabled(false);
         setAmountAndSetAndGheDuocDat("B04");
-        gheB04.setBackground(Color.RED);
-        gheB04.setOpaque(true);
-        gheB04.setContentAreaFilled(true);
-        gheB04.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheB04.setBackground(Color.RED);
+        jButtonGheB04.setOpaque(true);
+        jButtonGheB04.setContentAreaFilled(true);
+        jButtonGheB04.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheB04ActionPerformed
+    }//GEN-LAST:event_jButtonGheB04ActionPerformed
 
-    private void gheB05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB05ActionPerformed
-        gheB05.setEnabled(false);
+    private void jButtonGheB05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheB05ActionPerformed
+        jButtonGheB05.setEnabled(false);
         setAmountAndSetAndGheDuocDat("B05");
-        gheB05.setBackground(Color.RED);
-        gheB05.setOpaque(true);
-        gheB05.setContentAreaFilled(true);
-        gheB05.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheB05.setBackground(Color.RED);
+        jButtonGheB05.setOpaque(true);
+        jButtonGheB05.setContentAreaFilled(true);
+        jButtonGheB05.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheB05ActionPerformed
+    }//GEN-LAST:event_jButtonGheB05ActionPerformed
 
-    private void gheB06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB06ActionPerformed
-        gheB06.setEnabled(false);
+    private void jButtonGheB06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheB06ActionPerformed
+        jButtonGheB06.setEnabled(false);
         setAmountAndSetAndGheDuocDat("B06");
-        gheB06.setBackground(Color.RED);
-        gheB06.setOpaque(true);
-        gheB06.setContentAreaFilled(true);
-        gheB06.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheB06.setBackground(Color.RED);
+        jButtonGheB06.setOpaque(true);
+        jButtonGheB06.setContentAreaFilled(true);
+        jButtonGheB06.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheB06ActionPerformed
+    }//GEN-LAST:event_jButtonGheB06ActionPerformed
 
-    private void gheB07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB07ActionPerformed
-        gheB07.setEnabled(false);
+    private void jButtonGheB07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheB07ActionPerformed
+        jButtonGheB07.setEnabled(false);
         setAmountAndSetAndGheDuocDat("B07");
-        gheB07.setBackground(Color.RED);
-        gheB07.setOpaque(true);
-        gheB07.setContentAreaFilled(true);
-        gheB07.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheB07.setBackground(Color.RED);
+        jButtonGheB07.setOpaque(true);
+        jButtonGheB07.setContentAreaFilled(true);
+        jButtonGheB07.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheB07ActionPerformed
+    }//GEN-LAST:event_jButtonGheB07ActionPerformed
 
-    private void gheB08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB08ActionPerformed
-        gheB08.setEnabled(false);
+    private void jButtonGheB08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheB08ActionPerformed
+        jButtonGheB08.setEnabled(false);
         setAmountAndSetAndGheDuocDat("B08");
-        gheB08.setBackground(Color.RED);
-        gheB08.setOpaque(true);
-        gheB08.setContentAreaFilled(true);
-        gheB08.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheB08.setBackground(Color.RED);
+        jButtonGheB08.setOpaque(true);
+        jButtonGheB08.setContentAreaFilled(true);
+        jButtonGheB08.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheB08ActionPerformed
+    }//GEN-LAST:event_jButtonGheB08ActionPerformed
 
-    private void gheB09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB09ActionPerformed
-        gheB09.setEnabled(false);
+    private void jButtonGheB09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheB09ActionPerformed
+        jButtonGheB09.setEnabled(false);
         setAmountAndSetAndGheDuocDat("B09");
-        gheB09.setBackground(Color.RED);
-        gheB09.setOpaque(true);
-        gheB09.setContentAreaFilled(true);
-        gheB09.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheB09.setBackground(Color.RED);
+        jButtonGheB09.setOpaque(true);
+        jButtonGheB09.setContentAreaFilled(true);
+        jButtonGheB09.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheB09ActionPerformed
+    }//GEN-LAST:event_jButtonGheB09ActionPerformed
 
-    private void gheB10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheB10ActionPerformed
-        gheB10.setEnabled(false);
+    private void jButtonGheB10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheB10ActionPerformed
+        jButtonGheB10.setEnabled(false);
         setAmountAndSetAndGheDuocDat("B10");
-        gheB10.setBackground(Color.RED);
-        gheB10.setOpaque(true);
-        gheB10.setContentAreaFilled(true);
-        gheB10.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheB10.setBackground(Color.RED);
+        jButtonGheB10.setOpaque(true);
+        jButtonGheB10.setContentAreaFilled(true);
+        jButtonGheB10.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheB10ActionPerformed
+    }//GEN-LAST:event_jButtonGheB10ActionPerformed
 
-    private void gheC01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC01ActionPerformed
-        gheC01.setEnabled(false);
+    private void jButtonGheC01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheC01ActionPerformed
+        jButtonGheC01.setEnabled(false);
         setAmountAndSetAndGheDuocDat("C01");
-        gheC01.setBackground(Color.RED);
-        gheC01.setOpaque(true);
-        gheC01.setContentAreaFilled(true);
-        gheC01.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
-    }//GEN-LAST:event_gheC01ActionPerformed
+        jButtonGheC01.setBackground(Color.RED);
+        jButtonGheC01.setOpaque(true);
+        jButtonGheC01.setContentAreaFilled(true);
+        jButtonGheC01.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
+    }//GEN-LAST:event_jButtonGheC01ActionPerformed
 
-    private void gheC02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC02ActionPerformed
-        gheC02.setEnabled(false);
+    private void jButtonGheC02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheC02ActionPerformed
+        jButtonGheC02.setEnabled(false);
         setAmountAndSetAndGheDuocDat("C02");
-        gheC02.setBackground(Color.RED);
-        gheC02.setOpaque(true);
-        gheC02.setContentAreaFilled(true);
-        gheC02.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheC02.setBackground(Color.RED);
+        jButtonGheC02.setOpaque(true);
+        jButtonGheC02.setContentAreaFilled(true);
+        jButtonGheC02.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheC02ActionPerformed
+    }//GEN-LAST:event_jButtonGheC02ActionPerformed
 
-    private void gheC03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC03ActionPerformed
-        gheC03.setEnabled(false);
+    private void jButtonGheC03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheC03ActionPerformed
+        jButtonGheC03.setEnabled(false);
         setAmountAndSetAndGheDuocDat("C03");
-        gheC03.setBackground(Color.RED);
-        gheC03.setOpaque(true);
-        gheC03.setContentAreaFilled(true);
-        gheC03.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheC03.setBackground(Color.RED);
+        jButtonGheC03.setOpaque(true);
+        jButtonGheC03.setContentAreaFilled(true);
+        jButtonGheC03.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheC03ActionPerformed
+    }//GEN-LAST:event_jButtonGheC03ActionPerformed
 
-    private void gheC04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC04ActionPerformed
-        gheC04.setEnabled(false);
+    private void jButtonGheC04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheC04ActionPerformed
+        jButtonGheC04.setEnabled(false);
         setAmountAndSetAndGheDuocDat("C04");
-        gheC04.setBackground(Color.RED);
-        gheC04.setOpaque(true);
-        gheC04.setContentAreaFilled(true);
-        gheC04.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheC04.setBackground(Color.RED);
+        jButtonGheC04.setOpaque(true);
+        jButtonGheC04.setContentAreaFilled(true);
+        jButtonGheC04.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheC04ActionPerformed
+    }//GEN-LAST:event_jButtonGheC04ActionPerformed
 
-    private void gheC05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC05ActionPerformed
-        gheC05.setEnabled(false);
+    private void jButtonGheC05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheC05ActionPerformed
+        jButtonGheC05.setEnabled(false);
         setAmountAndSetAndGheDuocDat("C05");
-        gheC05.setBackground(Color.RED);
-        gheC05.setOpaque(true);
-        gheC05.setContentAreaFilled(true);
-        gheC05.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheC05.setBackground(Color.RED);
+        jButtonGheC05.setOpaque(true);
+        jButtonGheC05.setContentAreaFilled(true);
+        jButtonGheC05.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheC05ActionPerformed
+    }//GEN-LAST:event_jButtonGheC05ActionPerformed
 
-    private void gheC06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC06ActionPerformed
-        gheC06.setEnabled(false);
+    private void jButtonGheC06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheC06ActionPerformed
+        jButtonGheC06.setEnabled(false);
         setAmountAndSetAndGheDuocDat("C06");
-        gheC06.setBackground(Color.RED);
-        gheC06.setOpaque(true);
-        gheC06.setContentAreaFilled(true);
-        gheC06.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheC06.setBackground(Color.RED);
+        jButtonGheC06.setOpaque(true);
+        jButtonGheC06.setContentAreaFilled(true);
+        jButtonGheC06.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheC06ActionPerformed
+    }//GEN-LAST:event_jButtonGheC06ActionPerformed
 
-    private void gheC07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC07ActionPerformed
-        gheC07.setEnabled(false);
+    private void jButtonGheC07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheC07ActionPerformed
+        jButtonGheC07.setEnabled(false);
         setAmountAndSetAndGheDuocDat("C07");
-        gheC07.setBackground(Color.RED);
-        gheC07.setOpaque(true);
-        gheC07.setContentAreaFilled(true);
-        gheC07.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheC07.setBackground(Color.RED);
+        jButtonGheC07.setOpaque(true);
+        jButtonGheC07.setContentAreaFilled(true);
+        jButtonGheC07.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheC07ActionPerformed
+    }//GEN-LAST:event_jButtonGheC07ActionPerformed
 
-    private void gheC08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC08ActionPerformed
-        gheC08.setEnabled(false);
+    private void jButtonGheC08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheC08ActionPerformed
+        jButtonGheC08.setEnabled(false);
         setAmountAndSetAndGheDuocDat("C08");
-        gheC08.setBackground(Color.RED);
-        gheC08.setOpaque(true);
-        gheC08.setContentAreaFilled(true);
-        gheC08.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheC08.setBackground(Color.RED);
+        jButtonGheC08.setOpaque(true);
+        jButtonGheC08.setContentAreaFilled(true);
+        jButtonGheC08.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheC08ActionPerformed
+    }//GEN-LAST:event_jButtonGheC08ActionPerformed
 
-    private void gheC09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC09ActionPerformed
-        gheC09.setEnabled(false);
+    private void jButtonGheC09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheC09ActionPerformed
+        jButtonGheC09.setEnabled(false);
         setAmountAndSetAndGheDuocDat("C09");
-        gheC09.setBackground(Color.RED);
-        gheC09.setOpaque(true);
-        gheC09.setContentAreaFilled(true);
-        gheC09.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheC09.setBackground(Color.RED);
+        jButtonGheC09.setOpaque(true);
+        jButtonGheC09.setContentAreaFilled(true);
+        jButtonGheC09.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheC09ActionPerformed
+    }//GEN-LAST:event_jButtonGheC09ActionPerformed
 
-    private void gheC10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheC10ActionPerformed
-        gheC10.setEnabled(false);
+    private void jButtonGheC10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheC10ActionPerformed
+        jButtonGheC10.setEnabled(false);
         setAmountAndSetAndGheDuocDat("C10");
-        gheC10.setBackground(Color.RED);
-        gheC10.setOpaque(true);
-        gheC10.setContentAreaFilled(true);
-        gheC10.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheC10.setBackground(Color.RED);
+        jButtonGheC10.setOpaque(true);
+        jButtonGheC10.setContentAreaFilled(true);
+        jButtonGheC10.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheC10ActionPerformed
+    }//GEN-LAST:event_jButtonGheC10ActionPerformed
 
-    private void gheD01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD01ActionPerformed
-        gheD01.setEnabled(false);
+    private void jButtonGheD01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheD01ActionPerformed
+        jButtonGheD01.setEnabled(false);
         setAmountAndSetAndGheDuocDat("D01");
-        gheD01.setBackground(Color.RED);
-        gheD01.setOpaque(true);
-        gheD01.setContentAreaFilled(true);
-        gheD01.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheD01.setBackground(Color.RED);
+        jButtonGheD01.setOpaque(true);
+        jButtonGheD01.setContentAreaFilled(true);
+        jButtonGheD01.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheD01ActionPerformed
+    }//GEN-LAST:event_jButtonGheD01ActionPerformed
 
-    private void gheD02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD02ActionPerformed
-        gheD02.setEnabled(false);
+    private void jButtonGheD02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheD02ActionPerformed
+        jButtonGheD02.setEnabled(false);
         setAmountAndSetAndGheDuocDat("D02");
-        gheD02.setBackground(Color.RED);
-        gheD02.setOpaque(true);
-        gheD02.setContentAreaFilled(true);
-        gheD02.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheD02.setBackground(Color.RED);
+        jButtonGheD02.setOpaque(true);
+        jButtonGheD02.setContentAreaFilled(true);
+        jButtonGheD02.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheD02ActionPerformed
+    }//GEN-LAST:event_jButtonGheD02ActionPerformed
 
-    private void gheD03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD03ActionPerformed
-        gheD03.setEnabled(false);
+    private void jButtonGheD03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheD03ActionPerformed
+        jButtonGheD03.setEnabled(false);
         setAmountAndSetAndGheDuocDat("D03");
-        gheD03.setBackground(Color.RED);
-        gheD03.setOpaque(true);
-        gheD03.setContentAreaFilled(true);
-        gheD03.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheD03.setBackground(Color.RED);
+        jButtonGheD03.setOpaque(true);
+        jButtonGheD03.setContentAreaFilled(true);
+        jButtonGheD03.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheD03ActionPerformed
+    }//GEN-LAST:event_jButtonGheD03ActionPerformed
 
-    private void gheD04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD04ActionPerformed
-        gheD04.setEnabled(false);
+    private void jButtonGheD04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheD04ActionPerformed
+        jButtonGheD04.setEnabled(false);
         setAmountAndSetAndGheDuocDat("D04");
-        gheD04.setBackground(Color.RED);
-        gheD04.setOpaque(true);
-        gheD04.setContentAreaFilled(true);
-        gheD04.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheD04.setBackground(Color.RED);
+        jButtonGheD04.setOpaque(true);
+        jButtonGheD04.setContentAreaFilled(true);
+        jButtonGheD04.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheD04ActionPerformed
+    }//GEN-LAST:event_jButtonGheD04ActionPerformed
 
-    private void gheD05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD05ActionPerformed
-        gheD05.setEnabled(false);
+    private void jButtonGheD05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheD05ActionPerformed
+        jButtonGheD05.setEnabled(false);
         setAmountAndSetAndGheDuocDat("D05");
-        gheD05.setBackground(Color.RED);
-        gheD05.setOpaque(true);
-        gheD05.setContentAreaFilled(true);
-        gheD05.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheD05.setBackground(Color.RED);
+        jButtonGheD05.setOpaque(true);
+        jButtonGheD05.setContentAreaFilled(true);
+        jButtonGheD05.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheD05ActionPerformed
+    }//GEN-LAST:event_jButtonGheD05ActionPerformed
 
-    private void gheD06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD06ActionPerformed
-        gheD06.setEnabled(false);
+    private void jButtonGheD06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheD06ActionPerformed
+        jButtonGheD06.setEnabled(false);
         setAmountAndSetAndGheDuocDat("D06");
-        gheD06.setBackground(Color.RED);
-        gheD06.setOpaque(true);
-        gheD06.setContentAreaFilled(true);
-        gheD06.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheD06.setBackground(Color.RED);
+        jButtonGheD06.setOpaque(true);
+        jButtonGheD06.setContentAreaFilled(true);
+        jButtonGheD06.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheD06ActionPerformed
+    }//GEN-LAST:event_jButtonGheD06ActionPerformed
 
-    private void gheD07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD07ActionPerformed
-        gheD07.setEnabled(false);
+    private void jButtonGheD07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheD07ActionPerformed
+        jButtonGheD07.setEnabled(false);
         setAmountAndSetAndGheDuocDat("D07");
-        gheD07.setBackground(Color.RED);
-        gheD07.setOpaque(true);
-        gheD07.setContentAreaFilled(true);
-        gheD07.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheD07.setBackground(Color.RED);
+        jButtonGheD07.setOpaque(true);
+        jButtonGheD07.setContentAreaFilled(true);
+        jButtonGheD07.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheD07ActionPerformed
+    }//GEN-LAST:event_jButtonGheD07ActionPerformed
 
-    private void gheD08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD08ActionPerformed
-        gheD08.setEnabled(false);
+    private void jButtonGheD08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheD08ActionPerformed
+        jButtonGheD08.setEnabled(false);
         setAmountAndSetAndGheDuocDat("D08");
-        gheD08.setBackground(Color.RED);
-        gheD08.setOpaque(true);
-        gheD08.setContentAreaFilled(true);
-        gheD08.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheD08.setBackground(Color.RED);
+        jButtonGheD08.setOpaque(true);
+        jButtonGheD08.setContentAreaFilled(true);
+        jButtonGheD08.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheD08ActionPerformed
+    }//GEN-LAST:event_jButtonGheD08ActionPerformed
 
-    private void gheD09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD09ActionPerformed
+    private void jButtonGheD09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheD09ActionPerformed
         // TODO add your handling code here:
-        gheD09.setEnabled(false);
+        jButtonGheD09.setEnabled(false);
         setAmountAndSetAndGheDuocDat("D09");
-        gheD09.setBackground(Color.RED);
-        gheD09.setOpaque(true);
-        gheD09.setContentAreaFilled(true);
-        gheD09.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheD09.setBackground(Color.RED);
+        jButtonGheD09.setOpaque(true);
+        jButtonGheD09.setContentAreaFilled(true);
+        jButtonGheD09.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheD09ActionPerformed
+    }//GEN-LAST:event_jButtonGheD09ActionPerformed
 
-    private void gheD10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheD10ActionPerformed
-        gheD10.setEnabled(false);
+    private void jButtonGheD10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheD10ActionPerformed
+        jButtonGheD10.setEnabled(false);
         setAmountAndSetAndGheDuocDat("D10");
-        gheD10.setBackground(Color.RED);
-        gheD10.setOpaque(true);
-        gheD10.setContentAreaFilled(true);
-        gheD10.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheD10.setBackground(Color.RED);
+        jButtonGheD10.setOpaque(true);
+        jButtonGheD10.setContentAreaFilled(true);
+        jButtonGheD10.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheD10ActionPerformed
+    }//GEN-LAST:event_jButtonGheD10ActionPerformed
 
-    private void gheE01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE01ActionPerformed
-        gheE01.setEnabled(false);
+    private void jButtonGheE01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheE01ActionPerformed
+        jButtonGheE01.setEnabled(false);
         setAmountAndSetAndGheDuocDat("E01");
-        gheE01.setBackground(Color.RED);
-        gheE01.setOpaque(true);
-        gheE01.setContentAreaFilled(true);
-        gheE01.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheE01.setBackground(Color.RED);
+        jButtonGheE01.setOpaque(true);
+        jButtonGheE01.setContentAreaFilled(true);
+        jButtonGheE01.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheE01ActionPerformed
+    }//GEN-LAST:event_jButtonGheE01ActionPerformed
 
-    private void gheE02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE02ActionPerformed
-        gheE02.setEnabled(false);
+    private void jButtonGheE02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheE02ActionPerformed
+        jButtonGheE02.setEnabled(false);
         setAmountAndSetAndGheDuocDat("E02");
-        gheE02.setBackground(Color.RED);
-        gheE02.setOpaque(true);
-        gheE02.setContentAreaFilled(true);
-        gheE02.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheE02.setBackground(Color.RED);
+        jButtonGheE02.setOpaque(true);
+        jButtonGheE02.setContentAreaFilled(true);
+        jButtonGheE02.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheE02ActionPerformed
+    }//GEN-LAST:event_jButtonGheE02ActionPerformed
 
-    private void gheE03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE03ActionPerformed
-        gheE03.setEnabled(false);
+    private void jButtonGheE03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheE03ActionPerformed
+        jButtonGheE03.setEnabled(false);
         setAmountAndSetAndGheDuocDat("E03");
-        gheE03.setBackground(Color.RED);
-        gheE03.setOpaque(true);
-        gheE03.setContentAreaFilled(true);
-        gheE03.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheE03.setBackground(Color.RED);
+        jButtonGheE03.setOpaque(true);
+        jButtonGheE03.setContentAreaFilled(true);
+        jButtonGheE03.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheE03ActionPerformed
+    }//GEN-LAST:event_jButtonGheE03ActionPerformed
 
-    private void gheE04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE04ActionPerformed
-        gheE04.setEnabled(false);
+    private void jButtonGheE04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheE04ActionPerformed
+        jButtonGheE04.setEnabled(false);
         setAmountAndSetAndGheDuocDat("E04");
-        gheE04.setBackground(Color.RED);
-        gheE04.setOpaque(true);
-        gheE04.setContentAreaFilled(true);
-        gheE04.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheE04.setBackground(Color.RED);
+        jButtonGheE04.setOpaque(true);
+        jButtonGheE04.setContentAreaFilled(true);
+        jButtonGheE04.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheE04ActionPerformed
+    }//GEN-LAST:event_jButtonGheE04ActionPerformed
 
-    private void gheE05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE05ActionPerformed
-        gheE05.setEnabled(false);
+    private void jButtonGheE05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheE05ActionPerformed
+        jButtonGheE05.setEnabled(false);
         setAmountAndSetAndGheDuocDat("E05");
-        gheE05.setBackground(Color.RED);
-        gheE05.setOpaque(true);
-        gheE05.setContentAreaFilled(true);
-        gheE05.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheE05.setBackground(Color.RED);
+        jButtonGheE05.setOpaque(true);
+        jButtonGheE05.setContentAreaFilled(true);
+        jButtonGheE05.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheE05ActionPerformed
+    }//GEN-LAST:event_jButtonGheE05ActionPerformed
 
-    private void gheE06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE06ActionPerformed
-        gheE06.setEnabled(false);
+    private void jButtonGheE06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheE06ActionPerformed
+        jButtonGheE06.setEnabled(false);
         setAmountAndSetAndGheDuocDat("E06");
-        gheE06.setBackground(Color.RED);
-        gheE06.setOpaque(true);
-        gheE06.setContentAreaFilled(true);
-        gheE06.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheE06.setBackground(Color.RED);
+        jButtonGheE06.setOpaque(true);
+        jButtonGheE06.setContentAreaFilled(true);
+        jButtonGheE06.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
 
-    }//GEN-LAST:event_gheE06ActionPerformed
+    }//GEN-LAST:event_jButtonGheE06ActionPerformed
 
-    private void gheE07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE07ActionPerformed
+    private void jButtonGheE07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheE07ActionPerformed
         // TODO add your handling code here:
-        gheE07.setEnabled(false);
+        jButtonGheE07.setEnabled(false);
         setAmountAndSetAndGheDuocDat("E07");
-        gheE07.setBackground(Color.RED);
-        gheE07.setOpaque(true);
-        gheE07.setContentAreaFilled(true);
-        gheE07.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheE07.setBackground(Color.RED);
+        jButtonGheE07.setOpaque(true);
+        jButtonGheE07.setContentAreaFilled(true);
+        jButtonGheE07.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheE07ActionPerformed
+    }//GEN-LAST:event_jButtonGheE07ActionPerformed
 
-    private void gheE08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE08ActionPerformed
-        gheE08.setEnabled(false);
+    private void jButtonGheE08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheE08ActionPerformed
+        jButtonGheE08.setEnabled(false);
         setAmountAndSetAndGheDuocDat("E08");
-        gheE08.setBackground(Color.RED);
-        gheE08.setOpaque(true);
-        gheE08.setContentAreaFilled(true);
-        gheE08.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheE08.setBackground(Color.RED);
+        jButtonGheE08.setOpaque(true);
+        jButtonGheE08.setContentAreaFilled(true);
+        jButtonGheE08.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheE08ActionPerformed
+    }//GEN-LAST:event_jButtonGheE08ActionPerformed
 
-    private void gheE09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE09ActionPerformed
-        gheE09.setEnabled(false);
+    private void jButtonGheE09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheE09ActionPerformed
+        jButtonGheE09.setEnabled(false);
         setAmountAndSetAndGheDuocDat("E09");
-        gheE09.setBackground(Color.RED);
-        gheE09.setOpaque(true);
-        gheE09.setContentAreaFilled(true);
-        gheE09.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheE09.setBackground(Color.RED);
+        jButtonGheE09.setOpaque(true);
+        jButtonGheE09.setContentAreaFilled(true);
+        jButtonGheE09.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheE09ActionPerformed
+    }//GEN-LAST:event_jButtonGheE09ActionPerformed
 
-    private void gheE10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheE10ActionPerformed
-        gheE10.setEnabled(false);
+    private void jButtonGheE10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheE10ActionPerformed
+        jButtonGheE10.setEnabled(false);
         setAmountAndSetAndGheDuocDat("E10");
-        gheE10.setBackground(Color.RED);
-        gheE10.setOpaque(true);
-        gheE10.setContentAreaFilled(true);
-        gheE10.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheE10.setBackground(Color.RED);
+        jButtonGheE10.setOpaque(true);
+        jButtonGheE10.setContentAreaFilled(true);
+        jButtonGheE10.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheE10ActionPerformed
+    }//GEN-LAST:event_jButtonGheE10ActionPerformed
 
-    private void gheF01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheF01ActionPerformed
-        gheF01.setEnabled(false);
+    private void jButtonGheF01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheF01ActionPerformed
+        jButtonGheF01.setEnabled(false);
         setAmountAndSetAndGheDuocDat("F01");
-        gheF01.setBackground(Color.RED);
-        gheF01.setOpaque(true);
-        gheF01.setContentAreaFilled(true);
-        gheF01.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheF01.setBackground(Color.RED);
+        jButtonGheF01.setOpaque(true);
+        jButtonGheF01.setContentAreaFilled(true);
+        jButtonGheF01.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheF01ActionPerformed
+    }//GEN-LAST:event_jButtonGheF01ActionPerformed
 
-    private void gheF02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheF02ActionPerformed
-        gheF02.setEnabled(false);
+    private void jButtonGheF02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheF02ActionPerformed
+        jButtonGheF02.setEnabled(false);
         setAmountAndSetAndGheDuocDat("F02");
-        gheF02.setBackground(Color.RED);
-        gheF02.setOpaque(true);
-        gheF02.setContentAreaFilled(true);
-        gheF02.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheF02.setBackground(Color.RED);
+        jButtonGheF02.setOpaque(true);
+        jButtonGheF02.setContentAreaFilled(true);
+        jButtonGheF02.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheF02ActionPerformed
+    }//GEN-LAST:event_jButtonGheF02ActionPerformed
 
-    private void gheF03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheF03ActionPerformed
-        gheF03.setEnabled(false);
+    private void jButtonGheF03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheF03ActionPerformed
+        jButtonGheF03.setEnabled(false);
         setAmountAndSetAndGheDuocDat("F03");
-        gheF03.setBackground(Color.RED);
-        gheF03.setOpaque(true);
-        gheF03.setContentAreaFilled(true);
-        gheF03.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheF03.setBackground(Color.RED);
+        jButtonGheF03.setOpaque(true);
+        jButtonGheF03.setContentAreaFilled(true);
+        jButtonGheF03.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheF03ActionPerformed
+    }//GEN-LAST:event_jButtonGheF03ActionPerformed
 
-    private void gheF04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheF04ActionPerformed
-        gheF04.setEnabled(false);
+    private void jButtonGheF04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheF04ActionPerformed
+        jButtonGheF04.setEnabled(false);
         setAmountAndSetAndGheDuocDat("F04");
-        gheF04.setBackground(Color.RED);
-        gheF04.setOpaque(true);
-        gheF04.setContentAreaFilled(true);
-        gheF04.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheF04.setBackground(Color.RED);
+        jButtonGheF04.setOpaque(true);
+        jButtonGheF04.setContentAreaFilled(true);
+        jButtonGheF04.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheF04ActionPerformed
+    }//GEN-LAST:event_jButtonGheF04ActionPerformed
 
-    private void gheF05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheF05ActionPerformed
-        gheF05.setEnabled(false);
+    private void jButtonGheF05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheF05ActionPerformed
+        jButtonGheF05.setEnabled(false);
         setAmountAndSetAndGheDuocDat("F05");
-        gheF05.setBackground(Color.RED);
-        gheF05.setOpaque(true);
-        gheF05.setContentAreaFilled(true);
-        gheF05.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheF05.setBackground(Color.RED);
+        jButtonGheF05.setOpaque(true);
+        jButtonGheF05.setContentAreaFilled(true);
+        jButtonGheF05.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheF05ActionPerformed
+    }//GEN-LAST:event_jButtonGheF05ActionPerformed
 
-    private void gheF06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheF06ActionPerformed
-        gheF06.setEnabled(false);
+    private void jButtonGheF06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheF06ActionPerformed
+        jButtonGheF06.setEnabled(false);
         setAmountAndSetAndGheDuocDat("F06");
-        gheF06.setBackground(Color.RED);
-        gheF06.setOpaque(true);
-        gheF06.setContentAreaFilled(true);
-        gheF06.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheF06.setBackground(Color.RED);
+        jButtonGheF06.setOpaque(true);
+        jButtonGheF06.setContentAreaFilled(true);
+        jButtonGheF06.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheF06ActionPerformed
+    }//GEN-LAST:event_jButtonGheF06ActionPerformed
 
-    private void gheF07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheF07ActionPerformed
-        gheF07.setEnabled(false);
+    private void jButtonGheF07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheF07ActionPerformed
+        jButtonGheF07.setEnabled(false);
         setAmountAndSetAndGheDuocDat("F07");
-        gheF07.setBackground(Color.RED);
-        gheF07.setOpaque(true);
-        gheF07.setContentAreaFilled(true);
-        gheF07.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheF07.setBackground(Color.RED);
+        jButtonGheF07.setOpaque(true);
+        jButtonGheF07.setContentAreaFilled(true);
+        jButtonGheF07.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheF07ActionPerformed
+    }//GEN-LAST:event_jButtonGheF07ActionPerformed
 
-    private void gheF08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheF08ActionPerformed
-        gheF08.setEnabled(false);
+    private void jButtonGheF08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheF08ActionPerformed
+        jButtonGheF08.setEnabled(false);
         setAmountAndSetAndGheDuocDat("F08");
-        gheF08.setBackground(Color.RED);
-        gheF08.setOpaque(true);
-        gheF08.setContentAreaFilled(true);
-        gheF08.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheF08.setBackground(Color.RED);
+        jButtonGheF08.setOpaque(true);
+        jButtonGheF08.setContentAreaFilled(true);
+        jButtonGheF08.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheF08ActionPerformed
+    }//GEN-LAST:event_jButtonGheF08ActionPerformed
 
-    private void gheF09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheF09ActionPerformed
-        gheF09.setEnabled(false);
+    private void jButtonGheF09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheF09ActionPerformed
+        jButtonGheF09.setEnabled(false);
         setAmountAndSetAndGheDuocDat("F09");
-        gheF09.setBackground(Color.RED);
-        gheF09.setOpaque(true);
-        gheF09.setContentAreaFilled(true);
-        gheF09.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheF09.setBackground(Color.RED);
+        jButtonGheF09.setOpaque(true);
+        jButtonGheF09.setContentAreaFilled(true);
+        jButtonGheF09.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheF09ActionPerformed
+    }//GEN-LAST:event_jButtonGheF09ActionPerformed
 
-    private void gheF10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gheF10ActionPerformed
-        gheF10.setEnabled(false);
+    private void jButtonGheF10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGheF10ActionPerformed
+        jButtonGheF10.setEnabled(false);
         setAmountAndSetAndGheDuocDat("F10");
-        gheF10.setBackground(Color.RED);
-        gheF10.setOpaque(true);
-        gheF10.setContentAreaFilled(true);
-        gheF10.setBorderPainted(true);
-        jcbxSelectMatch.setEnabled(false);
+        jButtonGheF10.setBackground(Color.RED);
+        jButtonGheF10.setOpaque(true);
+        jButtonGheF10.setContentAreaFilled(true);
+        jButtonGheF10.setBorderPainted(true);
+        jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
-    }//GEN-LAST:event_gheF10ActionPerformed
+    }//GEN-LAST:event_jButtonGheF10ActionPerformed
 
     private void jButtonConfrimSeatAndChangeTabOrderAndPaymentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConfrimSeatAndChangeTabOrderAndPaymentActionPerformed
         try {
             ArrayList<Seat> listSeat = new ArrayList<>();
-            String matchID = (String) jcbxSelectMatch.getSelectedItem();
+            String matchID = (String) jComboxSelectMatch.getSelectedItem();
             String stadiumID = DataBaseConnect.selectStadiumIDbyMatchID(matchID);
             int amount = Integer.parseInt(jTextFieldAmount.getText());
             for (String item : gheDuocDat) {
@@ -1853,67 +1851,68 @@ public class TabBookSeat extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton gheA01;
-    private javax.swing.JButton gheA02;
-    private javax.swing.JButton gheA03;
-    private javax.swing.JButton gheA04;
-    private javax.swing.JButton gheA05;
-    private javax.swing.JButton gheA06;
-    private javax.swing.JButton gheA07;
-    private javax.swing.JButton gheA08;
-    private javax.swing.JButton gheA09;
-    private javax.swing.JButton gheA10;
-    private javax.swing.JButton gheB01;
-    private javax.swing.JButton gheB02;
-    private javax.swing.JButton gheB03;
-    private javax.swing.JButton gheB04;
-    private javax.swing.JButton gheB05;
-    private javax.swing.JButton gheB06;
-    private javax.swing.JButton gheB07;
-    private javax.swing.JButton gheB08;
-    private javax.swing.JButton gheB09;
-    private javax.swing.JButton gheB10;
-    private javax.swing.JButton gheC01;
-    private javax.swing.JButton gheC02;
-    private javax.swing.JButton gheC03;
-    private javax.swing.JButton gheC04;
-    private javax.swing.JButton gheC05;
-    private javax.swing.JButton gheC06;
-    private javax.swing.JButton gheC07;
-    private javax.swing.JButton gheC08;
-    private javax.swing.JButton gheC09;
-    private javax.swing.JButton gheC10;
-    private javax.swing.JButton gheD01;
-    private javax.swing.JButton gheD02;
-    private javax.swing.JButton gheD03;
-    private javax.swing.JButton gheD04;
-    private javax.swing.JButton gheD05;
-    private javax.swing.JButton gheD06;
-    private javax.swing.JButton gheD07;
-    private javax.swing.JButton gheD08;
-    private javax.swing.JButton gheD09;
-    private javax.swing.JButton gheD10;
-    private javax.swing.JButton gheE01;
-    private javax.swing.JButton gheE02;
-    private javax.swing.JButton gheE03;
-    private javax.swing.JButton gheE04;
-    private javax.swing.JButton gheE05;
-    private javax.swing.JButton gheE06;
-    private javax.swing.JButton gheE07;
-    private javax.swing.JButton gheE08;
-    private javax.swing.JButton gheE09;
-    private javax.swing.JButton gheE10;
-    private javax.swing.JButton gheF01;
-    private javax.swing.JButton gheF02;
-    private javax.swing.JButton gheF03;
-    private javax.swing.JButton gheF04;
-    private javax.swing.JButton gheF05;
-    private javax.swing.JButton gheF06;
-    private javax.swing.JButton gheF07;
-    private javax.swing.JButton gheF08;
-    private javax.swing.JButton gheF09;
-    private javax.swing.JButton gheF10;
     private javax.swing.JButton jButtonConfrimSeatAndChangeTabOrderAndPayment;
+    private javax.swing.JButton jButtonGheA01;
+    private javax.swing.JButton jButtonGheA02;
+    private javax.swing.JButton jButtonGheA03;
+    private javax.swing.JButton jButtonGheA04;
+    private javax.swing.JButton jButtonGheA05;
+    private javax.swing.JButton jButtonGheA06;
+    private javax.swing.JButton jButtonGheA07;
+    private javax.swing.JButton jButtonGheA08;
+    private javax.swing.JButton jButtonGheA09;
+    private javax.swing.JButton jButtonGheA10;
+    private javax.swing.JButton jButtonGheB01;
+    private javax.swing.JButton jButtonGheB02;
+    private javax.swing.JButton jButtonGheB03;
+    private javax.swing.JButton jButtonGheB04;
+    private javax.swing.JButton jButtonGheB05;
+    private javax.swing.JButton jButtonGheB06;
+    private javax.swing.JButton jButtonGheB07;
+    private javax.swing.JButton jButtonGheB08;
+    private javax.swing.JButton jButtonGheB09;
+    private javax.swing.JButton jButtonGheB10;
+    private javax.swing.JButton jButtonGheC01;
+    private javax.swing.JButton jButtonGheC02;
+    private javax.swing.JButton jButtonGheC03;
+    private javax.swing.JButton jButtonGheC04;
+    private javax.swing.JButton jButtonGheC05;
+    private javax.swing.JButton jButtonGheC06;
+    private javax.swing.JButton jButtonGheC07;
+    private javax.swing.JButton jButtonGheC08;
+    private javax.swing.JButton jButtonGheC09;
+    private javax.swing.JButton jButtonGheC10;
+    private javax.swing.JButton jButtonGheD01;
+    private javax.swing.JButton jButtonGheD02;
+    private javax.swing.JButton jButtonGheD03;
+    private javax.swing.JButton jButtonGheD04;
+    private javax.swing.JButton jButtonGheD05;
+    private javax.swing.JButton jButtonGheD06;
+    private javax.swing.JButton jButtonGheD07;
+    private javax.swing.JButton jButtonGheD08;
+    private javax.swing.JButton jButtonGheD09;
+    private javax.swing.JButton jButtonGheD10;
+    private javax.swing.JButton jButtonGheE01;
+    private javax.swing.JButton jButtonGheE02;
+    private javax.swing.JButton jButtonGheE03;
+    private javax.swing.JButton jButtonGheE04;
+    private javax.swing.JButton jButtonGheE05;
+    private javax.swing.JButton jButtonGheE06;
+    private javax.swing.JButton jButtonGheE07;
+    private javax.swing.JButton jButtonGheE08;
+    private javax.swing.JButton jButtonGheE09;
+    private javax.swing.JButton jButtonGheE10;
+    private javax.swing.JButton jButtonGheF01;
+    private javax.swing.JButton jButtonGheF02;
+    private javax.swing.JButton jButtonGheF03;
+    private javax.swing.JButton jButtonGheF04;
+    private javax.swing.JButton jButtonGheF05;
+    private javax.swing.JButton jButtonGheF06;
+    private javax.swing.JButton jButtonGheF07;
+    private javax.swing.JButton jButtonGheF08;
+    private javax.swing.JButton jButtonGheF09;
+    private javax.swing.JButton jButtonGheF10;
+    private javax.swing.JComboBox<String> jComboxSelectMatch;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -1929,7 +1928,6 @@ public class TabBookSeat extends javax.swing.JPanel {
     private javax.swing.JTextField jTextFieldPhone;
     private javax.swing.JTextField jTextFieldSeat;
     private javax.swing.JTextField jTextFieldUserID;
-    private javax.swing.JComboBox<String> jcbxSelectMatch;
     private javax.swing.JPanel seatPanel;
     // End of variables declaration//GEN-END:variables
 }

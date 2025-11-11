@@ -27,8 +27,8 @@ public class JDialogAboutUs extends javax.swing.JDialog {
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        buttonClose = new javax.swing.JButton();
+        jTableShow = new javax.swing.JTable();
+        jButtonClose = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
 
@@ -40,8 +40,8 @@ public class JDialogAboutUs extends javax.swing.JDialog {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/database32.png"))); // NOI18N
         jLabel1.setText("Database Project");
 
-        jTable1.setBackground(new java.awt.Color(153, 204, 255));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jTableShow.setBackground(new java.awt.Color(153, 204, 255));
+        jTableShow.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"Huỳnh Hoàng Khoa", "N23DCCN166"},
                 {"Nguyễn Xuân Hữu", "N23DCCN160"},
@@ -52,12 +52,12 @@ public class JDialogAboutUs extends javax.swing.JDialog {
                 "Full name", "Student ID number"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(jTableShow);
 
-        buttonClose.setText("Close");
-        buttonClose.addActionListener(new java.awt.event.ActionListener() {
+        jButtonClose.setText("Close");
+        jButtonClose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonCloseActionPerformed(evt);
+                jButtonCloseActionPerformed(evt);
             }
         });
 
@@ -74,7 +74,7 @@ public class JDialogAboutUs extends javax.swing.JDialog {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 537, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(buttonClose))
+                        .addComponent(jButtonClose))
                     .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jSeparator2)
                     .addGroup(layout.createSequentialGroup()
@@ -97,16 +97,16 @@ public class JDialogAboutUs extends javax.swing.JDialog {
                 .addGap(3, 3, 3)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(buttonClose)
+                .addComponent(jButtonClose)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void buttonCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCloseActionPerformed
+    private void jButtonCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCloseActionPerformed
         this.dispose();
-    }//GEN-LAST:event_buttonCloseActionPerformed
+    }//GEN-LAST:event_jButtonCloseActionPerformed
 
     /**
      * @param args the command line arguments
@@ -152,12 +152,12 @@ public class JDialogAboutUs extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton buttonClose;
+    private javax.swing.JButton jButtonClose;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTableShow;
     // End of variables declaration//GEN-END:variables
 }

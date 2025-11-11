@@ -88,13 +88,13 @@ public class UserInterface extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
-        OpenAndCloseMenuBar = new javax.swing.JLabel();
+        jLabelOpenAndCloseMenuBar = new javax.swing.JLabel();
         jLabelToCloseThisTab = new javax.swing.JLabel();
         MenuAnimation = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
-        MenuBarExit = new javax.swing.JLabel();
-        MenuAboutUs = new javax.swing.JLabel();
+        jLabelMenuBarExit = new javax.swing.JLabel();
+        jLabelMenuAboutUs = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         jLabelUserOld = new javax.swing.JLabel();
@@ -491,10 +491,10 @@ public class UserInterface extends javax.swing.JFrame {
 
         TabMain.addTab("Home", new javax.swing.ImageIcon(getClass().getResource("/home24.png")), TpnBoard); // NOI18N
 
-        OpenAndCloseMenuBar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menu32.png"))); // NOI18N
-        OpenAndCloseMenuBar.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabelOpenAndCloseMenuBar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menu32.png"))); // NOI18N
+        jLabelOpenAndCloseMenuBar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                OpenAndCloseMenuBarMouseClicked(evt);
+                jLabelOpenAndCloseMenuBarMouseClicked(evt);
             }
         });
 
@@ -514,23 +514,23 @@ public class UserInterface extends javax.swing.JFrame {
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/conf24.png"))); // NOI18N
         jLabel32.setText("Features");
 
-        MenuBarExit.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        MenuBarExit.setForeground(new java.awt.Color(255, 255, 255));
-        MenuBarExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/exit24.png"))); // NOI18N
-        MenuBarExit.setText("Exit");
-        MenuBarExit.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabelMenuBarExit.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelMenuBarExit.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelMenuBarExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/exit24.png"))); // NOI18N
+        jLabelMenuBarExit.setText("Exit");
+        jLabelMenuBarExit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                MenuBarExitMouseClicked(evt);
+                jLabelMenuBarExitMouseClicked(evt);
             }
         });
 
-        MenuAboutUs.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        MenuAboutUs.setForeground(new java.awt.Color(255, 255, 255));
-        MenuAboutUs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/info24.png"))); // NOI18N
-        MenuAboutUs.setText("Introduce");
-        MenuAboutUs.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabelMenuAboutUs.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelMenuAboutUs.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelMenuAboutUs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/info24.png"))); // NOI18N
+        jLabelMenuAboutUs.setText("Introduce");
+        jLabelMenuAboutUs.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                MenuAboutUsMouseClicked(evt);
+                jLabelMenuAboutUsMouseClicked(evt);
             }
         });
 
@@ -589,14 +589,14 @@ public class UserInterface extends javax.swing.JFrame {
                         .addGroup(MenuAnimationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel29, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(MenuAnimationLayout.createSequentialGroup()
-                                .addComponent(MenuAboutUs)
+                                .addComponent(jLabelMenuAboutUs)
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addContainerGap())
                     .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(MenuAnimationLayout.createSequentialGroup()
                         .addGroup(MenuAnimationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(MenuAnimationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(MenuBarExit)
+                                .addComponent(jLabelMenuBarExit)
                                 .addComponent(jLabelUserOld)
                                 .addComponent(jLabelManager, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel31)
@@ -625,9 +625,9 @@ public class UserInterface extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
                 .addComponent(jLabel29)
                 .addGap(18, 18, 18)
-                .addComponent(MenuAboutUs)
+                .addComponent(jLabelMenuAboutUs)
                 .addGap(18, 18, 18)
-                .addComponent(MenuBarExit)
+                .addComponent(jLabelMenuBarExit)
                 .addGap(62, 62, 62))
         );
 
@@ -637,7 +637,7 @@ public class UserInterface extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(OpenAndCloseMenuBar)
+                .addComponent(jLabelOpenAndCloseMenuBar)
                 .addGap(18, 18, 18)
                 .addComponent(jLabelToCloseThisTab)
                 .addGap(0, 0, Short.MAX_VALUE))
@@ -650,7 +650,7 @@ public class UserInterface extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(OpenAndCloseMenuBar)
+                    .addComponent(jLabelOpenAndCloseMenuBar)
                     .addComponent(jLabelToCloseThisTab))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -690,28 +690,28 @@ public class UserInterface extends javax.swing.JFrame {
     }
 
     
-    private void OpenAndCloseMenuBarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OpenAndCloseMenuBarMouseClicked
+    private void jLabelOpenAndCloseMenuBarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelOpenAndCloseMenuBarMouseClicked
         if (!checkOpenMenuBar) {
             openMenuBar();
             TabMain.setVisible(false);
             checkOpenMenuBar = true;
-            changIconForOpenAndCloseMenuBar(OpenAndCloseMenuBar, "/left32.png");
+            changIconForOpenAndCloseMenuBar(jLabelOpenAndCloseMenuBar, "/left32.png");
         } else {
             closeMenuBar();
             TabMain.setVisible(true);
             checkOpenMenuBar = false;
-            changIconForOpenAndCloseMenuBar(OpenAndCloseMenuBar, "/menu32.png");
+            changIconForOpenAndCloseMenuBar(jLabelOpenAndCloseMenuBar, "/menu32.png");
         }
-    }//GEN-LAST:event_OpenAndCloseMenuBarMouseClicked
+    }//GEN-LAST:event_jLabelOpenAndCloseMenuBarMouseClicked
 
-    private void MenuAboutUsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MenuAboutUsMouseClicked
+    private void jLabelMenuAboutUsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelMenuAboutUsMouseClicked
         JDialogAboutUs aboutus = new JDialogAboutUs(this, true);
         aboutus.setVisible(true);
-    }//GEN-LAST:event_MenuAboutUsMouseClicked
+    }//GEN-LAST:event_jLabelMenuAboutUsMouseClicked
 
-    private void MenuBarExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MenuBarExitMouseClicked
+    private void jLabelMenuBarExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelMenuBarExitMouseClicked
         System.exit(0);
-    }//GEN-LAST:event_MenuBarExitMouseClicked
+    }//GEN-LAST:event_jLabelMenuBarExitMouseClicked
 
     private void jButtonBookTicket1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBookTicket1ActionPerformed
         jDialogRegister dialog = new jDialogRegister(this, true);
@@ -733,7 +733,7 @@ public class UserInterface extends javax.swing.JFrame {
         TabManager tab = new TabManager(this);
         TabMain.add("Manager", tab);
         TabMain.setSelectedComponent(tab);
-        OpenAndCloseMenuBarMouseClicked(evt);
+        jLabelOpenAndCloseMenuBarMouseClicked(evt);
     }//GEN-LAST:event_jLabelManagerMouseClicked
 
     private void jButtonBookTicket2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBookTicket2ActionPerformed
@@ -758,7 +758,7 @@ public class UserInterface extends javax.swing.JFrame {
         TabBookSeat tab = new TabBookSeat(this, registeredUser);
         TabMain.addTab("Book Seat", tab);
         TabMain.setSelectedComponent(tab);
-        OpenAndCloseMenuBarMouseClicked(evt);
+        jLabelOpenAndCloseMenuBarMouseClicked(evt);
     }//GEN-LAST:event_jLabelUserOldMouseClicked
 
     private void jLabelResetDataMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelResetDataMouseClicked
@@ -771,14 +771,14 @@ public class UserInterface extends javax.swing.JFrame {
         } catch (SQLException | ClassNotFoundException ex) {
             System.getLogger(UserInterface.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
         }
-        OpenAndCloseMenuBarMouseClicked(evt);
+        jLabelOpenAndCloseMenuBarMouseClicked(evt);
     }//GEN-LAST:event_jLabelResetDataMouseClicked
 
     private void jLabelCreateNewMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelCreateNewMouseClicked
         TabCreateNew tab = new TabCreateNew(this);
         TabMain.add("New", tab);
         TabMain.setSelectedComponent(tab);
-        OpenAndCloseMenuBarMouseClicked(evt);
+        jLabelOpenAndCloseMenuBarMouseClicked(evt);
     }//GEN-LAST:event_jLabelCreateNewMouseClicked
     
     void openMenuBar () {
@@ -860,10 +860,7 @@ public class UserInterface extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel MenuAboutUs;
     private javax.swing.JPanel MenuAnimation;
-    private javax.swing.JLabel MenuBarExit;
-    private javax.swing.JLabel OpenAndCloseMenuBar;
     private javax.swing.JTabbedPane TabMain;
     private javax.swing.JPanel TpnBoard;
     private javax.swing.JButton jButtonBookTicket1;
@@ -904,6 +901,9 @@ public class UserInterface extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabelCreateNew;
     private javax.swing.JLabel jLabelManager;
+    private javax.swing.JLabel jLabelMenuAboutUs;
+    private javax.swing.JLabel jLabelMenuBarExit;
+    private javax.swing.JLabel jLabelOpenAndCloseMenuBar;
     private javax.swing.JLabel jLabelResetData;
     private javax.swing.JLabel jLabelToCloseThisTab;
     private javax.swing.JLabel jLabelUserOld;

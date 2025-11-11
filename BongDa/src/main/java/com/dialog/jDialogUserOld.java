@@ -36,8 +36,8 @@ public class jDialogUserOld extends javax.swing.JDialog {
 
         jLabel1 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
-        btnClose = new javax.swing.JButton();
-        btnLogin = new javax.swing.JButton();
+        jButtonClose = new javax.swing.JButton();
+        jButtonLogin = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel2 = new javax.swing.JLabel();
         jPassWord = new javax.swing.JPasswordField();
@@ -53,21 +53,21 @@ public class jDialogUserOld extends javax.swing.JDialog {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/register48.png"))); // NOI18N
         jLabel1.setText("Registration");
 
-        btnClose.setBackground(new java.awt.Color(231, 76, 60));
-        btnClose.setForeground(new java.awt.Color(255, 255, 255));
-        btnClose.setText("Close");
-        btnClose.addActionListener(new java.awt.event.ActionListener() {
+        jButtonClose.setBackground(new java.awt.Color(231, 76, 60));
+        jButtonClose.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonClose.setText("Close");
+        jButtonClose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCloseActionPerformed(evt);
+                jButtonCloseActionPerformed(evt);
             }
         });
 
-        btnLogin.setBackground(new java.awt.Color(52, 152, 219));
-        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
-        btnLogin.setText("Login");
-        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+        jButtonLogin.setBackground(new java.awt.Color(52, 152, 219));
+        jButtonLogin.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonLogin.setText("Login");
+        jButtonLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLoginActionPerformed(evt);
+                jButtonLoginActionPerformed(evt);
             }
         });
 
@@ -96,9 +96,9 @@ public class jDialogUserOld extends javax.swing.JDialog {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(btnLogin)
+                                .addComponent(jButtonLogin)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
-                                .addComponent(btnClose))
+                                .addComponent(jButtonClose))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel6)
@@ -128,8 +128,8 @@ public class jDialogUserOld extends javax.swing.JDialog {
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 4, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnClose)
-                    .addComponent(btnLogin))
+                    .addComponent(jButtonClose)
+                    .addComponent(jButtonLogin))
                 .addGap(23, 23, 23))
         );
 
@@ -157,12 +157,12 @@ public class jDialogUserOld extends javax.swing.JDialog {
         return u;
     }
     
-    private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
+    private void jButtonCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCloseActionPerformed
         close = true;
         dispose();
-    }//GEN-LAST:event_btnCloseActionPerformed
+    }//GEN-LAST:event_jButtonCloseActionPerformed
 
-    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+    private void jButtonLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLoginActionPerformed
         u = new User();
         String userID, passWord;
         userID = jTextFieldUserID.getText();
@@ -183,7 +183,7 @@ public class jDialogUserOld extends javax.swing.JDialog {
         } else {
             JOptionPane.showMessageDialog(this, "Đăng nhập thất bại!", "Lỗi", JOptionPane.ERROR_MESSAGE);
         }
-    }//GEN-LAST:event_btnLoginActionPerformed
+    }//GEN-LAST:event_jButtonLoginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -289,8 +289,8 @@ public class jDialogUserOld extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnClose;
-    private javax.swing.JButton btnLogin;
+    private javax.swing.JButton jButtonClose;
+    private javax.swing.JButton jButtonLogin;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel6;
