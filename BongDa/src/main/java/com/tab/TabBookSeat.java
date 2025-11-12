@@ -864,7 +864,6 @@ public class TabBookSeat extends javax.swing.JPanel {
     }
 
     private void addSeatButtonListeners() {
-        // Duyệt qua tất cả component trong panel ghế
         for (Component c : jPanelSeats.getComponents()) {
             if (c instanceof JButton) {
                 JButton seatButton = (JButton) c;
@@ -882,8 +881,7 @@ public class TabBookSeat extends javax.swing.JPanel {
         jComboxSelectMatch.setEnabled(false);
         jButtonConfrimSeatAndChangeTabOrderAndPayment.setEnabled(true);
 
-        // Lấy mã ghế từ tên nút
-        String seatCode = seatButton.getText(); // hoặc seatButton.getName() nếu bạn setName()
+        String seatCode = seatButton.getText();
         setAmountAndSetAndGheDuocDat(seatCode);
     }
 
