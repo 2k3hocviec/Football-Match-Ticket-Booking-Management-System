@@ -43,9 +43,9 @@ public class JDialogAboutUs extends javax.swing.JDialog {
         jTableShow.setBackground(new java.awt.Color(153, 204, 255));
         jTableShow.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Huỳnh Hoàng Khoa", "N23DCCN166"},
-                {"Nguyễn Xuân Hữu", "N23DCCN160"},
                 {"Trần Hoàng Đạt", "N23DCCN148"},
+                {"Nguyễn Xuân Hữu", "N23DCCN160"},
+                {"Huỳnh Hoàng Khoa", "N23DCCN166"},
                 {"Nguyễn Ngọc Phương", "N23DCCN047"}
             },
             new String [] {

@@ -21,14 +21,14 @@ public class TabBookSeat extends javax.swing.JPanel {
      */
     public ArrayList<String> gheDuocDat = new ArrayList<>();
     private int soLuong = 0;
-    private final int donGia = 40000;
+    private int price = 40000;
     private UserInterface userInterface;
     private User userCucBo;
     private final java.awt.Color HOVER_COLOR = new java.awt.Color(0, 163, 55);
     private final java.awt.Color DEFAULT_COLOR = new java.awt.Color(0, 204, 68);
 
     public TabBookSeat(UserInterface userInterface, User user) {
-        initComponents();    
+        initComponents();
         addSeatButtonListeners();
         setMatchIDTojcbxSelectMatch();
         initStatus(user);
@@ -565,7 +565,7 @@ public class TabBookSeat extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonConfrimSeatAndChangeTabOrderAndPayment, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButtonConfrimSeatAndChangeTabOrderAndPayment, javax.swing.GroupLayout.DEFAULT_SIZE, 249, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -660,6 +660,16 @@ public class TabBookSeat extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void setPrice(String matchid) {
+        String tournament = DataBaseConnect.getTournament(matchid);
+        price = switch (tournament.toLowerCase()) {
+            case "final" -> 200000;
+            case "third place" -> 100000;
+            case String t when t.contains("group") -> 30000;
+            default -> 80000;
+        };
+    }
+    
     private void initStatus(User user) {
         jTextFieldFullName.setEditable(false);
         jTextFieldUserID.setEditable(false);
@@ -714,6 +724,7 @@ public class TabBookSeat extends javax.swing.JPanel {
         String matchID = jComboxSelectMatch.getSelectedItem().toString();
         try {
             ArrayList<Vector> arr = DataBaseConnect.getDataSeatsAccordingToTheMatch(matchID);
+            setPrice(matchID);
             setStatusGheFollowComboBox(arr);
         } catch (SQLException | ClassNotFoundException ex) {
             System.getLogger(TabBookSeat.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
@@ -860,7 +871,7 @@ public class TabBookSeat extends javax.swing.JPanel {
         currentText = currentText + " " + ghe;
         jTextFieldSeat.setText(currentText);
         soLuong++;
-        jTextFieldAmount.setText("" + soLuong * donGia);
+        jTextFieldAmount.setText("" + soLuong * price);
     }
 
     private void addSeatButtonListeners() {
@@ -898,7 +909,7 @@ public class TabBookSeat extends javax.swing.JPanel {
                 DataBaseConnect.updateSeat(s);
             }
             userInterface.deleteTab();
-            userInterface.btnBookTicketInTabBookTicKet(userCucBo, listSeat, amount);
+            userInterface.btnBookTicketInTabBookTicKet(userCucBo, listSeat, amount, this.price);
 
         } catch (SQLException | ClassNotFoundException ex) {
             System.getLogger(TabBookSeat.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);

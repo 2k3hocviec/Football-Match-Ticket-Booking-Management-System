@@ -677,7 +677,8 @@ public class DataBaseConnect {
                  """;
         try (
                 Connection con = getConnection(); 
-                PreparedStatement pstmt = con.prepareStatement(sql);) {
+                PreparedStatement pstmt = con.prepareStatement(sql);
+                ) {
             pstmt.setString(1, userID);
             pstmt.setString(2, pass);
             try (ResultSet rs = pstmt.executeQuery()) {
@@ -722,5 +723,24 @@ public class DataBaseConnect {
         } catch (Exception e) {
             return -1;
         }
+    }
+    
+    public static String getTournament(String match_id) {
+        String sql = "Select tournament from Matches where match_id = ?";
+        try (
+                Connection con = getConnection(); PreparedStatement pstmt = con.prepareCall(sql);) {
+            pstmt.setString(1, match_id);
+            ResultSet rs = pstmt.executeQuery();
+            if (rs.next()) {
+                return rs.getString("tournament");
+            }
+        } catch (Exception e) {
+            return null;
+        }
+        return "Other";
+    }
+    
+    public static void main(String[] args) {
+        System.out.println(getTournament("M001"));
     }
 }

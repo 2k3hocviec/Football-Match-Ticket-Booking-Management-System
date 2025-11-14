@@ -19,9 +19,11 @@ public class TabOrderAndPayment extends javax.swing.JPanel {
     private UserInterface userInterface;
     private ArrayList <Seat> listSeat;
     private Order orderCucBo;
+    private int price;
 
-    public TabOrderAndPayment(UserInterface userInterface, User user, ArrayList<Seat> seats, int amount) {
+    public TabOrderAndPayment(UserInterface userInterface, User user, ArrayList<Seat> seats, int amount, int price) {
         initComponents();
+        this.price = price;
         this.userInterface = userInterface;
         this.listSeat = seats;
         initStatusOver();
@@ -358,7 +360,7 @@ public class TabOrderAndPayment extends javax.swing.JPanel {
             jButtonPay.setText("Đã Thanh Toán");
             jButtonPay.setEnabled(false);
             userInterface.deleteTab();
-            userInterface.btnPayInTabOrderAndPayment(orderCucBo, listSeat);
+            userInterface.btnPayInTabOrderAndPayment(orderCucBo, listSeat, price);
         } else {
             JOptionPane.showMessageDialog(this, "Lỗi, hãy khởi động lại!", "Erorr", JOptionPane.ERROR_MESSAGE);
         }

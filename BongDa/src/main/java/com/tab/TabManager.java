@@ -9,7 +9,9 @@ import com.objects.Seat;
 import com.objects.Stadium;
 import com.objects.Ticket;
 import com.objects.User;
+import java.text.NumberFormat;
 import java.util.ArrayList;
+import java.util.Locale;
 import javax.swing.ImageIcon;
 import javax.swing.table.DefaultTableModel;
 
@@ -267,7 +269,7 @@ public class TabManager extends javax.swing.JPanel {
                     Object[] row = new Object[]{
                         m.get(0),
                         m.get(1),
-                        m.get(2),
+                        formatCurrency(m.get(2))
                     };
                     model.addRow(row);
                 }
@@ -282,7 +284,7 @@ public class TabManager extends javax.swing.JPanel {
                 for (ArrayList<Object> m : arr) {
                     Object[] row = new Object[]{
                         m.get(0),
-                        m.get(1),
+                        formatCurrency(m.get(1))
                     };
                     model.addRow(row);
                 }
@@ -296,7 +298,7 @@ public class TabManager extends javax.swing.JPanel {
                 for (ArrayList<Object> m : arr) {
                     Object[] row = new Object[]{
                         m.get(0),
-                        m.get(1),
+                        m.get(1)
                     };
                     model.addRow(row);
                 }
@@ -311,7 +313,7 @@ public class TabManager extends javax.swing.JPanel {
                     Object[] row = new Object[]{
                         m.get(0),
                         m.get(1),
-                        m.get(2)
+                        formatCurrency(m.get(2))
                     };
                     model.addRow(row);
                 }
@@ -325,7 +327,7 @@ public class TabManager extends javax.swing.JPanel {
                 for (ArrayList<Object> m : arr) {
                     Object[] row = new Object[]{
                         m.get(0),
-                        m.get(1)
+                        formatCurrency(m.get(1))
                     };
                     model.addRow(row);
                 }
@@ -336,6 +338,17 @@ public class TabManager extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_jComboBoxSelectActionPerformed
 
+    public static String formatCurrency(Object amount) {
+        if (amount == null) return "0";
+        try {
+            long value = Long.parseLong(amount.toString());        
+            NumberFormat formatter = NumberFormat.getNumberInstance(Locale.getDefault());
+            return formatter.format(value);
+        } catch (NumberFormatException e) {
+            return amount.toString();
+        }
+    }
+    
     private void changeIconLabel(String choice) {
         switch (choice) {
             case "Users" -> {

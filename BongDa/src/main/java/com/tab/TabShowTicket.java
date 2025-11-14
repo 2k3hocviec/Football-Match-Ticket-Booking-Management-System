@@ -19,6 +19,7 @@ public class TabShowTicket extends javax.swing.JPanel {
     private DefaultTableModel model = new DefaultTableModel();
     private ArrayList <Ticket> listTicket = new ArrayList<>();
     private UserInterface userInterface;
+    private int price = 0;
     /**
      * Creates new form TabShowTicket1
      * @param userInterface
@@ -26,9 +27,10 @@ public class TabShowTicket extends javax.swing.JPanel {
      * @param listSeat
      */
     
-    public TabShowTicket(UserInterface userInterface ,Order order, ArrayList <Seat> listSeat) {
+    public TabShowTicket(UserInterface userInterface ,Order order, ArrayList <Seat> listSeat, int gia) {
         initComponents();
         this.userInterface = userInterface;
+        this.price = gia;
         model = (DefaultTableModel) jTableShow.getModel();
         initData(order, listSeat);
         initTable();
@@ -166,7 +168,7 @@ public class TabShowTicket extends javax.swing.JPanel {
 
     private void initData(Order o, ArrayList <Seat> list) {
         for (Seat s : list) {
-            Ticket t = new Ticket(createIDTicket(), o.getOrder_id(), s.getMatch_id(), s.getSeat_id(), 40000);
+            Ticket t = new Ticket(createIDTicket(), o.getOrder_id(), s.getMatch_id(), s.getSeat_id(), price);
             listTicket.add(t);
         }
     }

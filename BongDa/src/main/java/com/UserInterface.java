@@ -15,8 +15,6 @@ import com.tab.TabOrderAndPayment;
 import com.tab.TabShowTicket;
 import java.awt.Color;
 import java.awt.Component;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
@@ -822,14 +820,14 @@ public class UserInterface extends javax.swing.JFrame {
         }
     }
     
-    public void btnBookTicketInTabBookTicKet(User user, ArrayList <Seat> seats, int amount) {
-        TabOrderAndPayment tab = new TabOrderAndPayment(this, user, seats, amount);
+    public void btnBookTicketInTabBookTicKet(User user, ArrayList <Seat> seats, int amount, int price) {
+        TabOrderAndPayment tab = new TabOrderAndPayment(this, user, seats, amount, price);
         TabMain.addTab("Confirm and Payment", tab);
         TabMain.setSelectedComponent(tab);
     }
     
-    public void btnPayInTabOrderAndPayment(Order order, ArrayList <Seat> listSeat) {
-        TabShowTicket tab = new TabShowTicket(this ,order, listSeat);
+    public void btnPayInTabOrderAndPayment(Order order, ArrayList <Seat> listSeat, int price) {
+        TabShowTicket tab = new TabShowTicket(this ,order, listSeat, price);
         TabMain.addTab("Ticket", tab);
         TabMain.setSelectedComponent(tab);
     }
