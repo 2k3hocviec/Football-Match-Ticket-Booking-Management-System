@@ -59,7 +59,7 @@ public class jDialogRegister extends javax.swing.JDialog {
         jLabel1.setForeground(new java.awt.Color(192, 57, 43));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/register48.png"))); // NOI18N
-        jLabel1.setText("Registration");
+        jLabel1.setText("Sign Up");
 
         jButtonClose.setBackground(new java.awt.Color(231, 76, 60));
         jButtonClose.setForeground(new java.awt.Color(255, 255, 255));
@@ -72,14 +72,13 @@ public class jDialogRegister extends javax.swing.JDialog {
 
         jButtonLogin.setBackground(new java.awt.Color(52, 152, 219));
         jButtonLogin.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonLogin.setText("Sign in");
+        jButtonLogin.setText("Sign up");
         jButtonLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonLoginActionPerformed(evt);
             }
         });
 
-        jTextFieldFullName.setText("Huỳnh Hoàng Khoa");
         jTextFieldFullName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(176, 196, 222)));
         jTextFieldFullName.setDisabledTextColor(new java.awt.Color(176, 196, 222));
 
@@ -87,7 +86,6 @@ public class jDialogRegister extends javax.swing.JDialog {
 
         jLabel3.setText("Phone:");
 
-        jPassWord.setText("admin");
         jPassWord.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(176, 196, 222)));
         jPassWord.setDisabledTextColor(new java.awt.Color(176, 196, 222));
 
@@ -97,15 +95,17 @@ public class jDialogRegister extends javax.swing.JDialog {
 
         jLabel6.setText("Password:");
 
-        jTextFieldEmail.setText("khoa@gmail.com");
         jTextFieldEmail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(176, 196, 222)));
         jTextFieldEmail.setDisabledTextColor(new java.awt.Color(176, 196, 222));
+        jTextFieldEmail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldEmailActionPerformed(evt);
+            }
+        });
 
-        jTextFieldPhone.setText("0375065207");
         jTextFieldPhone.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(176, 196, 222)));
         jTextFieldPhone.setDisabledTextColor(new java.awt.Color(176, 196, 222));
 
-        jTextFieldUserID.setText("admin");
         jTextFieldUserID.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(176, 196, 222)));
         jTextFieldUserID.setDisabledTextColor(new java.awt.Color(176, 196, 222));
 
@@ -254,6 +254,10 @@ public class jDialogRegister extends javax.swing.JDialog {
             JOptionPane.showMessageDialog(this, "Đăng ký thất bại!", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_jButtonLoginActionPerformed
+
+    private void jTextFieldEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldEmailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldEmailActionPerformed
 
     /**
      * @param args the command line arguments

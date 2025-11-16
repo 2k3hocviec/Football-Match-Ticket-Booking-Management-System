@@ -51,7 +51,7 @@ public class jDialogUserOld extends javax.swing.JDialog {
         jLabel1.setForeground(new java.awt.Color(192, 57, 43));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/register48.png"))); // NOI18N
-        jLabel1.setText("Registration");
+        jLabel1.setText("Sign in");
 
         jButtonClose.setBackground(new java.awt.Color(231, 76, 60));
         jButtonClose.setForeground(new java.awt.Color(255, 255, 255));
@@ -64,7 +64,7 @@ public class jDialogUserOld extends javax.swing.JDialog {
 
         jButtonLogin.setBackground(new java.awt.Color(52, 152, 219));
         jButtonLogin.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonLogin.setText("Login");
+        jButtonLogin.setText("Sign in");
         jButtonLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonLoginActionPerformed(evt);
@@ -73,12 +73,10 @@ public class jDialogUserOld extends javax.swing.JDialog {
 
         jLabel2.setText("User ID:");
 
-        jPassWord.setText("admin");
         jPassWord.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(176, 196, 222)));
 
         jLabel6.setText("Password:");
 
-        jTextFieldUserID.setText("admin");
         jTextFieldUserID.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(176, 196, 222)));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

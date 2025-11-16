@@ -120,7 +120,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/register48.png"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Registration"/>
+        <Property name="text" type="java.lang.String" value="Sign Up"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator2">
@@ -147,7 +147,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Sign in"/>
+        <Property name="text" type="java.lang.String" value="Sign up"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonLoginActionPerformed"/>
@@ -157,7 +157,6 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTextFieldFullName">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Hu&#x1ef3;nh Ho&#xe0;ng Khoa"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
             <LineBorder>
@@ -182,7 +181,6 @@
     </Component>
     <Component class="javax.swing.JPasswordField" name="jPassWord">
       <Properties>
-        <Property name="text" type="java.lang.String" value="admin"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
             <LineBorder>
@@ -212,7 +210,6 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTextFieldEmail">
       <Properties>
-        <Property name="text" type="java.lang.String" value="khoa@gmail.com"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
             <LineBorder>
@@ -224,10 +221,12 @@
           <Color blue="de" green="c4" red="b0" type="rgb"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldEmailActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextFieldPhone">
       <Properties>
-        <Property name="text" type="java.lang.String" value="0375065207"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
             <LineBorder>
@@ -242,7 +241,6 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTextFieldUserID">
       <Properties>
-        <Property name="text" type="java.lang.String" value="admin"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
             <LineBorder>
