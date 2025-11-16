@@ -102,7 +102,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/register48.png"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Sign in"/>
+        <Property name="text" type="java.lang.String" value="Sign In"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator2">

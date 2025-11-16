@@ -51,7 +51,7 @@ public class jDialogUserOld extends javax.swing.JDialog {
         jLabel1.setForeground(new java.awt.Color(192, 57, 43));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/register48.png"))); // NOI18N
-        jLabel1.setText("Sign in");
+        jLabel1.setText("Sign In");
 
         jButtonClose.setBackground(new java.awt.Color(231, 76, 60));
         jButtonClose.setForeground(new java.awt.Color(255, 255, 255));
