@@ -1,7 +1,9 @@
 E:\Other\BongDa\src\main\java\com\connectdatabase\DataBaseConnect.java
 E:\Other\BongDa\src\main\java\com\dialog\JDialogAboutUs.java
 E:\Other\BongDa\src\main\java\com\dialog\jDialogRegister.java
+E:\Other\BongDa\src\main\java\com\dialog\jDialogSignInDataBase.java
 E:\Other\BongDa\src\main\java\com\dialog\jDialogUserOld.java
+E:\Other\BongDa\src\main\java\com\Main.java
 E:\Other\BongDa\src\main\java\com\objects\Match.java
 E:\Other\BongDa\src\main\java\com\objects\Order.java
 E:\Other\BongDa\src\main\java\com\objects\Payment.java
@@ -14,4 +16,3 @@ E:\Other\BongDa\src\main\java\com\tab\TabCreateNew.java
 E:\Other\BongDa\src\main\java\com\tab\TabManager.java
 E:\Other\BongDa\src\main\java\com\tab\TabOrderAndPayment.java
 E:\Other\BongDa\src\main\java\com\tab\TabShowTicket.java
-E:\Other\BongDa\src\main\java\com\UserInterface.java

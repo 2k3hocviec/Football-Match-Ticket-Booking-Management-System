@@ -1,6 +1,6 @@
 package com.tab;
 
-import com.UserInterface;
+import com.Main;
 import com.connectdatabase.DataBaseConnect;
 import com.objects.Match;
 import com.objects.Order;
@@ -22,14 +22,14 @@ import javax.swing.table.DefaultTableModel;
 public class TabManager extends javax.swing.JPanel {
 
     private DefaultTableModel model = new DefaultTableModel();
-    private UserInterface userInterface;
+    private Main userInterface;
 
     /**
      * Creates new form TabShowTicket1
      *
      * @param userInterface
      */
-    public TabManager(UserInterface userInterface) {
+    public TabManager(Main userInterface) {
         initComponents();
         this.userInterface = userInterface;
         model = (DefaultTableModel) jTableShow.getModel();

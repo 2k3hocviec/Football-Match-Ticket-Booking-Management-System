@@ -1,6 +1,6 @@
 package com.tab;
 
-import com.UserInterface;
+import com.Main;
 import com.connectdatabase.DataBaseConnect;
 import com.objects.Seat;
 import com.objects.User;
@@ -22,12 +22,12 @@ public class TabBookSeat extends javax.swing.JPanel {
     public ArrayList<String> gheDuocDat = new ArrayList<>();
     private int soLuong = 0;
     private int price = 40000;
-    private UserInterface userInterface;
+    private Main userInterface;
     private User userCucBo;
     private final java.awt.Color HOVER_COLOR = new java.awt.Color(0, 163, 55);
     private final java.awt.Color DEFAULT_COLOR = new java.awt.Color(0, 204, 68);
 
-    public TabBookSeat(UserInterface userInterface, User user) {
+    public TabBookSeat(Main userInterface, User user) {
         initComponents();
         addSeatButtonListeners();
         setMatchIDTojcbxSelectMatch();

@@ -1,6 +1,6 @@
 package com.tab;
 
-import com.UserInterface;
+import com.Main;
 import com.connectdatabase.DataBaseConnect;
 import com.objects.Order;
 import com.objects.Payment;
@@ -16,12 +16,12 @@ public class TabOrderAndPayment extends javax.swing.JPanel {
     /**
      * Creates new form TabThanhToan
      */
-    private UserInterface userInterface;
+    private Main userInterface;
     private ArrayList <Seat> listSeat;
     private Order orderCucBo;
     private int price;
 
-    public TabOrderAndPayment(UserInterface userInterface, User user, ArrayList<Seat> seats, int amount, int price) {
+    public TabOrderAndPayment(Main userInterface, User user, ArrayList<Seat> seats, int amount, int price) {
         initComponents();
         this.price = price;
         this.userInterface = userInterface;

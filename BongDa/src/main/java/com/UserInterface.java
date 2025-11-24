@@ -1,9 +1,9 @@
-
 package com;
 
 import com.connectdatabase.DataBaseConnect;
 import com.dialog.JDialogAboutUs;
 import com.dialog.jDialogRegister;
+import com.dialog.jDialogSignInDataBase;
 import com.dialog.jDialogUserOld;
 import com.objects.Order;
 import com.objects.Seat;
@@ -22,11 +22,12 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 public class UserInterface extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(UserInterface.class.getName());
     int weightMenuBar = 200;
     int heightMenuBar = 558;
     boolean checkOpenMenuBar = false;
+
     /**
      * Creates new form UserInterface
      */
@@ -93,12 +94,14 @@ public class UserInterface extends javax.swing.JFrame {
         jLabel32 = new javax.swing.JLabel();
         jLabelMenuBarExit = new javax.swing.JLabel();
         jLabelMenuAboutUs = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
         jLabelUserOld = new javax.swing.JLabel();
         jLabelManager = new javax.swing.JLabel();
         jLabelResetData = new javax.swing.JLabel();
         jLabelCreateNew = new javax.swing.JLabel();
+        jLabelCreateDatabase = new javax.swing.JLabel();
+        jLabelCreateDataToBI = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(66, 66, 66));
@@ -532,10 +535,6 @@ public class UserInterface extends javax.swing.JFrame {
             }
         });
 
-        jLabel29.setText("________________________________________");
-
-        jLabel33.setText("________________________________________");
-
         jLabelUserOld.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabelUserOld.setForeground(new java.awt.Color(255, 255, 255));
         jLabelUserOld.setIcon(new javax.swing.ImageIcon(getClass().getResource("/khangia24.png"))); // NOI18N
@@ -576,6 +575,34 @@ public class UserInterface extends javax.swing.JFrame {
             }
         });
 
+        jLabelCreateDatabase.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelCreateDatabase.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelCreateDatabase.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SQLserver24.png"))); // NOI18N
+        jLabelCreateDatabase.setText("Create Database");
+        jLabelCreateDatabase.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelCreateDatabaseMouseClicked(evt);
+            }
+        });
+
+        jLabelCreateDataToBI.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelCreateDataToBI.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelCreateDataToBI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BI24.png"))); // NOI18N
+        jLabelCreateDataToBI.setText("Data To BI");
+        jLabelCreateDataToBI.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelCreateDataToBIMouseClicked(evt);
+            }
+        });
+
+        jLabel35.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel35.setText("__________________________________");
+
+        jLabel36.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel36.setText("__________________________________");
+
         javax.swing.GroupLayout MenuAnimationLayout = new javax.swing.GroupLayout(MenuAnimation);
         MenuAnimation.setLayout(MenuAnimationLayout);
         MenuAnimationLayout.setHorizontalGroup(
@@ -583,25 +610,25 @@ public class UserInterface extends javax.swing.JFrame {
             .addGroup(MenuAnimationLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(MenuAnimationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelCreateNew, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
+                    .addComponent(jLabelCreateDataToBI, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(MenuAnimationLayout.createSequentialGroup()
                         .addGroup(MenuAnimationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel29, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabelCreateDatabase, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(MenuAnimationLayout.createSequentialGroup()
-                                .addComponent(jLabelMenuAboutUs)
+                                .addGroup(MenuAnimationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelMenuAboutUs)
+                                    .addGroup(MenuAnimationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jLabelMenuBarExit)
+                                        .addComponent(jLabelUserOld)
+                                        .addComponent(jLabelManager, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel31)
+                                        .addComponent(jLabelResetData, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(jLabel32))
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addContainerGap())
-                    .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(MenuAnimationLayout.createSequentialGroup()
-                        .addGroup(MenuAnimationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(MenuAnimationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabelMenuBarExit)
-                                .addComponent(jLabelUserOld)
-                                .addComponent(jLabelManager, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel31)
-                                .addComponent(jLabelResetData, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(jLabel32))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jLabelCreateNew, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         MenuAnimationLayout.setVerticalGroup(
             MenuAnimationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -611,8 +638,8 @@ public class UserInterface extends javax.swing.JFrame {
                 .addGap(44, 44, 44)
                 .addComponent(jLabel32)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel33)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel35)
+                .addGap(12, 12, 12)
                 .addComponent(jLabelUserOld)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabelManager)
@@ -620,13 +647,17 @@ public class UserInterface extends javax.swing.JFrame {
                 .addComponent(jLabelResetData, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabelCreateNew, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
-                .addComponent(jLabel29)
                 .addGap(18, 18, 18)
+                .addComponent(jLabelCreateDatabase)
+                .addGap(18, 18, 18)
+                .addComponent(jLabelCreateDataToBI)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel36)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
                 .addComponent(jLabelMenuAboutUs)
                 .addGap(18, 18, 18)
                 .addComponent(jLabelMenuBarExit)
-                .addGap(62, 62, 62))
+                .addGap(12, 12, 12))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -664,7 +695,7 @@ public class UserInterface extends javax.swing.JFrame {
         int index = TabMain.getSelectedIndex();
         String title = TabMain.getTitleAt(index);
         boolean check = false;
-        
+
         if (title.equals("Book Seat") || title.equals("Confirm and Payment") || title.equals("Ticket")) {
             check = true;
         }
@@ -679,7 +710,7 @@ public class UserInterface extends javax.swing.JFrame {
             TabMain.remove(index);
         }
     }
-    
+
     public void deleteTabByComponent(Component component) {
         int index = TabMain.indexOfComponent(component);
         if (index != -1) {
@@ -687,7 +718,6 @@ public class UserInterface extends javax.swing.JFrame {
         }
     }
 
-    
     private void jLabelOpenAndCloseMenuBarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelOpenAndCloseMenuBarMouseClicked
         if (!checkOpenMenuBar) {
             openMenuBar();
@@ -778,8 +808,33 @@ public class UserInterface extends javax.swing.JFrame {
         TabMain.setSelectedComponent(tab);
         jLabelOpenAndCloseMenuBarMouseClicked(evt);
     }//GEN-LAST:event_jLabelCreateNewMouseClicked
-    
-    void openMenuBar () {
+
+    private void jLabelCreateDataToBIMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelCreateDataToBIMouseClicked
+        if (DataBaseConnect.createDateToBI() == 1) {
+            JOptionPane.showMessageDialog(this, "Thêm dữ liệu cho BI thành công", "Inforamtion", JOptionPane.OK_OPTION);
+        } else {
+            JOptionPane.showMessageDialog(this, "Thất Bại", "Inforamtion", JOptionPane.OK_OPTION);
+        }
+        jLabelOpenAndCloseMenuBarMouseClicked(evt);
+    }//GEN-LAST:event_jLabelCreateDataToBIMouseClicked
+
+    private void jLabelCreateDatabaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelCreateDatabaseMouseClicked
+        try {
+            if (DataBaseConnect.createTablesAndData() == 1) {
+                JOptionPane.showMessageDialog(this, "Tạo database thành công", "Inforamtion", JOptionPane.OK_OPTION);
+            } else {
+                JOptionPane.showMessageDialog(this, "Thất Bại", "Inforamtion", JOptionPane.OK_OPTION);
+                System.exit(0);
+            }
+        } catch (SQLException ex) {
+            System.getLogger(UserInterface.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
+        } catch (ClassNotFoundException ex) {
+            System.getLogger(UserInterface.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
+        }
+        jLabelOpenAndCloseMenuBarMouseClicked(evt);
+    }//GEN-LAST:event_jLabelCreateDatabaseMouseClicked
+
+    void openMenuBar() {
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -794,8 +849,8 @@ public class UserInterface extends javax.swing.JFrame {
             }
         }).start();
     }
-    
-    void closeMenuBar () {
+
+    void closeMenuBar() {
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -806,11 +861,11 @@ public class UserInterface extends javax.swing.JFrame {
                     } catch (InterruptedException ex) {
                         System.getLogger(UserInterface.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
                     }
-                }               
+                }
             }
         }).start();
     }
-    
+
     private void changIconForOpenAndCloseMenuBar(JLabel label, String path) {
         java.net.URL imgURL = getClass().getResource(path);
         if (imgURL != null) {
@@ -819,19 +874,19 @@ public class UserInterface extends javax.swing.JFrame {
             System.err.println("Không tìm thấy icon: " + path);
         }
     }
-    
-    public void btnBookTicketInTabBookTicKet(User user, ArrayList <Seat> seats, int amount, int price) {
+
+    public void btnBookTicketInTabBookTicKet(User user, ArrayList<Seat> seats, int amount, int price) {
         TabOrderAndPayment tab = new TabOrderAndPayment(this, user, seats, amount, price);
         TabMain.addTab("Confirm and Payment", tab);
         TabMain.setSelectedComponent(tab);
     }
-    
-    public void btnPayInTabOrderAndPayment(Order order, ArrayList <Seat> listSeat, int price) {
-        TabShowTicket tab = new TabShowTicket(this ,order, listSeat, price);
+
+    public void btnPayInTabOrderAndPayment(Order order, ArrayList<Seat> listSeat, int price) {
+        TabShowTicket tab = new TabShowTicket(this, order, listSeat, price);
         TabMain.addTab("Ticket", tab);
         TabMain.setSelectedComponent(tab);
     }
-    
+
     /**
      * @param args the command line arguments
      */
@@ -854,7 +909,22 @@ public class UserInterface extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new UserInterface().setVisible(true));
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new UserInterface().setVisible(true);
+
+                jDialogSignInDataBase dialog = new jDialogSignInDataBase(null, true);
+                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+                    @Override
+                    public void windowClosing(java.awt.event.WindowEvent e) {
+                        System.exit(0); // thoát toàn bộ chương trình khi đóng dialog
+                    }
+                });
+
+                dialog.setVisible(true);
+            }
+        });
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -886,17 +956,19 @@ public class UserInterface extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelCreateDataToBI;
+    private javax.swing.JLabel jLabelCreateDatabase;
     private javax.swing.JLabel jLabelCreateNew;
     private javax.swing.JLabel jLabelManager;
     private javax.swing.JLabel jLabelMenuAboutUs;

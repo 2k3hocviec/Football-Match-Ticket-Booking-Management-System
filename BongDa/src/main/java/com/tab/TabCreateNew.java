@@ -1,6 +1,6 @@
 package com.tab;
 
-import com.UserInterface;
+import com.Main;
 import com.connectdatabase.DataBaseConnect;
 import com.objects.Match;
 import com.objects.Stadium;
@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 public class TabCreateNew extends javax.swing.JPanel {
-    private UserInterface userInterface;
+    private Main userInterface;
 
     /**
      * Creates new form TabShowTicket1
@@ -20,7 +20,7 @@ public class TabCreateNew extends javax.swing.JPanel {
      * @param userInterface
      */
     
-    public TabCreateNew(UserInterface userInterface) {
+    public TabCreateNew(Main userInterface) {
         initComponents();
         this.userInterface = userInterface;
         setStatusDefault();

@@ -97,11 +97,6 @@ public class jDialogRegister extends javax.swing.JDialog {
 
         jTextFieldEmail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(176, 196, 222)));
         jTextFieldEmail.setDisabledTextColor(new java.awt.Color(176, 196, 222));
-        jTextFieldEmail.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldEmailActionPerformed(evt);
-            }
-        });
 
         jTextFieldPhone.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(176, 196, 222)));
         jTextFieldPhone.setDisabledTextColor(new java.awt.Color(176, 196, 222));
@@ -254,10 +249,6 @@ public class jDialogRegister extends javax.swing.JDialog {
             JOptionPane.showMessageDialog(this, "Đăng ký thất bại!", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_jButtonLoginActionPerformed
-
-    private void jTextFieldEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldEmailActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldEmailActionPerformed
 
     /**
      * @param args the command line arguments

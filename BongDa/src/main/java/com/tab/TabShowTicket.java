@@ -1,6 +1,6 @@
 package com.tab;
 
-import com.UserInterface;
+import com.Main;
 import com.connectdatabase.DataBaseConnect;
 import com.objects.Order;
 import com.objects.Seat;
@@ -18,7 +18,7 @@ public class TabShowTicket extends javax.swing.JPanel {
 
     private DefaultTableModel model = new DefaultTableModel();
     private ArrayList <Ticket> listTicket = new ArrayList<>();
-    private UserInterface userInterface;
+    private Main userInterface;
     private int price = 0;
     /**
      * Creates new form TabShowTicket1
@@ -27,7 +27,7 @@ public class TabShowTicket extends javax.swing.JPanel {
      * @param listSeat
      */
     
-    public TabShowTicket(UserInterface userInterface ,Order order, ArrayList <Seat> listSeat, int gia) {
+    public TabShowTicket(Main userInterface ,Order order, ArrayList <Seat> listSeat, int gia) {
         initComponents();
         this.userInterface = userInterface;
         this.price = gia;
