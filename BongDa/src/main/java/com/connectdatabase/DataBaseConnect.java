@@ -1146,9 +1146,9 @@ public class DataBaseConnect {
                 ('STD002', N'Sân Thống Nhất', N'Hồ Chí Minh', 48);
 
                 INSERT INTO Matches VALUES
-                ('M001', N'Việt Nam', N'Thái Lan', 'STD001', '2025-12-29 19:00:00', N'Friendly'),
-                ('M002', N'Anh', N'Uruguay', 'STD002', '2025-12-30 19:00:00', N'WorldCup'),
-                ('M003', N'Brazil', N'Đức', 'STD001', '2025-11-20 19:00:00', N'Friendly'),
+                ('M001', N'Việt Nam', N'Thái Lan', 'STD001', '2025-12-29 19:00:00', N'Group State'),
+                ('M002', N'Anh', N'Uruguay', 'STD002', '2025-12-30 19:00:00', N'Final'),
+                ('M003', N'Brazil', N'Đức', 'STD001', '2025-11-20 19:00:00', N'Third Place'),
                 ('M004', N'Nhật Bản', N'Bồ Đào Nha', 'STD002', '2025-12-24 19:00:00', N'Olympic');
                      
                 INSERT INTO Seats (match_id, stadium_id, seat_id, status)
