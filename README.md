@@ -44,7 +44,6 @@ Hệ thống được phát triển bằng **Java** kết hợp với **Microsof
 - Quản lý đội bóng, sân vận động
 - Mô phỏng quá trình đặt vé
 - Lưu trữ và truy vấn dữ liệu bằng SQL Server
-- Giao diện Desktop thân thiện với người dùng
 
 ---
 
@@ -71,5 +70,5 @@ Hệ thống được phát triển bằng **Java** kết hợp với **Microsof
 Nếu gặp lỗi hoặc cần hỗ trợ, vui lòng liên hệ:
 
 - **Zalo / SĐT**: 0375 065 207
-
+- Khoa, Hữu, Đạt, Phương
 ---
