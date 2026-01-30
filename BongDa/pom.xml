@@ -18,6 +18,11 @@
             <version>12.10.1.jre11</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>com.toedter</groupId>
+            <artifactId>jcalendar</artifactId>
+            <version>1.4</version>
+        </dependency>
     </dependencies>
     <name>BongDa</name>
     <build>

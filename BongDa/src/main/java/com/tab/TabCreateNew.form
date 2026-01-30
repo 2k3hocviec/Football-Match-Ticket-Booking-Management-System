@@ -292,23 +292,23 @@
                                   <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jTextFieldMatchID" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jTextFieldAwayTeam" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jTextFieldHomeTeam" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jComboBoxStadiumId" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jTextFieldTournament" min="-2" pref="243" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="jTextFieldMatchDate" pref="161" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jTextFieldMatchID" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextFieldAwayTeam" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldHomeTeam" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldTournament" min="-2" pref="243" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="jTextFieldMatchDate" max="32767" attributes="0"/>
+                                          <Component id="jComboBoxStadiumId" alignment="1" max="32767" attributes="0"/>
+                                      </Group>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jDateChooserDate" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace pref="23" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -338,10 +338,12 @@
                           <Component id="jComboBoxStadiumId" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldMatchDate" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextFieldMatchDate" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jDateChooserDate" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -369,6 +371,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="14" style="0"/>
                 </Property>
+                <Property name="text" type="java.lang.String" value="&apos;2025-12-29 19:00:00&apos;"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel11">
@@ -428,7 +431,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="14" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Match Date: "/>
+                <Property name="text" type="java.lang.String" value="Time and Date: "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextFieldMatchDate">
@@ -485,9 +488,9 @@
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel14">
+            <Component class="com.toedter.calendar.JDateChooser" name="jDateChooserDate">
               <Properties>
-                <Property name="text" type="java.lang.String" value="&apos;2025-12-29 19:00:00&apos;"/>
+                <Property name="dateFormatString" type="java.lang.String" value="yyyy-MM-dd"/>
               </Properties>
             </Component>
           </SubComponents>

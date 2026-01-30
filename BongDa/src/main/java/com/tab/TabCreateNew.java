@@ -4,6 +4,8 @@ import com.Main;
 import com.connectdatabase.DataBaseConnect;
 import com.objects.Match;
 import com.objects.Stadium;
+import com.toedter.calendar.JCalendar;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -65,7 +67,7 @@ public class TabCreateNew extends javax.swing.JPanel {
         jTextFieldTournament = new javax.swing.JTextField();
         jButtonConfirmMatch = new javax.swing.JButton();
         jComboBoxStadiumId = new javax.swing.JComboBox<>();
-        jLabel14 = new javax.swing.JLabel();
+        jDateChooserDate = new com.toedter.calendar.JDateChooser();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
@@ -178,6 +180,7 @@ public class TabCreateNew extends javax.swing.JPanel {
         jLabel9.setText("Home team:");
 
         jTextFieldAwayTeam.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextFieldAwayTeam.setText("'2025-12-29 19:00:00'");
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel11.setText("Stadium ID:");
@@ -198,7 +201,7 @@ public class TabCreateNew extends javax.swing.JPanel {
         jLabel10.setText("Away team:");
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel12.setText("Match Date: ");
+        jLabel12.setText("Time and Date: ");
 
         jTextFieldMatchDate.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
@@ -220,7 +223,7 @@ public class TabCreateNew extends javax.swing.JPanel {
         jComboBoxStadiumId.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Default" }));
         jComboBoxStadiumId.setPreferredSize(new java.awt.Dimension(100, 26));
 
-        jLabel14.setText("'2025-12-29 19:00:00'");
+        jDateChooserDate.setDateFormatString("yyyy-MM-dd");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -240,18 +243,18 @@ public class TabCreateNew extends javax.swing.JPanel {
                             .addComponent(jLabel9)
                             .addComponent(jLabel8))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jTextFieldMatchID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jTextFieldAwayTeam)
-                                .addComponent(jTextFieldHomeTeam)
-                                .addComponent(jComboBoxStadiumId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jTextFieldTournament, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextFieldMatchID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextFieldAwayTeam)
+                            .addComponent(jTextFieldHomeTeam)
+                            .addComponent(jTextFieldTournament, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jTextFieldMatchDate, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE)
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jTextFieldMatchDate)
+                                    .addComponent(jComboBoxStadiumId, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel14)))))
-                .addContainerGap())
+                                .addComponent(jDateChooserDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -275,10 +278,11 @@ public class TabCreateNew extends javax.swing.JPanel {
                     .addComponent(jLabel11)
                     .addComponent(jComboBoxStadiumId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12)
-                    .addComponent(jTextFieldMatchDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel14))
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel12)
+                        .addComponent(jTextFieldMatchDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jDateChooserDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
@@ -375,6 +379,7 @@ public class TabCreateNew extends javax.swing.JPanel {
         jTextFieldMatchDate.setEnabled(true);
         jTextFieldTournament.setEnabled(true);
         jButtonConfirmMatch.setEnabled(true);
+        jDateChooserDate.setEnabled(true);
         setStadiumIDTojcbxSelectStadium();
     }
     
@@ -400,6 +405,7 @@ public class TabCreateNew extends javax.swing.JPanel {
         jTextFieldMatchDate.setText("");
         jTextFieldTournament.setEnabled(false);
         jTextFieldTournament.setText("");
+        jDateChooserDate.setEnabled(false);
         jButtonConfirmMatch.setEnabled(false);
     }
     
@@ -442,8 +448,9 @@ public class TabCreateNew extends javax.swing.JPanel {
     private void jButtonConfirmMatchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConfirmMatchActionPerformed
         DateTimeFormatter f = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         LocalDateTime date = null; 
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         try {
-            date = LocalDateTime.parse(jTextFieldMatchDate.getText(),f);
+            date = LocalDateTime.parse(sdf.format(jDateChooserDate.getDate()) + " " + jTextFieldMatchDate.getText(),f);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Thất bại!", "Error", JOptionPane.ERROR_MESSAGE);
             return;
@@ -471,12 +478,12 @@ public class TabCreateNew extends javax.swing.JPanel {
     private javax.swing.JButton jButtonConfirmStadium;
     private javax.swing.JComboBox<String> jComboBoxSelect;
     private javax.swing.JComboBox<String> jComboBoxStadiumId;
+    private com.toedter.calendar.JDateChooser jDateChooserDate;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
